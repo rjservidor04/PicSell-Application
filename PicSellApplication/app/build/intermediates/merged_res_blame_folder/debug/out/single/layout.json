@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-40:/layout/mainpage_view.xml",
+        "source": "com.example.picsellapplication.app-main-43:/layout/mainpage_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-mergeDebugResources-40:\\layout\\mainpage_view.xml",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\mainpage_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-mergeDebugResources-40:\\layout\\fragment_second.xml",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\fragment_second.xml"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-mergeDebugResources-40:\\layout\\register_view.xml",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\register_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-mergeDebugResources-40:\\layout\\login_view.xml",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\login_view.xml"
+    },
+    {
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-40:/layout/register_view.xml",
+        "source": "com.example.picsellapplication.app-main-43:/layout/register_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-mergeDebugResources-40:\\layout\\fragment_first.xml",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\fragment_first.xml"
+    }
+]
