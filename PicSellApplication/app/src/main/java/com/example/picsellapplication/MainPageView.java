@@ -11,14 +11,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class RegisterView extends AppCompatActivity{
+public class MainPageView extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.register_view);
+        setContentView(R.layout.mainpage_view);
     }
-
-
 }
 
