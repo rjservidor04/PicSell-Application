@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etStoreName" />
 
     <EditText
-        android:id="@+id/etNewUsername"
+        android:id="@+id/etUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
@@ -47,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etStoreOwnerName" />
 
     <EditText
-        android:id="@+id/etNewPassword"
+        android:id="@+id/etPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
@@ -57,7 +57,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNewUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
 
     <EditText
         android:id="@+id/etConfirmPassword"
@@ -70,7 +70,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNewPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <Button
         android:id="@+id/btnRegister"
@@ -78,6 +78,7 @@
         android:layout_height="58dp"
         android:layout_marginTop="52dp"
         android:text="Register"
+        android:onClick="registerButtonClicked"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
