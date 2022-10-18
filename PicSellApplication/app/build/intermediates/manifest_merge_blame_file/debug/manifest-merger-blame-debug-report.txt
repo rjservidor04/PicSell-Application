@@ -11,7 +11,7 @@
 9-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:6:5-39:19
+11-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:6:5-41:19
 12        android:allowBackup="true"
 12-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:7:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -33,82 +33,86 @@
 22        android:theme="@style/Theme.PicSellApplication" >
 22-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:14:9-56
 23        <activity
-23-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:16:9-26:20
+23-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:16:9-27:20
 24            android:name="com.example.picsellapplication.LoginView"
 24-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:17:13-38
 25            android:exported="true"
-25-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:18:13-36
+25-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:19:13-36
 26            android:label="@string/app_name"
-26-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:19:13-45
-27            android:theme="@style/Theme.PicSellApplication.NoActionBar" >
-27-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:20:13-72
-28            <intent-filter>
-28-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:21:13-25:29
-29                <action android:name="android.intent.action.MAIN" />
-29-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:22:17-69
-29-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:22:25-66
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:24:17-77
-31-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:24:27-74
-32            </intent-filter>
-33        </activity>
-34        <activity
-34-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:28:9-38:20
-35            android:name="com.example.picsellapplication.RegisterView"
-35-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:29:13-41
-36            android:exported="true"
-36-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:30:13-36
-37            android:label="@string/app_name"
-37-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:31:13-45
-38            android:theme="@style/Theme.PicSellApplication.NoActionBar" >
-38-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:32:13-72
-39            <intent-filter>
-39-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:21:13-25:29
-40                <action android:name="android.intent.action.MAIN" />
-40-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:22:17-69
-40-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:22:25-66
-41
-42                <category android:name="android.intent.category.LAUNCHER" />
-42-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:24:17-77
-42-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:24:27-74
-43            </intent-filter>
-44        </activity>
-45
-46        <provider
-46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acer\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-47            android:name="androidx.startup.InitializationProvider"
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acer\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-48            android:authorities="com.example.picsellapplication.androidx-startup"
-48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acer\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-49            android:exported="false" >
-49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acer\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-50            <meta-data
-50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acer\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-51                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acer\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-52                android:value="androidx.startup" />
-52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acer\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-53            <meta-data
-53-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\acer\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-54                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\acer\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-55                android:value="androidx.startup" />
-55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\acer\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-56        </provider>
-57
-58        <uses-library
-58-->[androidx.window:window:1.0.0] C:\Users\acer\.gradle\caches\transforms-3\44eb76c63a430958185cfd53aa9f79f1\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-59            android:name="androidx.window.extensions"
-59-->[androidx.window:window:1.0.0] C:\Users\acer\.gradle\caches\transforms-3\44eb76c63a430958185cfd53aa9f79f1\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-60            android:required="false" />
-60-->[androidx.window:window:1.0.0] C:\Users\acer\.gradle\caches\transforms-3\44eb76c63a430958185cfd53aa9f79f1\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-61        <uses-library
-61-->[androidx.window:window:1.0.0] C:\Users\acer\.gradle\caches\transforms-3\44eb76c63a430958185cfd53aa9f79f1\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-62            android:name="androidx.window.sidecar"
-62-->[androidx.window:window:1.0.0] C:\Users\acer\.gradle\caches\transforms-3\44eb76c63a430958185cfd53aa9f79f1\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-63            android:required="false" />
-63-->[androidx.window:window:1.0.0] C:\Users\acer\.gradle\caches\transforms-3\44eb76c63a430958185cfd53aa9f79f1\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-64    </application>
-65
-66</manifest>
+26-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:20:13-45
+27            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+27-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:21:13-72
+28            android:windowSoftInputMode="adjustResize" >
+28-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:18:13-55
+29            <intent-filter>
+29-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:22:13-26:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:23:17-69
+30-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:23:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:25:17-77
+32-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:25:27-74
+33            </intent-filter>
+34        </activity>
+35        <activity
+35-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:29:9-40:20
+36            android:name="com.example.picsellapplication.RegisterView"
+36-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:30:13-41
+37            android:exported="true"
+37-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:32:13-36
+38            android:label="@string/app_name"
+38-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:33:13-45
+39            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+39-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:34:13-72
+40            android:windowSoftInputMode="adjustResize" >
+40-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:31:13-55
+41            <intent-filter>
+41-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:22:13-26:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:23:17-69
+42-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:23:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:25:17-77
+44-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:25:27-74
+45            </intent-filter>
+46        </activity>
+47
+48        <provider
+48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acer\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+49            android:name="androidx.startup.InitializationProvider"
+49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acer\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+50            android:authorities="com.example.picsellapplication.androidx-startup"
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acer\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+51            android:exported="false" >
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acer\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+52            <meta-data
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acer\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+53                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acer\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+54                android:value="androidx.startup" />
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\acer\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+55            <meta-data
+55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\acer\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+56                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+56-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\acer\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+57                android:value="androidx.startup" />
+57-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\acer\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+58        </provider>
+59
+60        <uses-library
+60-->[androidx.window:window:1.0.0] C:\Users\acer\.gradle\caches\transforms-3\44eb76c63a430958185cfd53aa9f79f1\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+61            android:name="androidx.window.extensions"
+61-->[androidx.window:window:1.0.0] C:\Users\acer\.gradle\caches\transforms-3\44eb76c63a430958185cfd53aa9f79f1\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+62            android:required="false" />
+62-->[androidx.window:window:1.0.0] C:\Users\acer\.gradle\caches\transforms-3\44eb76c63a430958185cfd53aa9f79f1\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+63        <uses-library
+63-->[androidx.window:window:1.0.0] C:\Users\acer\.gradle\caches\transforms-3\44eb76c63a430958185cfd53aa9f79f1\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+64            android:name="androidx.window.sidecar"
+64-->[androidx.window:window:1.0.0] C:\Users\acer\.gradle\caches\transforms-3\44eb76c63a430958185cfd53aa9f79f1\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+65            android:required="false" />
+65-->[androidx.window:window:1.0.0] C:\Users\acer\.gradle\caches\transforms-3\44eb76c63a430958185cfd53aa9f79f1\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+66    </application>
+67
+68</manifest>

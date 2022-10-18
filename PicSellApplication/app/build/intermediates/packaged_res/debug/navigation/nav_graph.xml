@@ -9,7 +9,7 @@
         android:id="@+id/LoginView"
         android:name="com.example.picsellapplication.LoginView"
         android:label="Login View"
-        tools:layout="@layout/register_view">
+        tools:layout="@layout/login_view">
 
         <action
             android:id="@+id/action_LoginView_to_RegisterView"
@@ -20,7 +20,7 @@
         android:id="@+id/RegisterView"
         android:name="com.example.picsellapplication.RegisterView"
         android:label="Register View"
-        tools:layout="@layout/mainpage_view">
+        tools:layout="@layout/register_view">
 
         <action
             android:id="@+id/action_RegisterView_to_LoginView"
