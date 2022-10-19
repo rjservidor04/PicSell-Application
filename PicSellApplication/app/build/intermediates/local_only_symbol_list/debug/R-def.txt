@@ -14,7 +14,6 @@ dimen fab_margin
 drawable gradient_account_background
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-drawable sample
 id LoginView
 id RegisterView
 id action_LoginView_to_RegisterView
