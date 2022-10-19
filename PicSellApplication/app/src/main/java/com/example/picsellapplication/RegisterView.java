@@ -48,7 +48,10 @@ public class RegisterView extends AppCompatActivity{
         txtConfirmPassword = findViewById(R.id.etConfirmPassword);
         confirmPassword = txtConfirmPassword.getText().toString();
 
-        if(!registerController.checkDuplicate(userModel, storeName, storeOwnerName, username))
+        if(!registerController.fieldNotEmpty(storeName, storeOwnerName, username, password, confirmPassword))
+            Toast.makeText(this, "Missing Field Information. Please fill up all information.", Toast.LENGTH_SHORT).show();
+
+        else if(!registerController.checkDuplicate(userModel, storeName, storeOwnerName, username))
             Toast.makeText(this, "Records containing this credential already exist. Use other names", Toast.LENGTH_SHORT).show();
 
         else if(!registerController.passwordConfirmation(password, confirmPassword))
