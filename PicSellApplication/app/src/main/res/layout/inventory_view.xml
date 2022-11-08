@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_300"
+    tools:context=".InventoryView">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVInventory"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="#009C27B0">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@+id/idRVInventory"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="Add Item"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnUpdateItem"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/idRVInventory"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="Update Item"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnRemoveItem"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/idRVInventory"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="291dp"
+        android:layout_marginLeft="265dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="69dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="Remove Item"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="571dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="123dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="Home"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>
