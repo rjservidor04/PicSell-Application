@@ -5,7 +5,7 @@
     android:id="@+id/login_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_account_background"
+    android:background="@color/orange_300"
     tools:context=".LoginView"
     tools:ignore="HardcodedText">
 
@@ -19,7 +19,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="20dp"
-            android:src="@color/orange_200"
+            android:src="@drawable/picsell_logo"
             android:visibility="visible"
             android:contentDescription="PicSell Logo"
             app:layout_constraintEnd_toEndOf="parent"
@@ -30,14 +30,15 @@
             android:id="@+id/tvTagline"
             android:layout_width="300dp"
             android:layout_height="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:text="Your Smart Inventory and Sales Manager"
             android:textAlignment="center"
             android:textSize="16sp"
             android:textStyle="bold|italic"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/tvLogoName" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ftvUsername"
@@ -54,7 +55,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvTagline">
 
-            <!--this is the actual edit text which takes the input-->
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etUsername"
                 android:layout_width="match_parent"
@@ -78,7 +78,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ftvUsername">
 
-            <!--this is the actual edit text which takes the input-->
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
@@ -92,6 +91,7 @@
             android:layout_width="180dp"
             android:layout_height="60dp"
             android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_buttons"
             android:clickable="true"
             android:onClick="loginButtonClicked"
             android:text="LOGIN"
@@ -122,9 +122,21 @@
             android:minHeight="48dp"
             android:onClick="gotoRegister"
             android:text="Register Here"
-            android:textColor="#3F51B5"
+            android:textColor="@color/blue_100"
             app:layout_constraintStart_toEndOf="@+id/tvTagline2"
             app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+        <TextView
+            android:id="@+id/tvLogoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PicSell"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

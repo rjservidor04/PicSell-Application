@@ -45,6 +45,9 @@ public final class LoginViewBinding implements ViewBinding {
   public final ScrollView loginView;
 
   @NonNull
+  public final TextView tvLogoName;
+
+  @NonNull
   public final TextView tvRegister;
 
   @NonNull
@@ -56,8 +59,8 @@ public final class LoginViewBinding implements ViewBinding {
   private LoginViewBinding(@NonNull ScrollView rootView, @NonNull Button btnLogin,
       @NonNull TextInputEditText etPassword, @NonNull TextInputEditText etUsername,
       @NonNull TextInputLayout ftvPassword, @NonNull TextInputLayout ftvUsername,
-      @NonNull ImageView imageView, @NonNull ScrollView loginView, @NonNull TextView tvRegister,
-      @NonNull TextView tvTagline, @NonNull TextView tvTagline2) {
+      @NonNull ImageView imageView, @NonNull ScrollView loginView, @NonNull TextView tvLogoName,
+      @NonNull TextView tvRegister, @NonNull TextView tvTagline, @NonNull TextView tvTagline2) {
     this.rootView = rootView;
     this.btnLogin = btnLogin;
     this.etPassword = etPassword;
@@ -66,6 +69,7 @@ public final class LoginViewBinding implements ViewBinding {
     this.ftvUsername = ftvUsername;
     this.imageView = imageView;
     this.loginView = loginView;
+    this.tvLogoName = tvLogoName;
     this.tvRegister = tvRegister;
     this.tvTagline = tvTagline;
     this.tvTagline2 = tvTagline2;
@@ -136,6 +140,12 @@ public final class LoginViewBinding implements ViewBinding {
 
       ScrollView loginView = (ScrollView) rootView;
 
+      id = R.id.tvLogoName;
+      TextView tvLogoName = ViewBindings.findChildViewById(rootView, id);
+      if (tvLogoName == null) {
+        break missingId;
+      }
+
       id = R.id.tvRegister;
       TextView tvRegister = ViewBindings.findChildViewById(rootView, id);
       if (tvRegister == null) {
@@ -155,7 +165,8 @@ public final class LoginViewBinding implements ViewBinding {
       }
 
       return new LoginViewBinding((ScrollView) rootView, btnLogin, etPassword, etUsername,
-          ftvPassword, ftvUsername, imageView, loginView, tvRegister, tvTagline, tvTagline2);
+          ftvPassword, ftvUsername, imageView, loginView, tvLogoName, tvRegister, tvTagline,
+          tvTagline2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1252,6 +1252,7 @@ int color background_floating_material_light 0x7f06001e
 int color background_material_dark 0x7f06001f
 int color background_material_light 0x7f060020
 int color black 0x7f060021
+int color blue_100 0x7f06025d
 int color bright_foreground_disabled_material_dark 0x7f060022
 int color bright_foreground_disabled_material_light 0x7f060023
 int color bright_foreground_inverse_material_dark 0x7f060024
@@ -1790,6 +1791,7 @@ int color notification_action_color_filter 0x7f060238
 int color notification_icon_bg_color 0x7f060239
 int color orange_100 0x7f06023a
 int color orange_200 0x7f06023b
+int color orange_300 0x7f06025c
 int color primary_dark_material_dark 0x7f06023c
 int color primary_dark_material_light 0x7f06023d
 int color primary_material_dark 0x7f06023e
@@ -2559,6 +2561,8 @@ int drawable notification_template_icon_bg 0x7f080096
 int drawable notification_template_icon_low_bg 0x7f080097
 int drawable notification_tile_bg 0x7f080098
 int drawable notify_panel_notification_icon_bg 0x7f080099
+int drawable picsell_logo 0x7f0800a0
+int drawable rounded_buttons 0x7f08009f
 int drawable test_custom_background 0x7f08009b
 int drawable test_level_drawable 0x7f08009c
 int drawable tooltip_frame_dark 0x7f08009d
@@ -3054,6 +3058,7 @@ int id transition_position 0x7f0901e7
 int id transition_scene_layoutid_cache 0x7f0901e8
 int id transition_transform 0x7f0901e9
 int id triangle 0x7f0901ea
+int id tvLogoName 0x7f090205
 int id tvRegister 0x7f0901eb
 int id tvTagline 0x7f0901ec
 int id tvTagline2 0x7f0901ed

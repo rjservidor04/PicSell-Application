@@ -8,12 +8,16 @@
         "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.picsellapplication.app-merged_res-41:/layout_login_view.xml.flat",
+        "source": "com.example.picsellapplication.app-main-43:/layout/login_view.xml"
     },
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\drawable_sample.jpeg.flat",
@@ -38,6 +42,10 @@
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\drawable_rounded_buttons.xml.flat",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\drawable\\rounded_buttons.xml"
     },
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\layout_register_view.xml.flat",
@@ -76,12 +84,12 @@
         "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\mainpage_view.xml"
     },
     {
-        "merged": "com.example.picsellapplication.app-merged_res-41:/layout_register_view.xml.flat",
-        "source": "com.example.picsellapplication.app-main-43:/layout/register_view.xml"
-    },
-    {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\menu_menu_main.xml.flat",
         "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\drawable_picsell_logo.png.flat",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\drawable\\picsell_logo.png"
     },
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\navigation_nav_graph.xml.flat",

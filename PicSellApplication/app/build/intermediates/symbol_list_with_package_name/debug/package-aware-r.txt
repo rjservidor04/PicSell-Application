@@ -1253,6 +1253,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue_100
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1791,6 +1792,7 @@ color notification_action_color_filter
 color notification_icon_bg_color
 color orange_100
 color orange_200
+color orange_300
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2560,6 +2562,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable picsell_logo
+drawable rounded_buttons
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3055,6 +3059,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvLogoName
 id tvRegister
 id tvTagline
 id tvTagline2
