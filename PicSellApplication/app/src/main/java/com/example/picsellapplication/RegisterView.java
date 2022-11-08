@@ -60,7 +60,8 @@ public class RegisterView extends AppCompatActivity{
         else{
             registerController.registerAccount(userModel, storeName, storeOwnerName, username, password);
             Toast.makeText(this, "Account Registered Successfully", Toast.LENGTH_SHORT).show();
-            //make an intent here
+            Intent i = new Intent(RegisterView.this, LoginView.class);
+            startActivity(i);
         }
 
     }

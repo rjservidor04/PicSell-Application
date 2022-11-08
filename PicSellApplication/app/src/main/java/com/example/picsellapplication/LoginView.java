@@ -52,6 +52,8 @@ public class LoginView extends AppCompatActivity {
 
         else if(controller.verifyCredentials(userModel, username, password)){
             Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(LoginView.this, InventoryView.class);
+            startActivity(i);
         }
 
         else{
