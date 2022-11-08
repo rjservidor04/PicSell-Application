@@ -24,7 +24,8 @@
             android:name="com.example.picsellapplication.LoginView"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.PicSellApplication.NoActionBar" >
+            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+            android:windowSoftInputMode="adjustResize" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,7 +36,8 @@
             android:name="com.example.picsellapplication.RegisterView"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.PicSellApplication.NoActionBar" >
+            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+            android:windowSoftInputMode="adjustResize" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

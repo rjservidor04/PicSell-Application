@@ -1253,6 +1253,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue_100
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1789,6 +1790,9 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color orange_100
+color orange_200
+color orange_300
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2505,6 +2509,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable gradient_account_background
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2557,6 +2562,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable picsell_logo
+drawable rounded_buttons
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2666,8 +2673,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnLogin
-id button
-id button2
+id btnRegister
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2754,7 +2760,10 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id etConfirmPassword
 id etPassword
+id etStoreName
+id etStoreOwnerName
 id etUsername
 id exitUntilCollapsed
 id expand_activities_button
@@ -2775,6 +2784,11 @@ id floating
 id forever
 id fragment_container_view_tag
 id frost
+id ftvConfirmPassword
+id ftvPassword
+id ftvStoreName
+id ftvStoreOwnerName
+id ftvUsername
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
@@ -2797,6 +2811,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id info
@@ -2819,7 +2834,6 @@ id list_item
 id locale
 id login_view
 id ltr
-id mainpage_view
 id masked
 id match_constraint
 id match_parent
@@ -3020,8 +3034,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
-id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3047,8 +3059,10 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tvAppname
+id tvLogoName
 id tvRegister
+id tvTagline
+id tvTagline2
 id unchecked
 id uniform
 id unlabeled
@@ -3186,7 +3200,6 @@ layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
 layout m3_auto_complete_simple_item
-layout mainpage_view
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

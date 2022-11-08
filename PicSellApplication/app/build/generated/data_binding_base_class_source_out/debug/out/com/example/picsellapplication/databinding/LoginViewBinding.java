@@ -5,56 +5,79 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.picsellapplication.R;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class LoginViewBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final Button btnLogin;
 
   @NonNull
-  public final EditText etPassword;
+  public final TextInputEditText etPassword;
 
   @NonNull
-  public final EditText etUsername;
+  public final TextInputEditText etUsername;
 
   @NonNull
-  public final ConstraintLayout loginView;
+  public final TextInputLayout ftvPassword;
 
   @NonNull
-  public final TextView tvAppname;
+  public final TextInputLayout ftvUsername;
+
+  @NonNull
+  public final ImageView imageView;
+
+  @NonNull
+  public final ScrollView loginView;
+
+  @NonNull
+  public final TextView tvLogoName;
 
   @NonNull
   public final TextView tvRegister;
 
-  private LoginViewBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnLogin,
-      @NonNull EditText etPassword, @NonNull EditText etUsername,
-      @NonNull ConstraintLayout loginView, @NonNull TextView tvAppname,
-      @NonNull TextView tvRegister) {
+  @NonNull
+  public final TextView tvTagline;
+
+  @NonNull
+  public final TextView tvTagline2;
+
+  private LoginViewBinding(@NonNull ScrollView rootView, @NonNull Button btnLogin,
+      @NonNull TextInputEditText etPassword, @NonNull TextInputEditText etUsername,
+      @NonNull TextInputLayout ftvPassword, @NonNull TextInputLayout ftvUsername,
+      @NonNull ImageView imageView, @NonNull ScrollView loginView, @NonNull TextView tvLogoName,
+      @NonNull TextView tvRegister, @NonNull TextView tvTagline, @NonNull TextView tvTagline2) {
     this.rootView = rootView;
     this.btnLogin = btnLogin;
     this.etPassword = etPassword;
     this.etUsername = etUsername;
+    this.ftvPassword = ftvPassword;
+    this.ftvUsername = ftvUsername;
+    this.imageView = imageView;
     this.loginView = loginView;
-    this.tvAppname = tvAppname;
+    this.tvLogoName = tvLogoName;
     this.tvRegister = tvRegister;
+    this.tvTagline = tvTagline;
+    this.tvTagline2 = tvTagline2;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -86,22 +109,40 @@ public final class LoginViewBinding implements ViewBinding {
       }
 
       id = R.id.etPassword;
-      EditText etPassword = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText etPassword = ViewBindings.findChildViewById(rootView, id);
       if (etPassword == null) {
         break missingId;
       }
 
       id = R.id.etUsername;
-      EditText etUsername = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText etUsername = ViewBindings.findChildViewById(rootView, id);
       if (etUsername == null) {
         break missingId;
       }
 
-      ConstraintLayout loginView = (ConstraintLayout) rootView;
+      id = R.id.ftvPassword;
+      TextInputLayout ftvPassword = ViewBindings.findChildViewById(rootView, id);
+      if (ftvPassword == null) {
+        break missingId;
+      }
 
-      id = R.id.tvAppname;
-      TextView tvAppname = ViewBindings.findChildViewById(rootView, id);
-      if (tvAppname == null) {
+      id = R.id.ftvUsername;
+      TextInputLayout ftvUsername = ViewBindings.findChildViewById(rootView, id);
+      if (ftvUsername == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView;
+      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
+      if (imageView == null) {
+        break missingId;
+      }
+
+      ScrollView loginView = (ScrollView) rootView;
+
+      id = R.id.tvLogoName;
+      TextView tvLogoName = ViewBindings.findChildViewById(rootView, id);
+      if (tvLogoName == null) {
         break missingId;
       }
 
@@ -111,8 +152,21 @@ public final class LoginViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new LoginViewBinding((ConstraintLayout) rootView, btnLogin, etPassword, etUsername,
-          loginView, tvAppname, tvRegister);
+      id = R.id.tvTagline;
+      TextView tvTagline = ViewBindings.findChildViewById(rootView, id);
+      if (tvTagline == null) {
+        break missingId;
+      }
+
+      id = R.id.tvTagline2;
+      TextView tvTagline2 = ViewBindings.findChildViewById(rootView, id);
+      if (tvTagline2 == null) {
+        break missingId;
+      }
+
+      return new LoginViewBinding((ScrollView) rootView, btnLogin, etPassword, etUsername,
+          ftvPassword, ftvUsername, imageView, loginView, tvLogoName, tvRegister, tvTagline,
+          tvTagline2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
