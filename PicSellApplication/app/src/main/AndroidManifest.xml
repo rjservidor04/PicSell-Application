@@ -51,6 +51,57 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".AddInventoryItemView"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PicSellApplication.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RemoveInventoryItemView"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PicSellApplication.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UpdateInventoryItemView"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PicSellApplication.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SelectItem"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PicSellApplication.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

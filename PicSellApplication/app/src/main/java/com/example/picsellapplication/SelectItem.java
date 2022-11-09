@@ -44,6 +44,7 @@ public class SelectItem extends AppCompatActivity {
 
             // setting adapter to recycler view.
             updateRV.setAdapter(updateinventoryitemcont);
+
         }
         if(previous.equals("delete")){
             // passing array list to adapter class.

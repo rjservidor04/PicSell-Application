@@ -66,15 +66,15 @@ public class InventoryView extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        /*
+
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(InventoryView.this, Account.class);
+                Intent i = new Intent(InventoryView.this, LoginView.class);
                 startActivity(i);
             }
         });
 
-         */
+
     }
 }
