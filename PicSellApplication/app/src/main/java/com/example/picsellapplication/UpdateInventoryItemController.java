@@ -42,7 +42,7 @@ public class UpdateInventoryItemController extends RecyclerView.Adapter<UpdateIn
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(context, UpdateInventoryItemController.class);
+                Intent i = new Intent(context, UpdateInventoryItemView.class);
 
                 i.putExtra("productname", modal.getProductName());
                 i.putExtra("price", modal.getPrice());

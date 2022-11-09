@@ -13,6 +13,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.picsellapplication.R;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -29,13 +30,13 @@ public final class UpdateinventoryitemViewBinding implements ViewBinding {
   public final Button btnUpdate;
 
   @NonNull
-  public final TextInputLayout etItemname;
+  public final TextInputEditText etItemname;
 
   @NonNull
-  public final TextInputLayout etItemprice;
+  public final TextInputEditText etItemprice;
 
   @NonNull
-  public final TextInputLayout etItemstocks;
+  public final TextInputEditText etItemstocks;
 
   @NonNull
   public final ImageView imageView1;
@@ -44,12 +45,23 @@ public final class UpdateinventoryitemViewBinding implements ViewBinding {
   public final ImageView imageView4;
 
   @NonNull
+  public final TextInputLayout textInputLayout4;
+
+  @NonNull
+  public final TextInputLayout textInputLayout5;
+
+  @NonNull
+  public final TextInputLayout textInputLayout6;
+
+  @NonNull
   public final TextView tvLogoName4;
 
   private UpdateinventoryitemViewBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnSelect, @NonNull Button btnUpdate, @NonNull TextInputLayout etItemname,
-      @NonNull TextInputLayout etItemprice, @NonNull TextInputLayout etItemstocks,
-      @NonNull ImageView imageView1, @NonNull ImageView imageView4, @NonNull TextView tvLogoName4) {
+      @NonNull Button btnSelect, @NonNull Button btnUpdate, @NonNull TextInputEditText etItemname,
+      @NonNull TextInputEditText etItemprice, @NonNull TextInputEditText etItemstocks,
+      @NonNull ImageView imageView1, @NonNull ImageView imageView4,
+      @NonNull TextInputLayout textInputLayout4, @NonNull TextInputLayout textInputLayout5,
+      @NonNull TextInputLayout textInputLayout6, @NonNull TextView tvLogoName4) {
     this.rootView = rootView;
     this.btnSelect = btnSelect;
     this.btnUpdate = btnUpdate;
@@ -58,6 +70,9 @@ public final class UpdateinventoryitemViewBinding implements ViewBinding {
     this.etItemstocks = etItemstocks;
     this.imageView1 = imageView1;
     this.imageView4 = imageView4;
+    this.textInputLayout4 = textInputLayout4;
+    this.textInputLayout5 = textInputLayout5;
+    this.textInputLayout6 = textInputLayout6;
     this.tvLogoName4 = tvLogoName4;
   }
 
@@ -101,19 +116,19 @@ public final class UpdateinventoryitemViewBinding implements ViewBinding {
       }
 
       id = R.id.etItemname;
-      TextInputLayout etItemname = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText etItemname = ViewBindings.findChildViewById(rootView, id);
       if (etItemname == null) {
         break missingId;
       }
 
       id = R.id.etItemprice;
-      TextInputLayout etItemprice = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText etItemprice = ViewBindings.findChildViewById(rootView, id);
       if (etItemprice == null) {
         break missingId;
       }
 
       id = R.id.etItemstocks;
-      TextInputLayout etItemstocks = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText etItemstocks = ViewBindings.findChildViewById(rootView, id);
       if (etItemstocks == null) {
         break missingId;
       }
@@ -130,6 +145,24 @@ public final class UpdateinventoryitemViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textInputLayout4;
+      TextInputLayout textInputLayout4 = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayout4 == null) {
+        break missingId;
+      }
+
+      id = R.id.textInputLayout5;
+      TextInputLayout textInputLayout5 = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayout5 == null) {
+        break missingId;
+      }
+
+      id = R.id.textInputLayout6;
+      TextInputLayout textInputLayout6 = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayout6 == null) {
+        break missingId;
+      }
+
       id = R.id.tvLogoName4;
       TextView tvLogoName4 = ViewBindings.findChildViewById(rootView, id);
       if (tvLogoName4 == null) {
@@ -137,7 +170,8 @@ public final class UpdateinventoryitemViewBinding implements ViewBinding {
       }
 
       return new UpdateinventoryitemViewBinding((ConstraintLayout) rootView, btnSelect, btnUpdate,
-          etItemname, etItemprice, etItemstocks, imageView1, imageView4, tvLogoName4);
+          etItemname, etItemprice, etItemstocks, imageView1, imageView4, textInputLayout4,
+          textInputLayout5, textInputLayout6, tvLogoName4);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

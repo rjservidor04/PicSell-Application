@@ -5,7 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
@@ -36,18 +38,27 @@ public final class InventoryViewBinding implements ViewBinding {
   public final RecyclerView idRVInventory;
 
   @NonNull
+  public final ImageView imageView5;
+
+  @NonNull
   public final RelativeLayout inventoryView;
+
+  @NonNull
+  public final TextView tvLogoName5;
 
   private InventoryViewBinding(@NonNull RelativeLayout rootView, @NonNull Button btnAddItem,
       @NonNull Button btnHome, @NonNull Button btnRemoveItem, @NonNull Button btnUpdateItem,
-      @NonNull RecyclerView idRVInventory, @NonNull RelativeLayout inventoryView) {
+      @NonNull RecyclerView idRVInventory, @NonNull ImageView imageView5,
+      @NonNull RelativeLayout inventoryView, @NonNull TextView tvLogoName5) {
     this.rootView = rootView;
     this.btnAddItem = btnAddItem;
     this.btnHome = btnHome;
     this.btnRemoveItem = btnRemoveItem;
     this.btnUpdateItem = btnUpdateItem;
     this.idRVInventory = idRVInventory;
+    this.imageView5 = imageView5;
     this.inventoryView = inventoryView;
+    this.tvLogoName5 = tvLogoName5;
   }
 
   @Override
@@ -107,10 +118,22 @@ public final class InventoryViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView5;
+      ImageView imageView5 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView5 == null) {
+        break missingId;
+      }
+
       RelativeLayout inventoryView = (RelativeLayout) rootView;
 
+      id = R.id.tvLogoName5;
+      TextView tvLogoName5 = ViewBindings.findChildViewById(rootView, id);
+      if (tvLogoName5 == null) {
+        break missingId;
+      }
+
       return new InventoryViewBinding((RelativeLayout) rootView, btnAddItem, btnHome, btnRemoveItem,
-          btnUpdateItem, idRVInventory, inventoryView);
+          btnUpdateItem, idRVInventory, imageView5, inventoryView, tvLogoName5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

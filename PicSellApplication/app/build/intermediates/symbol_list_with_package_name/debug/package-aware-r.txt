@@ -2569,6 +2569,7 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
+id AddInventoryItemView
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
@@ -2622,6 +2623,8 @@ id accessibility_custom_action_9
 id actionDown
 id actionDownUp
 id actionUp
+id action_AddInventoryItemView_to_InventoryView
+id action_InventoryView_to_AddInventoryItemView
 id action_InventoryView_to_Views
 id action_LoginView_to_InventoryView
 id action_RegisterView_to_LoginView
@@ -2646,6 +2649,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addinventoryitem_view
 id alertTitle
 id aligned
 id all
@@ -2839,6 +2843,7 @@ id imageView1
 id imageView2
 id imageView3
 id imageView4
+id imageView5
 id immediateStop
 id included
 id info
@@ -3059,6 +3064,12 @@ id test_radiobutton_app_button_tint
 id text
 id text2
 id textEnd
+id textInputLayout
+id textInputLayout2
+id textInputLayout3
+id textInputLayout4
+id textInputLayout5
+id textInputLayout6
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -3092,6 +3103,7 @@ id tvLogoName
 id tvLogoName2
 id tvLogoName3
 id tvLogoName4
+id tvLogoName5
 id tvProductName
 id tvRegister
 id tvTagline
