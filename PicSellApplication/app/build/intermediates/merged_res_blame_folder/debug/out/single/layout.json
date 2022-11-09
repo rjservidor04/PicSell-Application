@@ -1,11 +1,19 @@
 [
     {
-        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-mergeDebugResources-40:\\layout\\mainpage_view.xml",
-        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\mainpage_view.xml"
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-mergeDebugResources-40:\\layout\\updateinventoryitem_view.xml",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\updateinventoryitem_view.xml"
     },
     {
-        "merged": "com.example.picsellapplication.app-mergeDebugResources-40:/layout/login_view.xml",
-        "source": "com.example.picsellapplication.app-main-43:/layout/login_view.xml"
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-mergeDebugResources-40:\\layout\\inventory_item.xml",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\inventory_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-mergeDebugResources-40:\\layout\\select_item.xml",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\select_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-mergeDebugResources-40:\\layout\\inventory_view.xml",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\inventory_view.xml"
     },
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-mergeDebugResources-40:\\layout\\register_view.xml",
@@ -14,5 +22,17 @@
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-mergeDebugResources-40:\\layout\\login_view.xml",
         "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\login_view.xml"
+    },
+    {
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-40:/layout/inventory_view.xml",
+        "source": "com.example.picsellapplication.app-main-43:/layout/inventory_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-mergeDebugResources-40:\\layout\\removeinventoryitem_view.xml",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\removeinventoryitem_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-mergeDebugResources-40:\\layout\\addinventoryitem_view.xml",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\addinventoryitem_view.xml"
     }
 ]

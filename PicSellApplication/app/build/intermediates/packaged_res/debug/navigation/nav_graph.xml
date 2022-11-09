@@ -12,7 +12,7 @@
         tools:layout="@layout/login_view">
 
         <action
-            android:id="@+id/action_LoginView_to_RegisterView"
+            android:id="@+id/action_LoginView_to_InventoryView"
             app:destination="@id/RegisterView" />
     </fragment>
 
@@ -24,6 +24,17 @@
 
         <action
             android:id="@+id/action_RegisterView_to_LoginView"
+            app:destination="@id/LoginView" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/InventoryView"
+        android:name="com.example.picsellapplication.RegisterView"
+        android:label="Register View"
+        tools:layout="@layout/inventory_view">
+
+        <action
+            android:id="@+id/action_InventoryView_to_Views"
             app:destination="@id/LoginView" />
     </fragment>
 </navigation>

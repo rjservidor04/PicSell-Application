@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inventory_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_300"
+    tools:context=".InventoryView">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVInventory"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#009C27B0">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/idRVInventory"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/rounded_buttons"
+        android:clickable="true"
+        android:text="Add Item"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnUpdateItem"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idRVInventory"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="73dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="Update Item"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnRemoveItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idRVInventory"
+        android:layout_marginStart="291dp"
+        android:layout_marginLeft="265dp"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="Remove Item"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="552dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="Home"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>

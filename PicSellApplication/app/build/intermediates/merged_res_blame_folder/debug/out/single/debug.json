@@ -8,20 +8,16 @@
         "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.picsellapplication.app-merged_res-41:/layout_login_view.xml.flat",
-        "source": "com.example.picsellapplication.app-main-43:/layout/login_view.xml"
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\drawable_sample.jpeg.flat",
-        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\drawable\\sample.jpeg"
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\layout_inventory_view.xml.flat",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\inventory_view.xml"
     },
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\mipmap-hdpi_ic_launcher.webp.flat",
@@ -34,6 +30,14 @@
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\layout_inventory_item.xml.flat",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\inventory_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\layout_updateinventoryitem_view.xml.flat",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\updateinventoryitem_view.xml"
     },
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
@@ -50,6 +54,10 @@
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\layout_register_view.xml.flat",
         "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\register_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\layout_select_item.xml.flat",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\select_item.xml"
     },
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\xml_data_extraction_rules.xml.flat",
@@ -80,16 +88,20 @@
         "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\login_view.xml"
     },
     {
-        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\layout_mainpage_view.xml.flat",
-        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\mainpage_view.xml"
-    },
-    {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\menu_menu_main.xml.flat",
         "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\menu\\menu_main.xml"
     },
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\drawable_picsell_logo.png.flat",
         "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\drawable\\picsell_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\layout_removeinventoryitem_view.xml.flat",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\removeinventoryitem_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\layout_addinventoryitem_view.xml.flat",
+        "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\layout\\addinventoryitem_view.xml"
     },
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\navigation_nav_graph.xml.flat",
@@ -102,5 +114,9 @@
     {
         "merged": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-merged_res-41:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\acer\\.gradle\\daemon\\7.3.3\\com.example.picsellapplication.app-main-43:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.picsellapplication.app-merged_res-41:/layout_inventory_view.xml.flat",
+        "source": "com.example.picsellapplication.app-main-43:/layout/inventory_view.xml"
     }
 ]
