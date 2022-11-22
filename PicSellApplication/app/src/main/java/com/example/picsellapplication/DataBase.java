@@ -32,6 +32,8 @@ public class DataBase extends SQLiteOpenHelper{
 
     private static final String STOCK_COL = "stock";
 
+    private static final String CAT_COL = "category";
+
     // creating constructor for database.
     public DataBase(SelectItem context) {super(context, DB_NAME, null, DB_VERSION);}
     public DataBase(InventoryView inventoryView) {super(inventoryView, DB_NAME, null, DB_VERSION);}
@@ -55,7 +57,8 @@ public class DataBase extends SQLiteOpenHelper{
                 + ID_COL + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + PRODUCTNAME_COL + " TEXT,"
                 + PRODUCTPRICE_COL + " REAL,"
-                + STOCK_COL + " INTEGER)";
+                + STOCK_COL + " INTEGER,"
+                + CAT_COL + " TEXT)";
         // calling exec sql method to execute above sql query
         db.execSQL(query);
         db.execSQL(query1);
@@ -76,7 +79,7 @@ public class DataBase extends SQLiteOpenHelper{
         db.insert(TABLE_USER, null, values);
     }
 
-    public void addNewProduct(String productName, double price, int stocks){
+    public void addNewProduct(String productName, double price, int stocks, String category){
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -84,6 +87,7 @@ public class DataBase extends SQLiteOpenHelper{
         values.put(PRODUCTNAME_COL, productName);
         values.put(PRODUCTPRICE_COL, price);
         values.put(STOCK_COL, stocks);
+        values.put(CAT_COL, category);
 
         db.insert(TABLE_INVENTORY, null, values);
     }
@@ -167,7 +171,8 @@ public class DataBase extends SQLiteOpenHelper{
                 inventoryModalArrayList.add(new InventoryModel(cursorInventory.getInt(0),
                         cursorInventory.getString(1),
                         cursorInventory.getDouble(2),
-                        cursorInventory.getInt(3)));
+                        cursorInventory.getInt(3),
+                        cursorInventory.getString(4)));
             } while (cursorInventory.moveToNext());
             // moving cursor to next.
         }
@@ -176,6 +181,81 @@ public class DataBase extends SQLiteOpenHelper{
         return inventoryModalArrayList;
     }
 
+    public ArrayList<InventoryModel> readCat1() {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        // creating a cursor with query to read data from database.
+        Cursor cursorInventory = db.rawQuery("select * from inventory where category=?" , new String[]{"Candies"});
+
+        // creating a new array list.
+        ArrayList<InventoryModel> inventoryModalArrayList = new ArrayList<>();
+
+        // moving cursor to first position.
+        if (cursorInventory.moveToFirst()) {
+            do {
+                // adding the data from cursor to array list.
+                inventoryModalArrayList.add(new InventoryModel(cursorInventory.getInt(0),
+                        cursorInventory.getString(1),
+                        cursorInventory.getDouble(2),
+                        cursorInventory.getInt(3),
+                        cursorInventory.getString(4)));
+            } while (cursorInventory.moveToNext());
+            // moving cursor to next.
+        }
+        // at last closing cursor and returning array list
+        cursorInventory.close();
+        return inventoryModalArrayList;
+    }
+    public ArrayList<InventoryModel> readCat2() {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        // creating a cursor with query to read data from database.
+        Cursor cursorInventory = db.rawQuery("select * from inventory where category=?" , new String[]{"Junk Foods"});
+
+        // creating a new array list.
+        ArrayList<InventoryModel> inventoryModalArrayList = new ArrayList<>();
+
+        // moving cursor to first position.
+        if (cursorInventory.moveToFirst()) {
+            do {
+                // adding the data from cursor to array list.
+                inventoryModalArrayList.add(new InventoryModel(cursorInventory.getInt(0),
+                        cursorInventory.getString(1),
+                        cursorInventory.getDouble(2),
+                        cursorInventory.getInt(3),
+                        cursorInventory.getString(4)));
+            } while (cursorInventory.moveToNext());
+            // moving cursor to next.
+        }
+        // at last closing cursor and returning array list
+        cursorInventory.close();
+        return inventoryModalArrayList;
+    }
+    public ArrayList<InventoryModel> readCat3() {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        // creating a cursor with query to read data from database.
+        Cursor cursorInventory = db.rawQuery("select * from inventory where category=?" , new String[]{"Beverages"});
+
+        // creating a new array list.
+        ArrayList<InventoryModel> inventoryModalArrayList = new ArrayList<>();
+
+        // moving cursor to first position.
+        if (cursorInventory.moveToFirst()) {
+            do {
+                // adding the data from cursor to array list.
+                inventoryModalArrayList.add(new InventoryModel(cursorInventory.getInt(0),
+                        cursorInventory.getString(1),
+                        cursorInventory.getDouble(2),
+                        cursorInventory.getInt(3),
+                        cursorInventory.getString(4)));
+            } while (cursorInventory.moveToNext());
+            // moving cursor to next.
+        }
+        // at last closing cursor and returning array list
+        cursorInventory.close();
+        return inventoryModalArrayList;
+    }
     public void closeDB() {
         SQLiteDatabase db = this.getReadableDatabase();
         if (db != null && db.isOpen())

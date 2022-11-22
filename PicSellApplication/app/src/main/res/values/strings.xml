@@ -8,4 +8,10 @@
         <item>Change Profile Details</item>
         <item>Sign Out</item>
     </string-array>
+
+    <string-array name="categories">
+        <item>Junk Foods</item>
+        <item>Candies</item>
+        <item>Beverages</item>
+    </string-array>
 </resources>

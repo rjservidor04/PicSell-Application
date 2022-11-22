@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class InventoryController extends RecyclerView.Adapter<InventoryController.ViewHolder> {
     private ArrayList<InventoryModel> inventoryModelArrayList;
     private Context context;
+    String cate;
 
     // constructor
     public InventoryController(ArrayList<InventoryModel> inventoryModalArrayList, Context context) {
@@ -37,6 +38,7 @@ public class InventoryController extends RecyclerView.Adapter<InventoryControlle
         holder.productNameTV.setText(modal.getProductName());
         holder.productPriceTV.setText(String.valueOf(modal.getPrice()));
         holder.productStocksTV.setText(String.valueOf(modal.getStocks()));
+        holder.productCategoryTV.setText(String.valueOf(modal.getCategory()));
     }
 
     @Override
@@ -45,9 +47,13 @@ public class InventoryController extends RecyclerView.Adapter<InventoryControlle
         return inventoryModelArrayList.size();
     }
 
+    public String getCate() {
+        return cate;
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView productIdTV, productNameTV, productPriceTV, productStocksTV;
+        private TextView productIdTV, productNameTV, productPriceTV, productStocksTV,productCategoryTV;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -56,6 +62,7 @@ public class InventoryController extends RecyclerView.Adapter<InventoryControlle
             productNameTV = itemView.findViewById(R.id.idTVProductName);
             productPriceTV = itemView.findViewById(R.id.idTVProductPrice);
             productStocksTV = itemView.findViewById(R.id.idTVProductStock);
+            productCategoryTV = itemView.findViewById(R.id.idTVCategory);
         }
     }
 }

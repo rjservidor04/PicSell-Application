@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -35,10 +34,22 @@ public final class InventoryViewBinding implements ViewBinding {
   public final Button btnUpdateItem;
 
   @NonNull
+  public final Button button;
+
+  @NonNull
+  public final Button button2;
+
+  @NonNull
+  public final Button button3;
+
+  @NonNull
   public final RecyclerView idRVInventory;
 
   @NonNull
-  public final ImageView imageView5;
+  public final RecyclerView idRVInventory2;
+
+  @NonNull
+  public final RecyclerView idRVInventory3;
 
   @NonNull
   public final RelativeLayout inventoryView;
@@ -48,15 +59,21 @@ public final class InventoryViewBinding implements ViewBinding {
 
   private InventoryViewBinding(@NonNull RelativeLayout rootView, @NonNull Button btnAddItem,
       @NonNull Button btnHome, @NonNull Button btnRemoveItem, @NonNull Button btnUpdateItem,
-      @NonNull RecyclerView idRVInventory, @NonNull ImageView imageView5,
-      @NonNull RelativeLayout inventoryView, @NonNull TextView tvLogoName5) {
+      @NonNull Button button, @NonNull Button button2, @NonNull Button button3,
+      @NonNull RecyclerView idRVInventory, @NonNull RecyclerView idRVInventory2,
+      @NonNull RecyclerView idRVInventory3, @NonNull RelativeLayout inventoryView,
+      @NonNull TextView tvLogoName5) {
     this.rootView = rootView;
     this.btnAddItem = btnAddItem;
     this.btnHome = btnHome;
     this.btnRemoveItem = btnRemoveItem;
     this.btnUpdateItem = btnUpdateItem;
+    this.button = button;
+    this.button2 = button2;
+    this.button3 = button3;
     this.idRVInventory = idRVInventory;
-    this.imageView5 = imageView5;
+    this.idRVInventory2 = idRVInventory2;
+    this.idRVInventory3 = idRVInventory3;
     this.inventoryView = inventoryView;
     this.tvLogoName5 = tvLogoName5;
   }
@@ -112,15 +129,39 @@ public final class InventoryViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.button;
+      Button button = ViewBindings.findChildViewById(rootView, id);
+      if (button == null) {
+        break missingId;
+      }
+
+      id = R.id.button2;
+      Button button2 = ViewBindings.findChildViewById(rootView, id);
+      if (button2 == null) {
+        break missingId;
+      }
+
+      id = R.id.button3;
+      Button button3 = ViewBindings.findChildViewById(rootView, id);
+      if (button3 == null) {
+        break missingId;
+      }
+
       id = R.id.idRVInventory;
       RecyclerView idRVInventory = ViewBindings.findChildViewById(rootView, id);
       if (idRVInventory == null) {
         break missingId;
       }
 
-      id = R.id.imageView5;
-      ImageView imageView5 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView5 == null) {
+      id = R.id.idRVInventory2;
+      RecyclerView idRVInventory2 = ViewBindings.findChildViewById(rootView, id);
+      if (idRVInventory2 == null) {
+        break missingId;
+      }
+
+      id = R.id.idRVInventory3;
+      RecyclerView idRVInventory3 = ViewBindings.findChildViewById(rootView, id);
+      if (idRVInventory3 == null) {
         break missingId;
       }
 
@@ -133,7 +174,8 @@ public final class InventoryViewBinding implements ViewBinding {
       }
 
       return new InventoryViewBinding((RelativeLayout) rootView, btnAddItem, btnHome, btnRemoveItem,
-          btnUpdateItem, idRVInventory, imageView5, inventoryView, tvLogoName5);
+          btnUpdateItem, button, button2, button3, idRVInventory, idRVInventory2, idRVInventory3,
+          inventoryView, tvLogoName5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

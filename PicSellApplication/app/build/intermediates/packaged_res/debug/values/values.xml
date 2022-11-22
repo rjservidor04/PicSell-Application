@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="categories">
+        <item>Junk Foods</item>
+        <item>Candies</item>
+        <item>Beverages</item>
+    </string-array>
     <string-array name="profile_options">
         <item>View User Profile</item>
         <item>Change Password</item>

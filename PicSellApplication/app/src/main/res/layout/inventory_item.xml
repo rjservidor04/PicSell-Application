@@ -36,7 +36,7 @@
             <!--text view for our product name-->
             <TextView
                 android:id="@+id/idTVProductName"
-                android:layout_width="0dp"
+                android:layout_width="313dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="3dp"
@@ -45,25 +45,35 @@
 
 
             <!--text view for our product stock-->
-            <TextView
-                android:id="@+id/idTVProductPrice"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="3dp"
-                android:text="Price"
-                android:textColor="@color/white" />
 
         </LinearLayout>
 
         <TextView
+            android:id="@+id/idTVProductPrice"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Price"
+            android:textColor="@color/white" />
+
+        <TextView
             android:id="@+id/idTVProductStock"
-            android:layout_width="match_parent"
+            android:layout_width="181dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="3dp"
             android:text="Stocks"
             android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/idTVCategory"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Category"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 

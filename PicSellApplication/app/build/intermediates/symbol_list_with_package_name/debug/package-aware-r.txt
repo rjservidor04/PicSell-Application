@@ -71,6 +71,7 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
+array categories
 array profile_options
 attr SharedValue
 attr SharedValueId
@@ -2665,6 +2666,7 @@ id asConfigured
 id async
 id auto
 id autoComplete
+id autoCompleteTextView
 id autoCompleteToEnd
 id autoCompleteToStart
 id barrier
@@ -2689,6 +2691,9 @@ id btnSelect
 id btnSelectItem
 id btnUpdate
 id btnUpdateItem
+id button
+id button2
+id button3
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2829,7 +2834,10 @@ id horizontal_only
 id icon
 id icon_group
 id idRVInventory
+id idRVInventory2
+id idRVInventory3
 id idRVSelect
+id idTVCategory
 id idTVProductID
 id idTVProductName
 id idTVProductPrice
@@ -2843,7 +2851,6 @@ id imageView1
 id imageView2
 id imageView3
 id imageView4
-id imageView5
 id immediateStop
 id included
 id info
@@ -3070,10 +3077,12 @@ id textInputLayout3
 id textInputLayout4
 id textInputLayout5
 id textInputLayout6
+id textInputLayout7
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3225,6 +3234,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout addinventoryitem_view
+layout cat_dropdown
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array categories
 array profile_options
 color black
 color blue_100
@@ -29,6 +30,7 @@ id action_LoginView_to_InventoryView
 id action_RegisterView_to_LoginView
 id action_settings
 id addinventoryitem_view
+id autoCompleteTextView
 id btnAdd
 id btnAddItem
 id btnHome
@@ -40,6 +42,9 @@ id btnSelect
 id btnSelectItem
 id btnUpdate
 id btnUpdateItem
+id button
+id button2
+id button3
 id etConfirmPassword
 id etItemName
 id etItemname
@@ -57,7 +62,10 @@ id ftvStoreName
 id ftvStoreOwnerName
 id ftvUsername
 id idRVInventory
+id idRVInventory2
+id idRVInventory3
 id idRVSelect
+id idTVCategory
 id idTVProductID
 id idTVProductName
 id idTVProductPrice
@@ -67,7 +75,6 @@ id imageView1
 id imageView2
 id imageView3
 id imageView4
-id imageView5
 id inventory_view
 id login_view
 id nav_graph
@@ -79,6 +86,8 @@ id textInputLayout3
 id textInputLayout4
 id textInputLayout5
 id textInputLayout6
+id textInputLayout7
+id textView
 id tvLogoName
 id tvLogoName2
 id tvLogoName3
@@ -89,6 +98,7 @@ id tvRegister
 id tvTagline
 id tvTagline2
 layout addinventoryitem_view
+layout cat_dropdown
 layout inventory_item
 layout inventory_view
 layout login_view

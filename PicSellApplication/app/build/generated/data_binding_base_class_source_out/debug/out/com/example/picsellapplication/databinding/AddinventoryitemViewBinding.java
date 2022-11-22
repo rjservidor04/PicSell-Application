@@ -4,6 +4,7 @@ package com.example.picsellapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -25,6 +26,9 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
 
   @NonNull
   public final ConstraintLayout addinventoryitemView;
+
+  @NonNull
+  public final AutoCompleteTextView autoCompleteTextView;
 
   @NonNull
   public final Button btnAdd;
@@ -51,16 +55,22 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
   public final TextInputLayout textInputLayout3;
 
   @NonNull
+  public final TextInputLayout textInputLayout7;
+
+  @NonNull
   public final TextView tvLogoName2;
 
   private AddinventoryitemViewBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout addinventoryitemView, @NonNull Button btnAdd,
+      @NonNull ConstraintLayout addinventoryitemView,
+      @NonNull AutoCompleteTextView autoCompleteTextView, @NonNull Button btnAdd,
       @NonNull TextInputEditText etItemName, @NonNull TextInputEditText etPrice,
       @NonNull TextInputEditText etStocks, @NonNull ImageView imageView2,
       @NonNull TextInputLayout textInputLayout, @NonNull TextInputLayout textInputLayout2,
-      @NonNull TextInputLayout textInputLayout3, @NonNull TextView tvLogoName2) {
+      @NonNull TextInputLayout textInputLayout3, @NonNull TextInputLayout textInputLayout7,
+      @NonNull TextView tvLogoName2) {
     this.rootView = rootView;
     this.addinventoryitemView = addinventoryitemView;
+    this.autoCompleteTextView = autoCompleteTextView;
     this.btnAdd = btnAdd;
     this.etItemName = etItemName;
     this.etPrice = etPrice;
@@ -69,6 +79,7 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
     this.textInputLayout = textInputLayout;
     this.textInputLayout2 = textInputLayout2;
     this.textInputLayout3 = textInputLayout3;
+    this.textInputLayout7 = textInputLayout7;
     this.tvLogoName2 = tvLogoName2;
   }
 
@@ -100,6 +111,12 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
     int id;
     missingId: {
       ConstraintLayout addinventoryitemView = (ConstraintLayout) rootView;
+
+      id = R.id.autoCompleteTextView;
+      AutoCompleteTextView autoCompleteTextView = ViewBindings.findChildViewById(rootView, id);
+      if (autoCompleteTextView == null) {
+        break missingId;
+      }
 
       id = R.id.btnAdd;
       Button btnAdd = ViewBindings.findChildViewById(rootView, id);
@@ -149,6 +166,12 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textInputLayout7;
+      TextInputLayout textInputLayout7 = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayout7 == null) {
+        break missingId;
+      }
+
       id = R.id.tvLogoName2;
       TextView tvLogoName2 = ViewBindings.findChildViewById(rootView, id);
       if (tvLogoName2 == null) {
@@ -156,8 +179,8 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
       }
 
       return new AddinventoryitemViewBinding((ConstraintLayout) rootView, addinventoryitemView,
-          btnAdd, etItemName, etPrice, etStocks, imageView2, textInputLayout, textInputLayout2,
-          textInputLayout3, tvLogoName2);
+          autoCompleteTextView, btnAdd, etItemName, etPrice, etStocks, imageView2, textInputLayout,
+          textInputLayout2, textInputLayout3, textInputLayout7, tvLogoName2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

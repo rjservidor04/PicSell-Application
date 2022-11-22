@@ -3,7 +3,7 @@ package com.example.picsellapplication;
 public class InventoryModel {
     // variables for our inventory,
     // product name, stocks, id.
-    private String productName;
+    private String productName,Category;
     private int stocks;
     private double price;
     private int id;
@@ -20,6 +20,10 @@ public class InventoryModel {
     public int getStocks() {
         return stocks;
     }
+    public String getCategory()
+    {return Category;
+    }
+    public void setCategory(String category){ this.Category = category;}
 
     public void setStocks(int stocks) {
         this.stocks = stocks;
@@ -42,10 +46,11 @@ public class InventoryModel {
     }
 
     // constructor
-    public InventoryModel(int id, String productName, double price, int stocks) {
+    public InventoryModel(int id, String productName, double price, int stocks, String category) {
         this.id = id;
         this.productName = productName;
         this.price = price;
         this.stocks = stocks;
+        this.Category = category;
     }
 }

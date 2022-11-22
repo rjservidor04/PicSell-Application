@@ -67,13 +67,14 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="341dp"
         android:layout_height="60dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="Stocks"
         android:inputType="number"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
 
@@ -92,13 +93,14 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="341dp"
         android:layout_height="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="Price"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
 
@@ -114,15 +116,36 @@
         android:id="@+id/btnAdd"
         android:layout_width="154dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/rounded_buttons"
         android:text="Add"
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
         tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout7"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="339dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="12dp"
+        android:hint="Select Categories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="none"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
