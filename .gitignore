@@ -48,17 +48,3 @@ gradle-app.setting
 
 # Cache of project
 .gradletasknamecache
-
-#Local SDK
-*.properties
-
-#Additional Files to Ignore
-*.bin
-*.lock
-*.probe
-*.dex
-*.txt
-
-#Not sure to ignore
-*.json
-values*.xml
