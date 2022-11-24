@@ -185,7 +185,7 @@ public class DataBase extends SQLiteOpenHelper{
         SQLiteDatabase db = this.getReadableDatabase();
 
         // creating a cursor with query to read data from database.
-        Cursor cursorInventory = db.rawQuery("select * from inventory where category=?" , new String[]{"Candies"});
+        Cursor cursorInventory = db.rawQuery("Select * from inventory where category = ?" , new String[]{"Candies"});
 
         // creating a new array list.
         ArrayList<InventoryModel> inventoryModalArrayList = new ArrayList<>();
