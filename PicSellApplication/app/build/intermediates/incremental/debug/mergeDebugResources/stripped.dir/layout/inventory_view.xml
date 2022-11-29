@@ -10,7 +10,7 @@
     tools:context=".InventoryView">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnBeverage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvLogoName5"
@@ -18,8 +18,8 @@
         android:layout_marginStart="19dp"
         android:layout_marginTop="43dp"
         android:layout_marginEnd="1dp"
-        android:layout_toEndOf="@+id/button2"
-        android:clickable="false"
+        android:layout_toEndOf="@+id/btnJunkFoods"
+        android:clickable="true"
         android:text="Beverage" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -142,7 +142,7 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnCandies"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvLogoName5"
@@ -153,13 +153,13 @@
         android:text="Candies" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnJunkFoods"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvLogoName5"
         android:layout_marginStart="31dp"
         android:layout_marginTop="43dp"
-        android:layout_toEndOf="@+id/button"
+        android:layout_toEndOf="@+id/btnCandies"
         android:clickable="false"
         android:text="Junk Foods" />
 

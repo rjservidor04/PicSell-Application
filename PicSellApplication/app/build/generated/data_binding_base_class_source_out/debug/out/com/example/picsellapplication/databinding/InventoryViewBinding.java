@@ -25,22 +25,22 @@ public final class InventoryViewBinding implements ViewBinding {
   public final Button btnAddItem;
 
   @NonNull
+  public final Button btnBeverage;
+
+  @NonNull
+  public final Button btnCandies;
+
+  @NonNull
   public final Button btnHome;
+
+  @NonNull
+  public final Button btnJunkFoods;
 
   @NonNull
   public final Button btnRemoveItem;
 
   @NonNull
   public final Button btnUpdateItem;
-
-  @NonNull
-  public final Button button;
-
-  @NonNull
-  public final Button button2;
-
-  @NonNull
-  public final Button button3;
 
   @NonNull
   public final RecyclerView idRVInventory;
@@ -58,19 +58,19 @@ public final class InventoryViewBinding implements ViewBinding {
   public final TextView tvLogoName5;
 
   private InventoryViewBinding(@NonNull RelativeLayout rootView, @NonNull Button btnAddItem,
-      @NonNull Button btnHome, @NonNull Button btnRemoveItem, @NonNull Button btnUpdateItem,
-      @NonNull Button button, @NonNull Button button2, @NonNull Button button3,
+      @NonNull Button btnBeverage, @NonNull Button btnCandies, @NonNull Button btnHome,
+      @NonNull Button btnJunkFoods, @NonNull Button btnRemoveItem, @NonNull Button btnUpdateItem,
       @NonNull RecyclerView idRVInventory, @NonNull RecyclerView idRVInventory2,
       @NonNull RecyclerView idRVInventory3, @NonNull RelativeLayout inventoryView,
       @NonNull TextView tvLogoName5) {
     this.rootView = rootView;
     this.btnAddItem = btnAddItem;
+    this.btnBeverage = btnBeverage;
+    this.btnCandies = btnCandies;
     this.btnHome = btnHome;
+    this.btnJunkFoods = btnJunkFoods;
     this.btnRemoveItem = btnRemoveItem;
     this.btnUpdateItem = btnUpdateItem;
-    this.button = button;
-    this.button2 = button2;
-    this.button3 = button3;
     this.idRVInventory = idRVInventory;
     this.idRVInventory2 = idRVInventory2;
     this.idRVInventory3 = idRVInventory3;
@@ -111,9 +111,27 @@ public final class InventoryViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnBeverage;
+      Button btnBeverage = ViewBindings.findChildViewById(rootView, id);
+      if (btnBeverage == null) {
+        break missingId;
+      }
+
+      id = R.id.btnCandies;
+      Button btnCandies = ViewBindings.findChildViewById(rootView, id);
+      if (btnCandies == null) {
+        break missingId;
+      }
+
       id = R.id.btnHome;
       Button btnHome = ViewBindings.findChildViewById(rootView, id);
       if (btnHome == null) {
+        break missingId;
+      }
+
+      id = R.id.btnJunkFoods;
+      Button btnJunkFoods = ViewBindings.findChildViewById(rootView, id);
+      if (btnJunkFoods == null) {
         break missingId;
       }
 
@@ -126,24 +144,6 @@ public final class InventoryViewBinding implements ViewBinding {
       id = R.id.btnUpdateItem;
       Button btnUpdateItem = ViewBindings.findChildViewById(rootView, id);
       if (btnUpdateItem == null) {
-        break missingId;
-      }
-
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
-        break missingId;
-      }
-
-      id = R.id.button2;
-      Button button2 = ViewBindings.findChildViewById(rootView, id);
-      if (button2 == null) {
-        break missingId;
-      }
-
-      id = R.id.button3;
-      Button button3 = ViewBindings.findChildViewById(rootView, id);
-      if (button3 == null) {
         break missingId;
       }
 
@@ -173,9 +173,9 @@ public final class InventoryViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new InventoryViewBinding((RelativeLayout) rootView, btnAddItem, btnHome, btnRemoveItem,
-          btnUpdateItem, button, button2, button3, idRVInventory, idRVInventory2, idRVInventory3,
-          inventoryView, tvLogoName5);
+      return new InventoryViewBinding((RelativeLayout) rootView, btnAddItem, btnBeverage,
+          btnCandies, btnHome, btnJunkFoods, btnRemoveItem, btnUpdateItem, idRVInventory,
+          idRVInventory2, idRVInventory3, inventoryView, tvLogoName5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

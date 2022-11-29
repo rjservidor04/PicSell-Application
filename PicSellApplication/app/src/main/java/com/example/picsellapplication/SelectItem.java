@@ -19,7 +19,8 @@ public class SelectItem extends AppCompatActivity {
     private DataBase dbHandler;
     private UpdateInventoryItemController updateinventoryitemcont;
     private RemoveInventoryItemController removeinventoryitemcont;
-    private RecyclerView updateRV, removeRV;
+    private InventoryController  inventorycont;
+    private RecyclerView updateRV, removeRV, CatRV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,45 @@ public class SelectItem extends AppCompatActivity {
 
             // setting adapter to recycler view.
             removeRV.setAdapter(removeinventoryitemcont);
+        }
+        if(previous.equals("Candies")){
+            inventoryModelArrayList = dbHandler.readCat1();
+            // passing array list to adapter class.
+            inventorycont = new InventoryController(inventoryModelArrayList, SelectItem.this);
+            CatRV = findViewById(R.id.idRVSelect);
+
+            // setting layout manager for recycler view.
+            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(SelectItem.this, RecyclerView.VERTICAL, false);
+            CatRV.setLayoutManager(linearLayoutManager);
+
+            // setting adapter to recycler view.
+            CatRV.setAdapter(inventorycont);
+        }
+        if(previous.equals("Junk Foods")){
+            inventoryModelArrayList = dbHandler.readCat2();
+            // passing array list to adapter class.
+            inventorycont = new InventoryController(inventoryModelArrayList, SelectItem.this);
+            CatRV = findViewById(R.id.idRVSelect);
+
+            // setting layout manager for recycler view.
+            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(SelectItem.this, RecyclerView.VERTICAL, false);
+            CatRV.setLayoutManager(linearLayoutManager);
+
+            // setting adapter to recycler view.
+            CatRV.setAdapter(inventorycont);
+        }
+        if(previous.equals("Beverages")){
+            inventoryModelArrayList = dbHandler.readCat3();
+            // passing array list to adapter class.
+            inventorycont = new InventoryController(inventoryModelArrayList, SelectItem.this);
+            CatRV = findViewById(R.id.idRVSelect);
+
+            // setting layout manager for recycler view.
+            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(SelectItem.this, RecyclerView.VERTICAL, false);
+            CatRV.setLayoutManager(linearLayoutManager);
+
+            // setting adapter to recycler view.
+            CatRV.setAdapter(inventorycont);
         }
     }
 }

@@ -2681,7 +2681,10 @@ int id bounceEnd 0x7f09006d
 int id bounceStart 0x7f09006e
 int id btnAdd 0x7f09006f
 int id btnAddItem 0x7f090070
+int id btnBeverage 0x7f09023b
+int id btnCandies 0x7f09023c
 int id btnHome 0x7f090071
+int id btnJunkFoods 0x7f09023d
 int id btnLogin 0x7f090072
 int id btnRegister 0x7f090073
 int id btnRemove 0x7f090074
@@ -2690,9 +2693,6 @@ int id btnSelect 0x7f090076
 int id btnSelectItem 0x7f090077
 int id btnUpdate 0x7f090078
 int id btnUpdateItem 0x7f090079
-int id button 0x7f09007a
-int id button2 0x7f09007b
-int id button3 0x7f09007c
 int id buttonPanel 0x7f09007d
 int id cache_measures 0x7f09007e
 int id callMeasure 0x7f09007f
