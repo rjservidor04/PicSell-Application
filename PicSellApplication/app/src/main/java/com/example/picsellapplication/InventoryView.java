@@ -16,7 +16,7 @@ public class InventoryView extends AppCompatActivity {
     private DataBase dbHandler;
     private InventoryController inventoryController,inventoryController2,inventoryController3;
     private RecyclerView inventoryRV,inventoryRV2,inventoryRV3;
-    Button addItem, updateItem, removeItem, home;
+    Button addItem, updateItem, removeItem, home,candy,junk,bev;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,9 @@ public class InventoryView extends AppCompatActivity {
         updateItem = findViewById(R.id.btnUpdateItem);
         removeItem = findViewById(R.id.btnRemoveItem);
         home = findViewById(R.id.btnHome);
+        candy = findViewById(R.id.btnCandies);
+        junk = findViewById(R.id.btnJunkFoods);
+        bev = findViewById(R.id.btnBeverage);
 
 
         inventoryModalArrayList = new ArrayList<>();
@@ -44,6 +47,7 @@ public class InventoryView extends AppCompatActivity {
         inventoryRV.setLayoutManager(linearLayoutManager);
         // setting adapter to recycler view.
         inventoryRV.setAdapter(inventoryController);
+
 
         inventoryModalArrayList2 = dbHandler.readCat2();
 
@@ -70,6 +74,31 @@ public class InventoryView extends AppCompatActivity {
         inventoryRV3.setLayoutManager(linearLayoutManager3);
         // setting adapter to recycler view.
         inventoryRV3.setAdapter(inventoryController3);
+        candy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(InventoryView.this, SelectItem.class);
+                i.putExtra("previous", "Candies");
+                startActivity(i);
+            }
+        });
+        junk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(InventoryView.this, SelectItem.class);
+                i.putExtra("previous", "Junk Foods");
+                startActivity(i);
+            }
+        });
+        bev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(InventoryView.this, SelectItem.class);
+                i.putExtra("previous", "Beverages");
+                startActivity(i);
+            }
+        });
+
 
         addItem.setOnClickListener(new View.OnClickListener() {
             @Override

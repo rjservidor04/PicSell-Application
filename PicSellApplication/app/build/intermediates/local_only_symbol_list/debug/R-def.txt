@@ -33,7 +33,10 @@ id addinventoryitem_view
 id autoCompleteTextView
 id btnAdd
 id btnAddItem
+id btnBeverage
+id btnCandies
 id btnHome
+id btnJunkFoods
 id btnLogin
 id btnRegister
 id btnRemove
@@ -42,9 +45,6 @@ id btnSelect
 id btnSelectItem
 id btnUpdate
 id btnUpdateItem
-id button
-id button2
-id button3
 id etConfirmPassword
 id etItemName
 id etItemname
