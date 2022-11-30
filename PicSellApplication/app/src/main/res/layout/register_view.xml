@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/orange_300"
-    tools:context=".RegisterView"
+    tools:context=".RegisterController"
     tools:ignore="HardcodedText">
 
     <RelativeLayout
@@ -46,15 +46,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="32dp"
             android:layout_below="@id/ftvStoreName"
-            android:hint="Enter Store Owner Name">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etStoreOwnerName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:singleLine="true" />
-
-        </com.google.android.material.textfield.TextInputLayout>
+            android:hint="Enter Store Owner Name"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ftvUsername"

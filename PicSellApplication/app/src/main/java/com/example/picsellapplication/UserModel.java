@@ -1,116 +1,53 @@
 package com.example.picsellapplication;
 
-import android.content.ContentValues;
 import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
+import java.util.ArrayList;
 
-public class UserModel extends SQLiteOpenHelper {
-    //initialize database
-    private static final String DB_NAME = "PicSell_UsersDB";
-    private static final int DB_VERSION = 1;
+public class UserModel {
+    private PicSellApplicationDatabase db;
+    private String storeName;
+    private String username;
+    private String password;
 
-    //table name
-    private static final String TABLENAME = "Users";
-
-    //columns
-    private static final String ID_COL = "ID";
-    private static final String STORENAME_COL = "StoreName";
-    private static final String STOREOWNERNAME_COL = "StoreOwnerName";
-    private static final String USERNAME_COL = "Username";
-    private static final String PASSWORD_COL = "Password";
-
-    //creating constructor for database handler.
-    public UserModel(Context context) {
-        super(context, DB_NAME, null, DB_VERSION);
+    public UserModel(Context context){
+        db = new PicSellApplicationDatabase(context);
     }
 
-    @Override
-    public void onCreate(SQLiteDatabase userModelDB) {
-        //SQLite query to create a table with column names and their data type
-        String query = "CREATE TABLE " + TABLENAME + " (" +
-                ID_COL + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                STORENAME_COL + " TEXT, " +
-                STOREOWNERNAME_COL + " TEXT, " +
-                USERNAME_COL + " TEXT, " +
-                PASSWORD_COL + " TEXT)";
-
-        userModelDB.execSQL(query);
+    public UserModel(String storeName, String username, String password){
+        this.storeName = storeName;
+        this.username = username;
+        this.password = password;
     }
 
-    @Override
-    public void onUpgrade(SQLiteDatabase userModelDB, int i, int i1) {
-        userModelDB.execSQL("DROP TABLE IF EXISTS " + TABLENAME);
-        onCreate(userModelDB);
+    public String getStoreName() {
+        return storeName;
     }
 
-    //creates a new account
-    public void createAccount(String storeName, String storeOwnerName, String username, String password){
-        SQLiteDatabase userModelDB = this.getWritableDatabase();
-        ContentValues recordValues = new ContentValues();
-
-        //passing all values along with its key
-        recordValues.put(STORENAME_COL, storeName);
-        recordValues.put(STOREOWNERNAME_COL, storeOwnerName);
-        recordValues.put(USERNAME_COL, username);
-        recordValues.put(PASSWORD_COL, password);
-
-        //values are then added to the DB
-        userModelDB.insert(TABLENAME, null, recordValues);
+    public String getUsername() {
+        return username;
     }
 
-    //check if the credentials matches from records stored in DB
-    public boolean checkCredentialsFromDB(String username, String password){
-        SQLiteDatabase userModelDB = this.getReadableDatabase();
-        Cursor cursor = userModelDB.rawQuery(
-                "Select * From Users Where Username = ? and Password = ?",
-                new String[]{username, password});
-
-        if(cursor.getCount() > 0){
-            cursor.close();
-            return true;
-        }
-
-        else{
-            cursor.close();
-            return  false;
-        }
+    public String getPassword() {
+        return password;
     }
 
-    //checks for StoreName and StoreOwnerName Duplicates
-    public boolean checkStoreDuplicateFromDB(String storeName, String storeOwnerName){
-        SQLiteDatabase userModelDB = this.getReadableDatabase();
-        Cursor cursor = userModelDB.rawQuery(
-                "Select * From Users Where StoreName = ? and StoreOwnerName = ?",
-                new String[]{storeName, storeOwnerName});
-
-        if(cursor.getCount() > 0){
-            cursor.close();
-            return true;
-        }
-
-        else{
-            cursor.close();
-            return  false;
-        }
+    public void setStoreName(String storeName) {
+        this.storeName = storeName;
     }
 
-    //checks for Username Duplicates
-    public boolean checkUsernameDuplicateFromDB(String username){
-        SQLiteDatabase userModelDB = this.getReadableDatabase();
-        Cursor cursor = userModelDB.rawQuery(
-                "Select * From Users Where Username = ?",
-                new String[]{username});
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
-        if(cursor.getCount() > 0){
-            cursor.close();
-            return true;
-        }
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-        else{
-            cursor.close();
-            return  false;
-        }
+    public void createNewUser(){
+        db.addNewUser(this.storeName, this.username, this.password);
+    }
+
+    public ArrayList<UserModel> readUsers(){
+        return db.readUsers();
     }
 }
