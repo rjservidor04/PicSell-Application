@@ -50,4 +50,12 @@ public class UserModel {
     public ArrayList<UserModel> readUsers(){
         return db.readUsers();
     }
+
+    public boolean verify(String username, String password){
+        return db.verifyCredentials(username, password);
+    }
+
+    public boolean checkDuplicates(String storeName, String username){
+        return db.checkForDuplicates(storeName, username);
+    }
 }

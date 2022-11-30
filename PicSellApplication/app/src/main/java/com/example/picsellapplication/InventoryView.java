@@ -127,7 +127,7 @@ public class InventoryView extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(InventoryView.this, LoginView.class);
+                Intent i = new Intent(InventoryView.this, LoginController.class);
                 startActivity(i);
             }
         });

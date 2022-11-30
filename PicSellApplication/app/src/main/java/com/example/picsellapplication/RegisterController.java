@@ -8,10 +8,9 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import java.util.ArrayList;
 
 public class RegisterController extends AppCompatActivity{
-    private final UserModel userModel = new UserModel(this);
+    private final UserModel userModel = new UserModel(RegisterController.this);
     Button register;
     EditText txtStoreName, txtUsername, txtPassword, txtConfirmPassword;
     String storeName, username, password, confirmPassword;
@@ -44,36 +43,16 @@ public class RegisterController extends AppCompatActivity{
         startActivity(intent);
     }
 
-    private boolean checkFieldsNotEmpty(String storeName, String username, String password, String confirmPassword){
-        return !storeName.isEmpty() && !username.isEmpty() && !password.isEmpty() && !confirmPassword.isEmpty();
-    }
-
-    private boolean checkNoDuplicate(String storeName, String username){
-        ArrayList<UserModel> list = userModel.readUsers();
-        UserModel temp;
-
-        for(int i = 0; i < list.size(); i++){
-            temp = list.get(i);
-
-            if(storeName.equals(temp.getStoreName()) || username.equals(temp.getUsername())) return false;
-        }
-        return true;
-    }
-
-    private boolean confirmPassword(String password, String confirmPassword){
-        return password.equals(confirmPassword);
-    }
-
     private void registerUser(String storeName, String username, String password, String confirmPassword){
-        if(checkFieldsNotEmpty(storeName, username, password, confirmPassword))
+        if(storeName.isEmpty() || username.isEmpty() || password.isEmpty() || confirmPassword.isEmpty())
             Toast.makeText(this, "Missing field information/s, Please fill up all information.",
                     Toast.LENGTH_SHORT).show();
 
-        else if(checkNoDuplicate(storeName, username))
+        else if(!userModel.checkDuplicates(storeName, username))
             Toast.makeText(this, "Records containing this credential already exist, Use other names",
                     Toast.LENGTH_SHORT).show();
 
-        else if(confirmPassword(password, confirmPassword))
+        else if(!password.equals(confirmPassword))
             Toast.makeText(this, "Password does not match, Try again", Toast.LENGTH_SHORT).show();
 
         else{

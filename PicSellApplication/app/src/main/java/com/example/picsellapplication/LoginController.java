@@ -8,10 +8,9 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import java.util.ArrayList;
 
 public class LoginController extends AppCompatActivity {
-    private final UserModel userModel = new UserModel(this);
+    private final UserModel userModel = new UserModel(LoginController.this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,29 +39,13 @@ public class LoginController extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private boolean credentialsNotEmpty(String username, String password){
-        return !username.isEmpty() && !password.isEmpty();
-    }
-
-    private boolean verifyCredentials(String username, String password){
-        ArrayList<UserModel> list =  userModel.readUsers();
-        UserModel temp;
-
-        for(int i = 0; i < list.size(); i++){
-            temp = list.get(i);
-
-            if(username.equals(temp.getUsername()) && password.equals(temp.getPassword())) return true;
-        }
-        return false;
-    }
-
     private void loginUser(String username, String password){
         //check if login credentials are correct
-        if(credentialsNotEmpty(username, password)){
+        if(username.isEmpty() || password.isEmpty()){
             Toast.makeText(this, "Please fill all fields.", Toast.LENGTH_SHORT).show();
         }
 
-        else if(verifyCredentials(username, password)){
+        else if(userModel.verify(username, password)){
             Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show();
             Intent i = new Intent(LoginController.this, InventoryView.class);
             startActivity(i);

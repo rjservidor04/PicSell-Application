@@ -90,6 +90,40 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         return userModels;
     }
 
+    // for login, check credentials
+    public boolean verifyCredentials(String username, String password) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("Select * From Users Where Username = ? and Password = ?",
+                new String[]{username, password});
+
+        if (cursor.getCount() > 0) {
+            cursor.close();
+            return true;
+        }
+
+        else {
+            cursor.close();
+            return false;
+        }
+    }
+
+    //for registration, check duplicates
+    public boolean checkForDuplicates(String storeName, String username) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("Select * From Users Where StoreName = ? and Username = ?",
+                new String[]{storeName, username});
+
+        if (cursor.getCount() > 0) {
+            cursor.close();
+            return true;
+        }
+
+        else {
+            cursor.close();
+            return false;
+        }
+    }
+
     public void updateUser(String originalUsername, String storeName, String userName, String passWord){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -149,44 +183,44 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
     }
 
 
-    public ArrayList<InventoryModel> readInventory() {
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursorInventory = db.rawQuery("SELECT * FROM " + TABLE_INVENTORY, null);
-        ArrayList<InventoryModel> inventoryModalArrayList = new ArrayList<>();
-
-        // read the cursor and add them to the array list
-        if (cursorInventory.moveToFirst()) {
-            do {
-                inventoryModalArrayList.add(new InventoryModel(cursorInventory.getString(0),
-                        cursorInventory.getDouble(1),
-                        cursorInventory.getInt(2),
-                        cursorInventory.getInt(3),
-                        cursorInventory.getString(4)));
-            } while (cursorInventory.moveToNext());
-        }
-
-        cursorInventory.close();
-        return inventoryModalArrayList;
-    }
-
-    public ArrayList<InventoryModel> readInventoryByCategory(String category) {
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursorInventory = db.rawQuery("Select * from inventory where Category = ?" , new String[] {category});
-        ArrayList<InventoryModel> inventoryModalArrayList = new ArrayList<>();
-
-        if (cursorInventory.moveToFirst()) {
-            do {
-                inventoryModalArrayList.add(new InventoryModel(cursorInventory.getString(0),
-                        cursorInventory.getDouble(1),
-                        cursorInventory.getInt(2),
-                        cursorInventory.getInt(3),
-                        cursorInventory.getString(4)));
-            } while (cursorInventory.moveToNext());
-        }
-
-        cursorInventory.close();
-        return inventoryModalArrayList;
-    }
+//    public ArrayList<InventoryModel> readInventory() {
+//        SQLiteDatabase db = this.getReadableDatabase();
+//        Cursor cursorInventory = db.rawQuery("SELECT * FROM " + TABLE_INVENTORY, null);
+//        ArrayList<InventoryModel> inventoryModalArrayList = new ArrayList<>();
+//
+//        // read the cursor and add them to the array list
+//        if (cursorInventory.moveToFirst()) {
+//            do {
+//                inventoryModalArrayList.add(new InventoryModel(cursorInventory.getString(0),
+//                        cursorInventory.getDouble(1),
+//                        cursorInventory.getInt(2),
+//                        cursorInventory.getInt(3),
+//                        cursorInventory.getString(4)));
+//            } while (cursorInventory.moveToNext());
+//        }
+//
+//        cursorInventory.close();
+//        return inventoryModalArrayList;
+//    }
+//
+//    public ArrayList<InventoryModel> readInventoryByCategory(String category) {
+//        SQLiteDatabase db = this.getReadableDatabase();
+//        Cursor cursorInventory = db.rawQuery("Select * from inventory where Category = ?" , new String[] {category});
+//        ArrayList<InventoryModel> inventoryModalArrayList = new ArrayList<>();
+//
+//        if (cursorInventory.moveToFirst()) {
+//            do {
+//                inventoryModalArrayList.add(new InventoryModel(cursorInventory.getString(0),
+//                        cursorInventory.getDouble(1),
+//                        cursorInventory.getInt(2),
+//                        cursorInventory.getInt(3),
+//                        cursorInventory.getString(4)));
+//            } while (cursorInventory.moveToNext());
+//        }
+//
+//        cursorInventory.close();
+//        return inventoryModalArrayList;
+//    }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
