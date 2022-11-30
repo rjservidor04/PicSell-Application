@@ -114,7 +114,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ac
 		ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:14:9-56
 	android:dataExtractionRules
 		ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:8:9-65
-activity#com.example.picsellapplication.LoginView
+activity#com.example.picsellapplication.LoginController
 ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:16:9-27:20
 	android:label
 		ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:20:13-45
@@ -125,7 +125,7 @@ ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\sr
 	android:theme
 		ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:21:13-72
 	android:name
-		ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:17:13-38
+		ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:17:13-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
@@ -136,7 +136,7 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
 		ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:25:27-74
-activity#com.example.picsellapplication.RegisterView
+activity#com.example.picsellapplication.RegisterController
 ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:29:9-40:20
 	android:label
 		ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:33:13-45
@@ -147,7 +147,7 @@ ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\sr
 	android:theme
 		ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:34:13-72
 	android:name
-		ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:30:13-41
+		ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:30:13-47
 activity#com.example.picsellapplication.InventoryView
 ADDED from C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:42:9-53:20
 	android:label

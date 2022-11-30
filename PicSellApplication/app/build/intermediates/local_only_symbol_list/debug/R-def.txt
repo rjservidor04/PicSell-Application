@@ -54,7 +54,6 @@ id etPassword
 id etPrice
 id etStocks
 id etStoreName
-id etStoreOwnerName
 id etUsername
 id ftvConfirmPassword
 id ftvPassword

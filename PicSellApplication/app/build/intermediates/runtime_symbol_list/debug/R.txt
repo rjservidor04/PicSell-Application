@@ -2788,7 +2788,6 @@ int id etPassword 0x7f0900d8
 int id etPrice 0x7f0900d9
 int id etStocks 0x7f0900da
 int id etStoreName 0x7f0900db
-int id etStoreOwnerName 0x7f0900dc
 int id etUsername 0x7f0900dd
 int id exitUntilCollapsed 0x7f0900de
 int id expand_activities_button 0x7f0900df

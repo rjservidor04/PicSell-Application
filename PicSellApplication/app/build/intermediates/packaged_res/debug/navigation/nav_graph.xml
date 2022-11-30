@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/LoginView"
-        android:name="com.example.picsellapplication.LoginView"
+        android:name="com.example.picsellapplication.LoginController"
         android:label="Login View"
         tools:layout="@layout/login_view">
 
@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/RegisterView"
-        android:name="com.example.picsellapplication.RegisterView"
+        android:name="com.example.picsellapplication.RegisterController"
         android:label="Register View"
         tools:layout="@layout/register_view">
 
@@ -29,7 +29,7 @@
 
     <fragment
         android:id="@+id/InventoryView"
-        android:name="com.example.picsellapplication.RegisterView"
+        android:name="com.example.picsellapplication.RegisterController"
         android:label="Register View"
         tools:layout="@layout/inventory_view">
 

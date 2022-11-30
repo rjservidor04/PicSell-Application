@@ -2789,7 +2789,6 @@ id etPassword
 id etPrice
 id etStocks
 id etStoreName
-id etStoreOwnerName
 id etUsername
 id exitUntilCollapsed
 id expand_activities_button

@@ -34,8 +34,8 @@
 22-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:14:9-56
 23        <activity
 23-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:16:9-27:20
-24            android:name="com.example.picsellapplication.LoginView"
-24-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:17:13-38
+24            android:name="com.example.picsellapplication.LoginController"
+24-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:17:13-44
 25            android:exported="true"
 25-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:19:13-36
 26            android:label="@string/app_name"
@@ -57,8 +57,8 @@
 34        </activity>
 35        <activity
 35-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:29:9-40:20
-36            android:name="com.example.picsellapplication.RegisterView"
-36-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:30:13-41
+36            android:name="com.example.picsellapplication.RegisterController"
+36-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:30:13-47
 37            android:exported="true"
 37-->C:\Users\acer\Documents\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:32:13-36
 38            android:label="@string/app_name"
