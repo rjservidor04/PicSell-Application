@@ -2,7 +2,6 @@ package com.example.picsellapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +12,7 @@ import java.util.ArrayList;
 public class InventoryView extends AppCompatActivity {
     private ArrayList<InventoryModel> inventoryModalArrayList,inventoryModalArrayList2,inventoryModalArrayList3;
     private InventoryModel inv;
-    private DataBase dbHandler;
+    private PicSellApplicationDatabase dbHandler;
     private InventoryController inventoryController,inventoryController2,inventoryController3;
     private RecyclerView inventoryRV,inventoryRV2,inventoryRV3;
     Button addItem, updateItem, removeItem, home,candy,junk,bev;
@@ -32,7 +31,7 @@ public class InventoryView extends AppCompatActivity {
 
 
         inventoryModalArrayList = new ArrayList<>();
-        dbHandler = new DataBase(InventoryView.this);
+        dbHandler = new PicSellApplicationDatabase(InventoryView.this);
 
         // getting inventory array list from dbHandler class
         inventoryModalArrayList = dbHandler.readCat1();

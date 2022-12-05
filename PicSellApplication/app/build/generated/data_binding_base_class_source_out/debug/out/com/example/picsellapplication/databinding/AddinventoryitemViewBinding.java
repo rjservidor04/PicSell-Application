@@ -37,6 +37,9 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
   public final TextInputEditText etItemName;
 
   @NonNull
+  public final TextInputEditText etMinimum;
+
+  @NonNull
   public final TextInputEditText etPrice;
 
   @NonNull
@@ -55,6 +58,9 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
   public final TextInputLayout textInputLayout3;
 
   @NonNull
+  public final TextInputLayout textInputLayout4;
+
+  @NonNull
   public final TextInputLayout textInputLayout7;
 
   @NonNull
@@ -63,22 +69,25 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
   private AddinventoryitemViewBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout addinventoryitemView,
       @NonNull AutoCompleteTextView autoCompleteTextView, @NonNull Button btnAdd,
-      @NonNull TextInputEditText etItemName, @NonNull TextInputEditText etPrice,
-      @NonNull TextInputEditText etStocks, @NonNull ImageView imageView2,
-      @NonNull TextInputLayout textInputLayout, @NonNull TextInputLayout textInputLayout2,
-      @NonNull TextInputLayout textInputLayout3, @NonNull TextInputLayout textInputLayout7,
+      @NonNull TextInputEditText etItemName, @NonNull TextInputEditText etMinimum,
+      @NonNull TextInputEditText etPrice, @NonNull TextInputEditText etStocks,
+      @NonNull ImageView imageView2, @NonNull TextInputLayout textInputLayout,
+      @NonNull TextInputLayout textInputLayout2, @NonNull TextInputLayout textInputLayout3,
+      @NonNull TextInputLayout textInputLayout4, @NonNull TextInputLayout textInputLayout7,
       @NonNull TextView tvLogoName2) {
     this.rootView = rootView;
     this.addinventoryitemView = addinventoryitemView;
     this.autoCompleteTextView = autoCompleteTextView;
     this.btnAdd = btnAdd;
     this.etItemName = etItemName;
+    this.etMinimum = etMinimum;
     this.etPrice = etPrice;
     this.etStocks = etStocks;
     this.imageView2 = imageView2;
     this.textInputLayout = textInputLayout;
     this.textInputLayout2 = textInputLayout2;
     this.textInputLayout3 = textInputLayout3;
+    this.textInputLayout4 = textInputLayout4;
     this.textInputLayout7 = textInputLayout7;
     this.tvLogoName2 = tvLogoName2;
   }
@@ -130,6 +139,12 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.etMinimum;
+      TextInputEditText etMinimum = ViewBindings.findChildViewById(rootView, id);
+      if (etMinimum == null) {
+        break missingId;
+      }
+
       id = R.id.etPrice;
       TextInputEditText etPrice = ViewBindings.findChildViewById(rootView, id);
       if (etPrice == null) {
@@ -166,6 +181,12 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textInputLayout4;
+      TextInputLayout textInputLayout4 = ViewBindings.findChildViewById(rootView, id);
+      if (textInputLayout4 == null) {
+        break missingId;
+      }
+
       id = R.id.textInputLayout7;
       TextInputLayout textInputLayout7 = ViewBindings.findChildViewById(rootView, id);
       if (textInputLayout7 == null) {
@@ -179,8 +200,9 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
       }
 
       return new AddinventoryitemViewBinding((ConstraintLayout) rootView, addinventoryitemView,
-          autoCompleteTextView, btnAdd, etItemName, etPrice, etStocks, imageView2, textInputLayout,
-          textInputLayout2, textInputLayout3, textInputLayout7, tvLogoName2);
+          autoCompleteTextView, btnAdd, etItemName, etMinimum, etPrice, etStocks, imageView2,
+          textInputLayout, textInputLayout2, textInputLayout3, textInputLayout4, textInputLayout7,
+          tvLogoName2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -2784,10 +2784,11 @@ int id etItemName 0x7f0900d4
 int id etItemname 0x7f0900d5
 int id etItemprice 0x7f0900d6
 int id etItemstocks 0x7f0900d7
-int id etPassword 0x7f0900d8
-int id etPrice 0x7f0900d9
-int id etStocks 0x7f0900da
-int id etStoreName 0x7f0900db
+int id etMinimum 0x7f0900d8
+int id etPassword 0x7f0900d9
+int id etPrice 0x7f0900da
+int id etStocks 0x7f0900db
+int id etStoreName 0x7f0900dc
 int id etUsername 0x7f0900dd
 int id exitUntilCollapsed 0x7f0900de
 int id expand_activities_button 0x7f0900df

@@ -4,7 +4,7 @@ public class InventoryModel {
     // variables for our inventory,
     // product name, stocks, id.
     private String productName,Category;
-    private int stocks;
+    private int stocks,minQuan;
     private double price;
     private int id;
 
@@ -22,6 +22,12 @@ public class InventoryModel {
     }
     public String getCategory()
     {return Category;
+    }
+
+    public int getMinQuan(){
+        return minQuan;
+    }
+    public void setMinQuantity(int min){this.minQuan=min;
     }
     public void setCategory(String category){ this.Category = category;}
 
@@ -46,11 +52,12 @@ public class InventoryModel {
     }
 
     // constructor
-    public InventoryModel(int id, String productName, double price, int stocks, String category) {
+    public InventoryModel(int id, String productName, double price, int stocks, String category,int MinQuan) {
         this.id = id;
         this.productName = productName;
         this.price = price;
         this.stocks = stocks;
         this.Category = category;
+        this.minQuan = MinQuan;
     }
 }

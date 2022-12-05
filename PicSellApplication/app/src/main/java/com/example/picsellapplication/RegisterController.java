@@ -48,7 +48,7 @@ public class RegisterController extends AppCompatActivity{
             Toast.makeText(this, "Missing field information/s, Please fill up all information.",
                     Toast.LENGTH_SHORT).show();
 
-        else if(!userModel.checkDuplicates(storeName, username))
+        else if(userModel.checkDuplicates(storeName, username))
             Toast.makeText(this, "Records containing this credential already exist, Use other names",
                     Toast.LENGTH_SHORT).show();
 

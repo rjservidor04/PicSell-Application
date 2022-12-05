@@ -50,6 +50,7 @@ id etItemName
 id etItemname
 id etItemprice
 id etItemstocks
+id etMinimum
 id etPassword
 id etPrice
 id etStocks
