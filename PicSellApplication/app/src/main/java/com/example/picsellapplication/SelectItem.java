@@ -4,10 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import android.os.Bundle;
-import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,7 +12,7 @@ import java.util.ArrayList;
 public class SelectItem extends AppCompatActivity {
 
     private ArrayList<InventoryModel> inventoryModelArrayList;
-    private DataBase dbHandler;
+    private PicSellApplicationDatabase dbHandler;
     private UpdateInventoryItemController updateinventoryitemcont;
     private RemoveInventoryItemController removeinventoryitemcont;
     private InventoryController  inventorycont;
@@ -30,7 +26,7 @@ public class SelectItem extends AppCompatActivity {
         String previous = getIntent().getStringExtra("previous");
 
         inventoryModelArrayList = new ArrayList<>();
-        dbHandler = new DataBase(SelectItem.this);
+        dbHandler = new PicSellApplicationDatabase(SelectItem.this);
 
         inventoryModelArrayList = dbHandler.readInventory();
 

@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class RemoveInventoryItemView extends AppCompatActivity {
     Button select, remove;
     TextView productname;
-    DataBase dbHandler;
+    PicSellApplicationDatabase dbHandler;
     String productName;
 
     @Override
@@ -24,7 +24,7 @@ public class RemoveInventoryItemView extends AppCompatActivity {
         select = findViewById(R.id.btnSelectItem);
         remove = findViewById(R.id.btnRemove);
 
-        dbHandler = new DataBase(RemoveInventoryItemView.this);
+        dbHandler = new PicSellApplicationDatabase(RemoveInventoryItemView.this);
 
         productName = getIntent().getStringExtra("productname");
 

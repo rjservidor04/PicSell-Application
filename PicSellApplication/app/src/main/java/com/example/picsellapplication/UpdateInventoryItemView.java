@@ -10,7 +10,7 @@ import android.widget.Toast;
 public class UpdateInventoryItemView extends AppCompatActivity {
     EditText productNameEdt, priceEdt, stocksEdt;
     Button select, update;
-    DataBase dbHandler;
+    PicSellApplicationDatabase dbHandler;
     String productName;
     Double price;
     int stock;
@@ -27,7 +27,7 @@ public class UpdateInventoryItemView extends AppCompatActivity {
         select = findViewById(R.id.btnSelect);
         update = findViewById(R.id.btnUpdate);
 
-        dbHandler = new DataBase(UpdateInventoryItemView.this);
+        dbHandler = new PicSellApplicationDatabase(UpdateInventoryItemView.this);
 
         productName = getIntent().getStringExtra("productname");
         price = getIntent().getDoubleExtra("price", 0.00);
