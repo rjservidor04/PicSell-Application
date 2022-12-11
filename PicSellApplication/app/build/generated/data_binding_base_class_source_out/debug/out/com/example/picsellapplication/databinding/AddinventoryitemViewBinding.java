@@ -4,7 +4,6 @@ package com.example.picsellapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -28,10 +27,10 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
   public final ConstraintLayout addinventoryitemView;
 
   @NonNull
-  public final AutoCompleteTextView autoCompleteTextView;
+  public final Button btnAdd;
 
   @NonNull
-  public final Button btnAdd;
+  public final TextInputEditText etCost;
 
   @NonNull
   public final TextInputEditText etItemName;
@@ -49,46 +48,50 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
   public final ImageView imageView2;
 
   @NonNull
-  public final TextInputLayout textInputLayout;
+  public final TextInputLayout layoutCost;
 
   @NonNull
-  public final TextInputLayout textInputLayout2;
+  public final TextInputLayout layoutItem;
 
   @NonNull
-  public final TextInputLayout textInputLayout3;
+  public final TextInputLayout layoutMin;
 
   @NonNull
-  public final TextInputLayout textInputLayout4;
+  public final TextInputLayout layoutPrice;
 
   @NonNull
-  public final TextInputLayout textInputLayout7;
+  public final TextInputLayout layoutStock;
+
+  @NonNull
+  public final TextView tvBack;
 
   @NonNull
   public final TextView tvLogoName2;
 
   private AddinventoryitemViewBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout addinventoryitemView,
-      @NonNull AutoCompleteTextView autoCompleteTextView, @NonNull Button btnAdd,
-      @NonNull TextInputEditText etItemName, @NonNull TextInputEditText etMinimum,
-      @NonNull TextInputEditText etPrice, @NonNull TextInputEditText etStocks,
-      @NonNull ImageView imageView2, @NonNull TextInputLayout textInputLayout,
-      @NonNull TextInputLayout textInputLayout2, @NonNull TextInputLayout textInputLayout3,
-      @NonNull TextInputLayout textInputLayout4, @NonNull TextInputLayout textInputLayout7,
+      @NonNull ConstraintLayout addinventoryitemView, @NonNull Button btnAdd,
+      @NonNull TextInputEditText etCost, @NonNull TextInputEditText etItemName,
+      @NonNull TextInputEditText etMinimum, @NonNull TextInputEditText etPrice,
+      @NonNull TextInputEditText etStocks, @NonNull ImageView imageView2,
+      @NonNull TextInputLayout layoutCost, @NonNull TextInputLayout layoutItem,
+      @NonNull TextInputLayout layoutMin, @NonNull TextInputLayout layoutPrice,
+      @NonNull TextInputLayout layoutStock, @NonNull TextView tvBack,
       @NonNull TextView tvLogoName2) {
     this.rootView = rootView;
     this.addinventoryitemView = addinventoryitemView;
-    this.autoCompleteTextView = autoCompleteTextView;
     this.btnAdd = btnAdd;
+    this.etCost = etCost;
     this.etItemName = etItemName;
     this.etMinimum = etMinimum;
     this.etPrice = etPrice;
     this.etStocks = etStocks;
     this.imageView2 = imageView2;
-    this.textInputLayout = textInputLayout;
-    this.textInputLayout2 = textInputLayout2;
-    this.textInputLayout3 = textInputLayout3;
-    this.textInputLayout4 = textInputLayout4;
-    this.textInputLayout7 = textInputLayout7;
+    this.layoutCost = layoutCost;
+    this.layoutItem = layoutItem;
+    this.layoutMin = layoutMin;
+    this.layoutPrice = layoutPrice;
+    this.layoutStock = layoutStock;
+    this.tvBack = tvBack;
     this.tvLogoName2 = tvLogoName2;
   }
 
@@ -121,15 +124,15 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
     missingId: {
       ConstraintLayout addinventoryitemView = (ConstraintLayout) rootView;
 
-      id = R.id.autoCompleteTextView;
-      AutoCompleteTextView autoCompleteTextView = ViewBindings.findChildViewById(rootView, id);
-      if (autoCompleteTextView == null) {
-        break missingId;
-      }
-
       id = R.id.btnAdd;
       Button btnAdd = ViewBindings.findChildViewById(rootView, id);
       if (btnAdd == null) {
+        break missingId;
+      }
+
+      id = R.id.etCost;
+      TextInputEditText etCost = ViewBindings.findChildViewById(rootView, id);
+      if (etCost == null) {
         break missingId;
       }
 
@@ -163,33 +166,39 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textInputLayout;
-      TextInputLayout textInputLayout = ViewBindings.findChildViewById(rootView, id);
-      if (textInputLayout == null) {
+      id = R.id.layoutCost;
+      TextInputLayout layoutCost = ViewBindings.findChildViewById(rootView, id);
+      if (layoutCost == null) {
         break missingId;
       }
 
-      id = R.id.textInputLayout2;
-      TextInputLayout textInputLayout2 = ViewBindings.findChildViewById(rootView, id);
-      if (textInputLayout2 == null) {
+      id = R.id.layoutItem;
+      TextInputLayout layoutItem = ViewBindings.findChildViewById(rootView, id);
+      if (layoutItem == null) {
         break missingId;
       }
 
-      id = R.id.textInputLayout3;
-      TextInputLayout textInputLayout3 = ViewBindings.findChildViewById(rootView, id);
-      if (textInputLayout3 == null) {
+      id = R.id.layoutMin;
+      TextInputLayout layoutMin = ViewBindings.findChildViewById(rootView, id);
+      if (layoutMin == null) {
         break missingId;
       }
 
-      id = R.id.textInputLayout4;
-      TextInputLayout textInputLayout4 = ViewBindings.findChildViewById(rootView, id);
-      if (textInputLayout4 == null) {
+      id = R.id.layoutPrice;
+      TextInputLayout layoutPrice = ViewBindings.findChildViewById(rootView, id);
+      if (layoutPrice == null) {
         break missingId;
       }
 
-      id = R.id.textInputLayout7;
-      TextInputLayout textInputLayout7 = ViewBindings.findChildViewById(rootView, id);
-      if (textInputLayout7 == null) {
+      id = R.id.layoutStock;
+      TextInputLayout layoutStock = ViewBindings.findChildViewById(rootView, id);
+      if (layoutStock == null) {
+        break missingId;
+      }
+
+      id = R.id.tvBack;
+      TextView tvBack = ViewBindings.findChildViewById(rootView, id);
+      if (tvBack == null) {
         break missingId;
       }
 
@@ -200,9 +209,8 @@ public final class AddinventoryitemViewBinding implements ViewBinding {
       }
 
       return new AddinventoryitemViewBinding((ConstraintLayout) rootView, addinventoryitemView,
-          autoCompleteTextView, btnAdd, etItemName, etMinimum, etPrice, etStocks, imageView2,
-          textInputLayout, textInputLayout2, textInputLayout3, textInputLayout4, textInputLayout7,
-          tvLogoName2);
+          btnAdd, etCost, etItemName, etMinimum, etPrice, etStocks, imageView2, layoutCost,
+          layoutItem, layoutMin, layoutPrice, layoutStock, tvBack, tvLogoName2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,63 +1,127 @@
 package com.example.picsellapplication;
 
-public class InventoryModel {
-    // variables for our inventory,
-    // product name, stocks, id.
-    private String productName,Category;
-    private int stocks,minQuan;
-    private double price;
-    private int id;
+import android.content.Context;
+import android.os.Parcel;
+import android.os.Parcelable;
 
-    // creating getter and setter methods
-    public String getProductName() {
-        return productName;
-    }
+import androidx.appcompat.app.AppCompatActivity;
 
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
+import java.util.List;
 
-    public int getStocks() {
-        return stocks;
-    }
-    public String getCategory()
-    {return Category;
-    }
+public class InventoryModel implements Parcelable {
+    PicSellApplicationDatabase dbHandler;
+    private Item item;
+    private int inventoryId;
+    private int minimumStockQuantity;
+    private int stockQuantity;
+    private int itemId;
 
-    public int getMinQuan(){
-        return minQuan;
-    }
-    public void setMinQuantity(int min){this.minQuan=min;
-    }
-    public void setCategory(String category){ this.Category = category;}
-
-    public void setStocks(int stocks) {
-        this.stocks = stocks;
-    }
-
-    public double getPrice(){
-        return price;
-    }
-
-    public void setPrice(double price){
-        this.price = price;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     // constructor
-    public InventoryModel(int id, String productName, double price, int stocks, String category,int MinQuan) {
-        this.id = id;
-        this.productName = productName;
-        this.price = price;
-        this.stocks = stocks;
-        this.Category = category;
-        this.minQuan = MinQuan;
+    public InventoryModel(){}
+    public InventoryModel(Context context){
+        dbHandler = new PicSellApplicationDatabase(context);
     }
+
+    public InventoryModel(Item item, int minQuan, int stockQuantity){
+        this.item = item;
+        this.minimumStockQuantity = minQuan;
+        this.stockQuantity = stockQuantity;
+    }
+    public InventoryModel(int id, Item item, int minQuan, int stockQuantity){
+        this.inventoryId = id;
+        this.item = item;
+        this.minimumStockQuantity = minQuan;
+        this.stockQuantity = stockQuantity;
+    }
+
+    protected InventoryModel(Parcel in) {
+        inventoryId = in.readInt();
+        minimumStockQuantity = in.readInt();
+        stockQuantity = in.readInt();
+        itemId = in.readInt();
+    }
+
+    public static final Creator<InventoryModel> CREATOR = new Creator<InventoryModel>() {
+        @Override
+        public InventoryModel createFromParcel(Parcel in) {
+            return new InventoryModel(in);
+        }
+
+        @Override
+        public InventoryModel[] newArray(int size) {
+            return new InventoryModel[size];
+        }
+    };
+
+    public boolean addItemToInventory(InventoryModel inventory){
+        String returnMsg = dbHandler.addNewItem(inventory.getItem());
+        int id = dbHandler.getItemId(inventory.getItem().getItemName());
+        inventory.setItemId(id);
+
+        if(returnMsg == "Insertion was a success.")
+            return dbHandler.addItemToInventory(inventory);
+        else
+            return false;
+    }
+
+    public List<InventoryModel> getInventoryItems(){
+        return dbHandler.getInventoryItems();
+    }
+    public boolean isItemUnique(String itemName){
+        return dbHandler.isItemUnique(itemName);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(inventoryId);
+        parcel.writeInt(minimumStockQuantity);
+        parcel.writeInt(stockQuantity);
+        parcel.writeInt(itemId);
+    }
+
+    public Item getItem() {
+        return item;
+    }
+
+    public void setItem(Item item) {
+        this.item = item;
+    }
+
+    public int getInventoryId() {
+        return inventoryId;
+    }
+
+    public void setInventoryId(int inventoryId) {
+        this.inventoryId = inventoryId;
+    }
+
+    public int getMinimumStockQuantity() {
+        return minimumStockQuantity;
+    }
+
+    public void setMinimumStockQuantity(int minimumStockQuantity) {
+        this.minimumStockQuantity = minimumStockQuantity;
+    }
+
+    public int getStockQuantity() {
+        return stockQuantity;
+    }
+
+    public void setStockQuantity(int stockQuantity) {
+        this.stockQuantity = stockQuantity;
+    }
+    public int getItemId() {
+        return itemId;
+    }
+
+    public void setItemId(int itemId) {
+        this.itemId = itemId;
+    }
+
 }

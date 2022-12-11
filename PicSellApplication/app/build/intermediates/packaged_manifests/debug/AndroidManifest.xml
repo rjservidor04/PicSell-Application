@@ -21,6 +21,34 @@
         android:testOnly="true"
         android:theme="@style/Theme.PicSellApplication" >
         <activity
+            android:name="com.example.picsellapplication.ViewItemDetails"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.picsellapplication.YearPickerDialog"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.picsellapplication.MonthYearDialog"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.picsellapplication.MainFragmentActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.picsellapplication.LoginController"
             android:exported="true"
             android:label="@string/app_name"

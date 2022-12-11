@@ -6,38 +6,55 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
+import java.util.List;
+
 public class PicSellApplicationDatabase extends SQLiteOpenHelper{
     // creating a constant variables for database.
-    private static final String DB_NAME = "picselldb";
+    private static final String DB_NAME = "PicSellDatabase";
 
     private static final int DB_VERSION = 3;
 
     // table names
-    private static final String TABLE_USER = "users";
-    private static final String TABLE_INVENTORY = "inventory";
+    private static final String TABLE_USER = "Users";
+    private static final String TABLE_INVENTORY = "Inventory";
+    private static final String TABLE_ITEM = "Item";
+    private static final String TABLE_SALES = "Sales";
 
     // columns for Users table
-    private static final String USERID_COL = "userID";
+    private static final String USERID_COL = "userId";
     private static final String STORENAME_COL = "storename";
     private static final String USERNAME_COL = "username";
     private static final String PASSWORD_COL = "password";
 
+    // columns for Item table
+    private static final String ITEMID_COL = "itemId";
+    private static final String ITEMNAME_COL = "itemName";
+    private static final String PRICE_COL = "price";
+    private static final String COST_COL = "cost";
 
+
+    // columns for Sales table
+    private static final String SALESID_COL = "salesId";
+    private static final String QUANTITY_COL = "quantity";
+    private static final String DATESOLD_COL = "dateSold";
 
     // columns for Inventory table
-    private static final String PRODUCTID_COL = "productID";
-    private static final String PRODUCTNAME_COL = "productname";
-    private static final String PRODUCTPRICE_COL = "productprice";
+
+    // inventory table should just have a foreign key that is from Item (please refer to its attributes)
+    // also naming convention should be item, not product.
+    // will also remove the implementation of category.
+
+    private static final String INVENTORYID_COL = "inventoryId";
     private static final String STOCKQUANTITY_COL = "stockquantity";
-    private static final String CATEGORY_COL = "category";
-    private static final String MINIMUMSTOCKQUANTITY_COL = "MinimumStockQuantity";
+    private static final String MINIMUMSTOCKQUANTITY_COL = "minimumStockQuantity";
+
 
     // creating constructor for database.
-    public PicSellApplicationDatabase(SelectItem context) {super(context, DB_NAME, null, DB_VERSION);}
-    public PicSellApplicationDatabase(InventoryView inventoryView) {super(inventoryView, DB_NAME, null, DB_VERSION);}
-    public PicSellApplicationDatabase(AddInventoryItemView addInventoryItemView) {super(addInventoryItemView, DB_NAME, null, DB_VERSION);}
-    public PicSellApplicationDatabase(RemoveInventoryItemView removeInventoryItemView) {super(removeInventoryItemView,DB_NAME, null, DB_VERSION);}
-    public PicSellApplicationDatabase(UpdateInventoryItemView updateInventoryItemView) {super(updateInventoryItemView,DB_NAME, null, DB_VERSION);}
+//    public PicSellApplicationDatabase(SelectItem context) {super(context, DB_NAME, null, DB_VERSION);}
+//    public PicSellApplicationDatabase(InventoryView inventoryView) {super(inventoryView, DB_NAME, null, DB_VERSION);}
+//    public PicSellApplicationDatabase(AddInventoryItemView addInventoryItemView) {super(addInventoryItemView, DB_NAME, null, DB_VERSION);}
+//    public PicSellApplicationDatabase(RemoveInventoryItemView removeInventoryItemView) {super(removeInventoryItemView,DB_NAME, null, DB_VERSION);}
+//    public PicSellApplicationDatabase(UpdateInventoryItemView updateInventoryItemView) {super(updateInventoryItemView,DB_NAME, null, DB_VERSION);}
     public PicSellApplicationDatabase(Context context){
         super(context, DB_NAME, null, DB_VERSION);
     }
@@ -52,17 +69,35 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
                 + USERNAME_COL + " TEXT,"
                 + PASSWORD_COL + " TEXT)";
 
-        String query1 = "CREATE TABLE " + TABLE_INVENTORY + " ("
-                + PRODUCTID_COL + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + PRODUCTNAME_COL + " TEXT, "
-                + PRODUCTPRICE_COL + " REAL, "
+        String createInventoryTable = "CREATE TABLE " + TABLE_INVENTORY + " ("
+                + INVENTORYID_COL + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + STOCKQUANTITY_COL + " INTEGER, "
-                + CATEGORY_COL + " TEXT, "
-                + MINIMUMSTOCKQUANTITY_COL + " INTEGER); ";
+                + MINIMUMSTOCKQUANTITY_COL + " INTEGER, "
+                + ITEMID_COL + " INTEGER, FOREIGN KEY (" + ITEMID_COL + ") REFERENCES "
+                + TABLE_ITEM + "(" + ITEMID_COL + ") )";
+
+        String createItemTable = "CREATE TABLE " + TABLE_ITEM + " ("
+                + ITEMID_COL + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + ITEMNAME_COL + " TEXT, "
+                + COST_COL + " REAL, "
+                + PRICE_COL + " REAL)";
+
+        String createSalesTable = "CREATE TABLE " + TABLE_SALES + " ("
+                + SALESID_COL + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + ITEMNAME_COL + " TEXT, "
+                + QUANTITY_COL + " INTEGER, "
+                + DATESOLD_COL + " INTEGER, "
+                + COST_COL + " REAL, "
+                + PRICE_COL + " REAL)";
         // calling exec sql method to execute above sql query
+
         db.execSQL(query);
-        db.execSQL(query1);
+        db.execSQL(createInventoryTable);
+        db.execSQL(createItemTable);
+        db.execSQL(createSalesTable);
     }
+
+    // USER DATABASE QUERIES
 
     public void addNewUser(String storeName, String userName, String passWord) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -99,7 +134,7 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
     // for login, check credentials
     public boolean verifyCredentials(String username, String password) {
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery("Select * From Users Where Username = ? and Password = ?",
+        Cursor cursor = db.rawQuery("Select * From Users Where username = ? and password = ?",
                 new String[]{username, password});
 
         if (cursor.getCount() > 0) {
@@ -139,7 +174,7 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         values.put(PASSWORD_COL, passWord);
 
         // update values with condition that UserID must match the provided UserID
-        db.update(TABLE_USER, values, "Username?", new String[] {originalUsername});
+        db.update(TABLE_USER, values, "username=?", new String[] {originalUsername});
         db.close();
     }
 
@@ -147,16 +182,137 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         SQLiteDatabase db = this.getWritableDatabase();
 
         //delete records with condition that the record's UserID matched the provided UserID
-        db.delete(TABLE_USER, "Username", new String[] {username});
+        db.delete(TABLE_USER, "username", new String[] {username});
         db.close();
     }
+    // ITEM DATABASE QUERIES
 
-    public void addNewProduct(String productName, double price, int stocks,int minimumStock, String category){
+    public String addNewItem(Item item) {
+        Boolean isUnique = isItemUnique(item.getItemName());
+
+        if(!isUnique)
+            return "Item already exists.";
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+
+        values.put(ITEMNAME_COL, item.getItemName());
+        values.put(COST_COL, item.getCost());
+        values.put(PRICE_COL, item.getPrice());
+
+        // inset values to the Users table
+        long result =  db.insert(TABLE_ITEM, null, values);
+        db.close();
+
+        if(result == -1) // error happened during insertion
+            return "Error during insertion";
+
+        return "Insertion was a success.";
+    }
+    public boolean isItemUnique(String itemName){
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        String sql = "SELECT * FROM " + TABLE_ITEM + " WHERE " + ITEMNAME_COL + " = '" + itemName + "'";
+        Cursor cursor = db.rawQuery(sql, null);
+
+        if(cursor.moveToFirst()){
+            cursor.close();
+            return false;
+        }
+        return true;
+    }
+    public Item getItem(int itemId){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String sql = "SELECT * FROM " + TABLE_ITEM + " WHERE " + ITEMID_COL + " = " + itemId;
+        Cursor cursor = db.rawQuery(sql, null);
+        Item temp = new Item();
+        if(cursor.moveToFirst()){
+            temp.setItemId(cursor.getInt(0));
+            temp.setItemName(cursor.getString(1));
+            temp.setCost(cursor.getDouble(2));
+            temp.setPrice(cursor.getDouble(3));
+        }
+        cursor.close();
+        return temp;
+    }
+
+    public Item getItem(String itemName){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String sql = "SELECT * FROM " + TABLE_ITEM + " WHERE " + ITEMNAME_COL + " = '" + itemName + "'";
+        Cursor cursor = db.rawQuery(sql, null);
+        Item temp = new Item();
+        if(cursor.moveToFirst()){
+            temp.setItemId(cursor.getInt(0));
+            temp.setItemName(cursor.getString(1));
+            temp.setCost(cursor.getDouble(2));
+            temp.setPrice(cursor.getDouble(3));
+        }
+        cursor.close();
+        return temp;
+    }
+
+    public int getItemId(String itemName){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String sql = "SELECT itemId FROM " + TABLE_ITEM + " WHERE " + ITEMNAME_COL + " = '" + itemName + "'";
+        Cursor cursor = db.rawQuery(sql, null);
+
+
+        if(cursor.moveToFirst()){
+            int id = cursor.getInt(0);
+            cursor.close();
+            return id;
+        }
+        return -1;
+    }
+
+    // INVENTORY DATABASE QUERIES
+    public boolean addItemToInventory(InventoryModel inventory){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+
+        long result2 = -1;
+
+        values.put(STOCKQUANTITY_COL, inventory.getStockQuantity());
+        values.put(MINIMUMSTOCKQUANTITY_COL, inventory.getMinimumStockQuantity());
+        values.put(ITEMID_COL, inventory.getItemId());
+
+        result2 = db.insert(TABLE_INVENTORY, null, values);
+        db.close();
+
+        if(result2 == -1)
+            return false;
+
+        return true;
+    }
+
+    public List<InventoryModel> getInventoryItems(){
+        List<InventoryModel> inventoryList = new ArrayList<InventoryModel>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM Inventory", null);
+
+        if(cursor.moveToFirst()){
+            do{
+                Item item = getItem(cursor.getInt(3));
+                InventoryModel temp = new InventoryModel();
+
+                temp.setItem(item);
+                temp.setStockQuantity(cursor.getInt(1));
+                temp.setMinimumStockQuantity(cursor.getInt(2));
+
+                inventoryList.add(temp);
+            }while(cursor.moveToNext());
+        }
+        cursor.close();
+        db.close();
+        return inventoryList;
+    }
+    /*
+    public void addNewItem(String item, double price, int stocks, int minimumStock, String category){
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
 
-        values.put(PRODUCTNAME_COL, productName);
+        values.put(PRODUCTNAME_COL, item);
         values.put(PRODUCTPRICE_COL, price);
         values.put(STOCKQUANTITY_COL, stocks);
         values.put(MINIMUMSTOCKQUANTITY_COL, minimumStock);
@@ -180,6 +336,8 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         db.update(TABLE_INVENTORY, values, "productname=?", new String[]{originalProductName});
     }
 
+
+
     public void removeInventory(String productName) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -187,11 +345,10 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         db.delete(TABLE_INVENTORY, "productname=?", new String[]{productName});
 //        db.close();
     }
-
-
-    public boolean checkproduct(String productName){
+    */
+    public boolean checkProduct(String productName){
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery("select * from inventory where productname=?", new String[]{productName});
+        Cursor cursor = db.rawQuery("select * from Inventory where productname=?", new String[]{productName});
         if(cursor.getCount()>0) {
             cursor.close();
             return true;
@@ -201,7 +358,7 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
             return false;
         }
     }
-
+    /*
     public ArrayList<InventoryModel> readInventory() {
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -307,11 +464,113 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         cursorInventory.close();
         return inventoryModalArrayList;
     }
+    */
     public void closeDB() {
         SQLiteDatabase db = this.getReadableDatabase();
         if (db != null && db.isOpen())
             db.close();
     }
+
+    // SALES DATABASE QUERIES
+    public Cursor getSoldItems(int startDate, int endDate){
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        String sql = "SELECT ItemName, Quantity, Cost, Price FROM Sales WHERE" +
+                " DateSold >= " + startDate + " AND" +
+                " DateSold <= " + endDate;
+
+        Cursor cursor = db.rawQuery(sql, null);
+        return cursor;
+    }
+
+    public String addItemToSales(SalesModel sales){
+        SQLiteDatabase read = this.getReadableDatabase();
+        SQLiteDatabase write = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+
+        long result = -1;
+        String returnMsg = "";
+
+        int thisItemId = getItemId(sales.getItemName());
+
+        // check if stock > than the checkout quantity of the item
+        Cursor inventoryCursor = read.rawQuery("SELECT stockQuantity, minimumStockQuantity FROM Inventory WHERE itemId = " + thisItemId, null);
+        int stock = -1;
+
+        if(inventoryCursor.moveToFirst())
+            stock = inventoryCursor.getInt(0);
+
+        if(stock < sales.getQuantity())
+            return "Not enough stock for item " + sales.getItemName() + " Stock " + stock;
+
+        // check if same item is sold within the day, if yes just update its quantity sold
+        String sql2 = "SELECT Quantity FROM " + TABLE_SALES + " WHERE "
+                + DATESOLD_COL + " = " + sales.getDateSold()
+                + " AND ItemName = '" + sales.getItemName() + "'" ;
+
+        Cursor salesCursor = read.rawQuery(sql2, null);
+
+        if(salesCursor.moveToFirst()){
+            // get quantity from db and increment it with the user-input quantity
+            int dbQuantity = salesCursor.getInt(0);
+
+            // increment db quantity with user-input quantity
+            values.put(QUANTITY_COL, (sales.getQuantity() + dbQuantity));
+            String dateSoldToString = String.valueOf(sales.getDateSold());
+            result = write.update(TABLE_SALES, values, "DateSold = ?", new String[]{ dateSoldToString });
+
+            if(result == -1) returnMsg = "Error during update process.";
+            else returnMsg = "Update process successful.";
+        }
+        else{ // first item to be sold today
+            // insert new record to sales table
+            values.put(ITEMNAME_COL, sales.getItemName());
+            values.put(QUANTITY_COL, sales.getQuantity());
+            values.put(DATESOLD_COL, sales.getDateSold());
+            values.put(COST_COL, sales.getCost());
+            values.put(PRICE_COL, sales.getPrice());
+
+            result = write.insert(TABLE_SALES, null, values);
+
+            if(result == -1) returnMsg = "Error during insertion process.";
+            else returnMsg = "Insertion process successful.";
+        }
+        // update the stock quantity in Sales table
+        if(result != -1){
+            values.clear();
+            values.put(STOCKQUANTITY_COL, (stock - sales.getQuantity()));
+            String itemIdtoString = String.valueOf(thisItemId);
+            result = write.update(TABLE_INVENTORY, values, "itemId = ?", new String[]{ itemIdtoString });
+
+            if(result == -1) returnMsg = "Error during insertion process.";
+            else returnMsg = "Insertion process successful.";
+        }
+
+        inventoryCursor.close();
+        salesCursor.close();
+
+        write.close();
+        read.close();
+        return returnMsg;
+    }
+
+    public boolean deleteSalesRecords(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        int result = db.delete(TABLE_SALES,null,null);
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
+    public boolean deleteItemRecords(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        int result = db.delete(TABLE_ITEM,null,null);
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
+
 
 
     @Override

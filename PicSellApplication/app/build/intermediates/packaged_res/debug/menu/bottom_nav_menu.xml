@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/inventoryView2"
+        android:title="Inventory"
+        android:icon="@drawable/inventory"/>
+
+    <item
+        android:id="@+id/salesView"
+        android:title="Sales"
+        android:icon="@drawable/sales"/>
+
+    <item
+        android:id="@+id/checkoutView"
+        android:title="Checkout"
+        android:icon="@drawable/checkout"/>
+
+    <item
+        android:id="@+id/profileView"
+        android:title="Profile"
+        android:icon="@drawable/user"/>
+</menu>

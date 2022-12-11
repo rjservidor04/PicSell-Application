@@ -12,4 +12,7 @@
     <color name="orange_300">#FFFCD299</color>
     <color name="blue_100">#FF3F51B5</color>
 
+    <color name="gold_orange">#FF9913</color>
+    <color name="light_gray">#e7e7e7</color>
+
 </resources>
