@@ -21,6 +21,27 @@
         android:testOnly="true"
         android:theme="@style/Theme.PicSellApplication" >
         <activity
+            android:name="com.example.picsellapplication.ChangePasswordView"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.picsellapplication.ChangeProfileDetailsView"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.picsellapplication.UserProfileView"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.picsellapplication.LoginController"
             android:exported="true"
             android:label="@string/app_name"

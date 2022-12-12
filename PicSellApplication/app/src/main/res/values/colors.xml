@@ -11,5 +11,8 @@
     <color name="orange_200">#FFE68910</color>
     <color name="orange_300">#FFFCD299</color>
     <color name="blue_100">#FF3F51B5</color>
+    <color name="orange">#F9A826</color>
+    <color name="gray">#707070</color>
+    <color name="orange2">#F3B872</color>
 
 </resources>

@@ -269,6 +269,20 @@ int attr circularflow_defaultAngle 0x7f0400c1
 int attr circularflow_defaultRadius 0x7f0400c2
 int attr circularflow_radiusInDP 0x7f0400c3
 int attr circularflow_viewCenter 0x7f0400c4
+int attr civ_border 0x7f040478
+int attr civ_border_color 0x7f040479
+int attr civ_border_color_direction 0x7f04047a
+int attr civ_border_color_end 0x7f04047b
+int attr civ_border_color_start 0x7f04047c
+int attr civ_border_width 0x7f04047d
+int attr civ_circle_color 0x7f04047e
+int attr civ_circle_color_direction 0x7f04047f
+int attr civ_circle_color_end 0x7f040480
+int attr civ_circle_color_start 0x7f040481
+int attr civ_shadow 0x7f040482
+int attr civ_shadow_color 0x7f040483
+int attr civ_shadow_gravity 0x7f040484
+int attr civ_shadow_radius 0x7f040485
 int attr clearTop 0x7f0400c5
 int attr clearsTag 0x7f0400c6
 int attr clickAction 0x7f0400c7
@@ -1313,6 +1327,7 @@ int color error_color_material_dark 0x7f06005a
 int color error_color_material_light 0x7f06005b
 int color foreground_material_dark 0x7f06005c
 int color foreground_material_light 0x7f06005d
+int color gray 0x7f06025e
 int color highlighted_text_material_dark 0x7f06005e
 int color highlighted_text_material_light 0x7f06005f
 int color m3_appbar_overlay_color 0x7f060060
@@ -1790,6 +1805,8 @@ int color mtrl_textinput_focused_box_stroke_color 0x7f060237
 int color mtrl_textinput_hovered_box_stroke_color 0x7f060238
 int color notification_action_color_filter 0x7f060239
 int color notification_icon_bg_color 0x7f06023a
+int color orange 0x7f06025f
+int color orange2 0x7f060260
 int color orange_100 0x7f06023b
 int color orange_200 0x7f06023c
 int color orange_300 0x7f06023d
@@ -2510,6 +2527,9 @@ int drawable design_ic_visibility_off 0x7f080062
 int drawable design_password_eye 0x7f080063
 int drawable design_snackbar_background 0x7f080064
 int drawable gradient_account_background 0x7f080065
+int drawable ic_baseline_password_24 0x7f0800a0
+int drawable ic_baseline_person_24 0x7f0800a1
+int drawable ic_baseline_store_24 0x7f0800a2
 int drawable ic_clock_black_24dp 0x7f080066
 int drawable ic_keyboard_black_24dp 0x7f080067
 int drawable ic_launcher_background 0x7f080068
@@ -2563,6 +2583,7 @@ int drawable notification_template_icon_low_bg 0x7f080097
 int drawable notification_tile_bg 0x7f080098
 int drawable notify_panel_notification_icon_bg 0x7f080099
 int drawable picsell_logo 0x7f08009a
+int drawable profilepic 0x7f0800a3
 int drawable rounded_buttons 0x7f08009b
 int drawable test_custom_background 0x7f08009c
 int drawable test_level_drawable 0x7f08009d
@@ -2675,14 +2696,20 @@ int id beginning 0x7f090067
 int id bestChoice 0x7f090068
 int id blocking 0x7f090069
 int id bottom 0x7f09006a
+int id bottom_to_top 0x7f090250
 int id bounce 0x7f09006b
 int id bounceBoth 0x7f09006c
 int id bounceEnd 0x7f09006d
 int id bounceStart 0x7f09006e
 int id btnAdd 0x7f09006f
 int id btnAddItem 0x7f090070
+int id btnBack 0x7f09023b
 int id btnBeverage 0x7f090071
+int id btnCancelChangePassword 0x7f09023c
+int id btnCancelChangeProfileDetails 0x7f09023d
 int id btnCandies 0x7f090072
+int id btnChangePasswordDetails 0x7f090251
+int id btnChangeProfileDetails 0x7f09023e
 int id btnHome 0x7f090073
 int id btnJunkFoods 0x7f090074
 int id btnLogin 0x7f090075
@@ -2693,6 +2720,8 @@ int id btnSelect 0x7f090079
 int id btnSelectItem 0x7f09007a
 int id btnUpdate 0x7f09007b
 int id btnUpdateItem 0x7f09007c
+int id btnUpdatePassword 0x7f090240
+int id btnUpdateProfileDetails 0x7f090241
 int id buttonPanel 0x7f09007d
 int id cache_measures 0x7f09007e
 int id callMeasure 0x7f09007f
@@ -2779,7 +2808,10 @@ int id end 0x7f0900cf
 int id endToStart 0x7f0900d0
 int id enterAlways 0x7f0900d1
 int id enterAlwaysCollapsed 0x7f0900d2
+int id etChangeNewPassword 0x7f090242
+int id etChangeUsername 0x7f090245
 int id etConfirmPassword 0x7f0900d3
+int id etCurrentPassword 0x7f090246
 int id etItemName 0x7f0900d4
 int id etItemname 0x7f0900d5
 int id etItemprice 0x7f0900d6
@@ -2787,6 +2819,7 @@ int id etItemstocks 0x7f0900d7
 int id etMinimum 0x7f0900d8
 int id etPassword 0x7f0900d9
 int id etPrice 0x7f0900da
+int id etRetypeNewPassword 0x7f090247
 int id etStocks 0x7f0900db
 int id etStoreName 0x7f0900dc
 int id etUsername 0x7f0900dd
@@ -2864,10 +2897,12 @@ int id labeled 0x7f090124
 int id layout 0x7f090125
 int id left 0x7f090126
 int id leftToRight 0x7f090127
+int id left_to_right 0x7f090252
 int id legacy 0x7f090128
 int id line1 0x7f090129
 int id line3 0x7f09012a
 int id linear 0x7f09012b
+int id linearLayout 0x7f090253
 int id listMode 0x7f09012c
 int id list_item 0x7f09012d
 int id locale 0x7f09012e
@@ -2968,6 +3003,7 @@ int id path 0x7f09018c
 int id pathRelative 0x7f09018d
 int id peekHeight 0x7f09018e
 int id percent 0x7f09018f
+int id picture 0x7f090254
 int id pin 0x7f090190
 int id position 0x7f090191
 int id postLayout 0x7f090192
@@ -2983,6 +3019,7 @@ int id right 0x7f09019b
 int id rightToLeft 0x7f09019c
 int id right_icon 0x7f09019d
 int id right_side 0x7f09019e
+int id right_to_left 0x7f090255
 int id rounded 0x7f09019f
 int id row_index_key 0x7f0901a0
 int id rtl 0x7f0901a1
@@ -3098,6 +3135,7 @@ int id title_template 0x7f09020e
 int id toggle 0x7f09020f
 int id top 0x7f090210
 int id topPanel 0x7f090211
+int id top_to_bottom 0x7f090256
 int id touch_outside 0x7f090212
 int id transitionToEnd 0x7f090213
 int id transitionToStart 0x7f090214
@@ -3112,10 +3150,14 @@ int id tvLogoName2 0x7f09021c
 int id tvLogoName3 0x7f09021d
 int id tvLogoName4 0x7f09021e
 int id tvLogoName5 0x7f09021f
+int id tvLogout 0x7f090257
+int id tvPassword 0x7f09024c
 int id tvProductName 0x7f090220
 int id tvRegister 0x7f090221
+int id tvStoreName 0x7f09024d
 int id tvTagline 0x7f090222
 int id tvTagline2 0x7f090223
+int id tvUsername 0x7f09024f
 int id unchecked 0x7f090224
 int id uniform 0x7f090225
 int id unlabeled 0x7f090226
@@ -3234,6 +3276,8 @@ int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
 int layout addinventoryitem_view 0x7f0c001c
 int layout cat_dropdown 0x7f0c001d
+int layout changepassword_view 0x7f0c007f
+int layout changeprofiledetails_view 0x7f0c0080
 int layout custom_dialog 0x7f0c001e
 int layout design_bottom_navigation_item 0x7f0c001f
 int layout design_bottom_sheet_dialog 0x7f0c0020
@@ -3331,6 +3375,7 @@ int layout text_view_with_line_height_from_style 0x7f0c007b
 int layout text_view_with_theme_line_height 0x7f0c007c
 int layout text_view_without_line_height 0x7f0c007d
 int layout updateinventoryitem_view 0x7f0c007e
+int layout userprofile_view 0x7f0c0081
 int menu menu_main 0x7f0d0000
 int mipmap ic_launcher 0x7f0e0000
 int mipmap ic_launcher_round 0x7f0e0001
@@ -4935,6 +4980,21 @@ int styleable ChipGroup_chipSpacingVertical 3
 int styleable ChipGroup_selectionRequired 4
 int styleable ChipGroup_singleLine 5
 int styleable ChipGroup_singleSelection 6
+int[] styleable CircularImageView { 0x7f040478, 0x7f040479, 0x7f04047a, 0x7f04047b, 0x7f04047c, 0x7f04047d, 0x7f04047e, 0x7f04047f, 0x7f040480, 0x7f040481, 0x7f040482, 0x7f040483, 0x7f040484, 0x7f040485 }
+int styleable CircularImageView_civ_border 0
+int styleable CircularImageView_civ_border_color 1
+int styleable CircularImageView_civ_border_color_direction 2
+int styleable CircularImageView_civ_border_color_end 3
+int styleable CircularImageView_civ_border_color_start 4
+int styleable CircularImageView_civ_border_width 5
+int styleable CircularImageView_civ_circle_color 6
+int styleable CircularImageView_civ_circle_color_direction 7
+int styleable CircularImageView_civ_circle_color_end 8
+int styleable CircularImageView_civ_circle_color_start 9
+int styleable CircularImageView_civ_shadow 10
+int styleable CircularImageView_civ_shadow_color 11
+int styleable CircularImageView_civ_shadow_gravity 12
+int styleable CircularImageView_civ_shadow_radius 13
 int[] styleable CircularProgressIndicator { 0x7f040203, 0x7f040205, 0x7f040206 }
 int styleable CircularProgressIndicator_indicatorDirectionCircular 0
 int styleable CircularProgressIndicator_indicatorInset 1

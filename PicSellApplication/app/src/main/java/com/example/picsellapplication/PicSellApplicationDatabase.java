@@ -130,6 +130,31 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         }
     }
 
+    //for changing profile details (storename and username)
+    public void changeUser(String originalUsername, String storeName, String userName){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+
+        values.put(STORENAME_COL, storeName);
+        values.put(USERNAME_COL, userName);
+
+        // update values with condition that UserID must match the provided UserID
+        db.update(TABLE_USER, values, "Username?", new String[] {originalUsername});
+//        db.close();
+    }
+
+    //for changing password
+    public void changePass(String originalUsername, String newPassword){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+
+        values.put(PASSWORD_COL, newPassword);
+
+        // update values with condition that UserID must match the provided UserID
+        db.update(TABLE_USER, values, "Username?", new String[] {originalUsername});
+//        db.close();
+    }
+
     public void updateUser(String originalUsername, String storeName, String userName, String passWord){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -140,7 +165,7 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
 
         // update values with condition that UserID must match the provided UserID
         db.update(TABLE_USER, values, "Username?", new String[] {originalUsername});
-        db.close();
+//        db.close();
     }
 
     public void deleteUser(String username){
@@ -148,7 +173,7 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
 
         //delete records with condition that the record's UserID matched the provided UserID
         db.delete(TABLE_USER, "Username", new String[] {username});
-        db.close();
+//        db.close();
     }
 
     public void addNewProduct(String productName, double price, int stocks,int minimumStock, String category){
@@ -186,6 +211,21 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         // calling a method to delete a product and comparing it with productNname
         db.delete(TABLE_INVENTORY, "productname=?", new String[]{productName});
 //        db.close();
+    }
+
+    //for changing profile details (username duplicate check)
+    public boolean checkusername(String username){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("select * from Users where Username = ?",
+                new String[]{username});
+        if(cursor.getCount()>0) {
+            cursor.close();
+            return true;
+        }
+        else {
+            cursor.close();
+            return false;
+        }
     }
 
 

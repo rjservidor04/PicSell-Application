@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.picsellapplication.app-mergeDebugResources-39:/values-v18/values-v18.xml",
+            "outputFile": "com.example.picsellapplication.app-mergeDebugResources-40:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sinon\\.gradle\\caches\\transforms-3\\034f511a629c0fda711794a09fef4382\\transformed\\appcompat-1.5.1\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\IanLloyd\\.gradle\\caches\\transforms-3\\034f511a629c0fda711794a09fef4382\\transformed\\appcompat-1.5.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
