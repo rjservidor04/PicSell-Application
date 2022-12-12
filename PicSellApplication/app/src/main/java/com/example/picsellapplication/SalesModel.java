@@ -34,6 +34,7 @@ public class SalesModel {
         sales.setPrice(item.getPrice());
         return db.addItemToSales(sales);
     }
+
     public String addNewItem(Item item){
         return db.addNewItem(item);
     }

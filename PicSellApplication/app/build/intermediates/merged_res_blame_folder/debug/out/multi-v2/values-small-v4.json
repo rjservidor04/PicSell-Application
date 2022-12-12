@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.picsellapplication.app-mergeDebugResources-39:/values-small-v4/values-small-v4.xml",
+            "outputFile": "com.example.picsellapplication.app-mergeDebugResources-41:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Rd\\.gradle\\caches\\transforms-3\\bd4a99450df9efa1e9019504ea56c77f\\transformed\\material-1.6.1\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\acer\\.gradle\\caches\\transforms-3\\cf199b73e85c40708ab42c5f13bad77e\\transformed\\material-1.6.1\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

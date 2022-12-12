@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -22,7 +23,10 @@ public final class FragmentCheckoutViewBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final Button btnSubmit;
+  public final Button btnCheckout;
+
+  @NonNull
+  public final Button btnTakePicture;
 
   @NonNull
   public final TextInputEditText etItem;
@@ -36,15 +40,21 @@ public final class FragmentCheckoutViewBinding implements ViewBinding {
   @NonNull
   public final TextInputLayout ftvQuantity;
 
-  private FragmentCheckoutViewBinding(@NonNull FrameLayout rootView, @NonNull Button btnSubmit,
-      @NonNull TextInputEditText etItem, @NonNull TextInputEditText etQuantity,
-      @NonNull TextInputLayout ftvItem, @NonNull TextInputLayout ftvQuantity) {
+  @NonNull
+  public final ImageView imgViewPicture;
+
+  private FragmentCheckoutViewBinding(@NonNull FrameLayout rootView, @NonNull Button btnCheckout,
+      @NonNull Button btnTakePicture, @NonNull TextInputEditText etItem,
+      @NonNull TextInputEditText etQuantity, @NonNull TextInputLayout ftvItem,
+      @NonNull TextInputLayout ftvQuantity, @NonNull ImageView imgViewPicture) {
     this.rootView = rootView;
-    this.btnSubmit = btnSubmit;
+    this.btnCheckout = btnCheckout;
+    this.btnTakePicture = btnTakePicture;
     this.etItem = etItem;
     this.etQuantity = etQuantity;
     this.ftvItem = ftvItem;
     this.ftvQuantity = ftvQuantity;
+    this.imgViewPicture = imgViewPicture;
   }
 
   @Override
@@ -74,9 +84,15 @@ public final class FragmentCheckoutViewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnSubmit;
-      Button btnSubmit = ViewBindings.findChildViewById(rootView, id);
-      if (btnSubmit == null) {
+      id = R.id.btnCheckout;
+      Button btnCheckout = ViewBindings.findChildViewById(rootView, id);
+      if (btnCheckout == null) {
+        break missingId;
+      }
+
+      id = R.id.btnTakePicture;
+      Button btnTakePicture = ViewBindings.findChildViewById(rootView, id);
+      if (btnTakePicture == null) {
         break missingId;
       }
 
@@ -104,8 +120,14 @@ public final class FragmentCheckoutViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentCheckoutViewBinding((FrameLayout) rootView, btnSubmit, etItem, etQuantity,
-          ftvItem, ftvQuantity);
+      id = R.id.imgViewPicture;
+      ImageView imgViewPicture = ViewBindings.findChildViewById(rootView, id);
+      if (imgViewPicture == null) {
+        break missingId;
+      }
+
+      return new FragmentCheckoutViewBinding((FrameLayout) rootView, btnCheckout, btnTakePicture,
+          etItem, etQuantity, ftvItem, ftvQuantity, imgViewPicture);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

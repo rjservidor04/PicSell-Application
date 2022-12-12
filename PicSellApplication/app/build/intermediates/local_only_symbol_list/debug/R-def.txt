@@ -44,6 +44,7 @@ id action_settings
 id addinventoryitem_view
 id bottomNavigationView
 id btnAdd
+id btnCheckout
 id btnDelete
 id btnLogin
 id btnNewItem
@@ -51,7 +52,7 @@ id btnRegister
 id btnRemove
 id btnSelect
 id btnSelectItem
-id btnSubmit
+id btnTakePicture
 id btnUpdate
 id checkoutView
 id datePicker_month
@@ -96,6 +97,7 @@ id imageView3
 id imageView4
 id imgEndDate
 id imgStartDate
+id imgViewPicture
 id inventoryView2
 id inventory_recycler_view
 id layoutCost

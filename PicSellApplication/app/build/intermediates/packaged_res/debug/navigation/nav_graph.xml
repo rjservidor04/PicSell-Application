@@ -31,7 +31,7 @@
         android:id="@+id/InventoryView"
         android:name="com.example.picsellapplication.RegisterController"
         android:label="Register View"
-        tools:layout="@layout/inventory_view">
+        tools:layout="@layout/fragment_inventory_view">
 
         <action
             android:id="@+id/action_InventoryView_to_Views"
@@ -43,7 +43,7 @@
 
     <fragment
         android:id="@+id/AddInventoryItemView"
-        android:name="com.example.picsellapplication.AddInventoryItemView"
+        android:name="com.example.picsellapplication.AddInventoryItemController"
         android:label="Add Inventory Item View"
         tools:layout="@layout/addinventoryitem_view">
 

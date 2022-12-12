@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/checkoutView"
-        android:name="com.example.picsellapplication.CheckoutView"
+        android:name="com.example.picsellapplication.CheckoutController"
         android:label="Checkout"
         tools:layout="@layout/fragment_checkout_view" />
     <fragment
@@ -23,7 +23,7 @@
         tools:layout="@layout/fragment_profile_view" />
     <fragment
         android:id="@+id/inventoryView2"
-        android:name="com.example.picsellapplication.InventoryView"
+        android:name="com.example.picsellapplication.InventoryController"
         android:label="fragment_inventory_view"
         tools:layout="@layout/fragment_inventory_view" />
 </navigation>

@@ -6,6 +6,7 @@ import android.os.Parcelable;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class InventoryModel implements Parcelable {
@@ -77,12 +78,36 @@ public class InventoryModel implements Parcelable {
         return 0;
     }
 
+    public ArrayList<String> getItemNames() {
+        List<InventoryModel> list = dbHandler.getInventoryItems();
+        ArrayList<String> nameList = new ArrayList<String>();
+
+       for(int i = 0; i < list.size(); i++){
+           InventoryModel temp = list.get(i);
+           nameList.add(temp.getItem().getItemName());
+       }
+
+       return nameList;
+    }
+
     @Override
     public void writeToParcel(Parcel parcel, int i) {
         parcel.writeInt(inventoryId);
         parcel.writeInt(minimumStockQuantity);
         parcel.writeInt(stockQuantity);
         parcel.writeInt(itemId);
+    }
+
+    public int getStockQuantityFromItemName(String itemName) {
+        List<InventoryModel> list = dbHandler.getInventoryItems();
+
+        for(int i = 0; i < list.size(); i++){
+            if(list.get(i).getItem().getItemName() == itemName) {
+                return list.get(i).getStockQuantity();
+            }
+        }
+
+        return -1;
     }
 
     public Item getItem() {
@@ -116,6 +141,7 @@ public class InventoryModel implements Parcelable {
     public void setStockQuantity(int stockQuantity) {
         this.stockQuantity = stockQuantity;
     }
+
     public int getItemId() {
         return itemId;
     }
