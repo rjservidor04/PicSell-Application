@@ -2738,9 +2738,6 @@ id btnDelete
 id btnLogin
 id btnNewItem
 id btnRegister
-id btnRemove
-id btnSelect
-id btnSelectItem
 id btnTakePicture
 id btnUpdate
 id buttonPanel
@@ -2839,9 +2836,6 @@ id etCost_Details
 id etItem
 id etItemName
 id etItemName_Details
-id etItemname
-id etItemprice
-id etItemstocks
 id etMinimum
 id etMinimum_Details
 id etPassword
@@ -2898,7 +2892,6 @@ id horizontal_only
 id icon
 id icon_group
 id icon_only
-id idRVSelect
 id idTVCategory
 id idTVProductID
 id idTVProductName
@@ -2909,10 +2902,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
-id imageView1
 id imageView2
-id imageView3
-id imageView4
 id imgEndDate
 id imgStartDate
 id imgViewPicture
@@ -3053,7 +3043,6 @@ id ratio
 id rectangles
 id recycler_view
 id register_view
-id removeImageView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3150,14 +3139,10 @@ id test_radiobutton_app_button_tint
 id text
 id text2
 id textEnd
-id textInputLayout4
-id textInputLayout5
-id textInputLayout6
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView6
 id text_input_end_icon
 id text_input_error_icon
@@ -3196,11 +3181,8 @@ id tvInventoryQuantity
 id tvItem
 id tvLogoName
 id tvLogoName2
-id tvLogoName3
-id tvLogoName4
 id tvMore
 id tvPrice
-id tvProductName
 id tvQty
 id tvRegister
 id tvResult
@@ -3336,7 +3318,6 @@ layout activity_main_fragment
 layout activity_month_year_dialog
 layout activity_year_picker_dialog
 layout addinventoryitem_view
-layout cat_dropdown
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3415,12 +3396,10 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout register_view
-layout removeinventoryitem_view
 layout sales_table_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
-layout select_item
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_chip_zero_corner_radius
@@ -3438,7 +3417,6 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-layout updateinventoryitem_view
 layout view_item_details
 menu bottom_nav_menu
 menu menu_main

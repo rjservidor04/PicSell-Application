@@ -2,12 +2,17 @@ package com.example.picsellapplication;
 
 import static android.app.Activity.RESULT_OK;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.Fragment;
 
 import android.provider.MediaStore;
@@ -81,6 +86,19 @@ public class CheckoutController extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = "test";
+            String description = "testtest";
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel("test", name, importance);
+            channel.setDescription(description);
+            // Register the channel with the system; you can't change the importance
+            // or other notification behaviors after this
+            NotificationManager notificationManager = getActivity().getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+
+
     }
 
     @Override
@@ -110,6 +128,16 @@ public class CheckoutController extends Fragment {
                     try{
                         int quantity = Integer.parseInt(etQuantity.getText().toString());
                         msg = addItemToSales(itemName, quantity);
+                        if(inventoryModel.getStockQuantityFromItemName(itemName) <= inventoryModel.getMinimumStockQuantityFromItemName(itemName)) {
+                            NotificationCompat.Builder builder = new NotificationCompat.Builder(getActivity(), "test");
+                            builder.setContentTitle("Item Almost Out!");
+                            builder.setContentText("The following item " + itemName + " has almost ran out! Try restocking in Inventory.");
+                            builder.setSmallIcon(R.drawable.picsell_logo);
+                            builder.setAutoCancel(true);
+
+                            NotificationManagerCompat managerCompat = NotificationManagerCompat.from(getActivity());
+                            managerCompat.notify(1, builder.build());
+                        }
                     }
                     catch(Exception e){
                         msg = e.toString();
