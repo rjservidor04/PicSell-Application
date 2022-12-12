@@ -66,6 +66,22 @@ public class InventoryModel implements Parcelable {
             return false;
     }
 
+    public void UpdateInventoryItem(InventoryModel inventory){
+        int id = dbHandler.getItemId(inventory.getItem().getItemName());
+        inventory.setItemId(id);
+        dbHandler.updateInventory(inventory);
+        dbHandler.updateItem(inventory.getItem());
+        return;
+    }
+
+    public void RemoveInventoryItem(InventoryModel inventory){
+        int id = dbHandler.getItemId(inventory.getItem().getItemName());
+        inventory.setItemId(id);
+        dbHandler.removeInventory(inventory);
+        dbHandler.removeItem(inventory.getItem());
+        return;
+    }
+
     public List<InventoryModel> getInventoryItems(){
         return dbHandler.getInventoryItems();
     }
@@ -99,15 +115,28 @@ public class InventoryModel implements Parcelable {
     }
 
     public int getStockQuantityFromItemName(String itemName) {
+        int id = dbHandler.getItemId(itemName);
         List<InventoryModel> list = dbHandler.getInventoryItems();
 
         for(int i = 0; i < list.size(); i++){
-            if(list.get(i).getItem().getItemName() == itemName) {
+            if(list.get(i).getItemId() == id ) {
                 return list.get(i).getStockQuantity();
+
+            }
+        }
+        return 0;
+    }
+    public int getMinimumStockQuantityFromItemName(String itemName) {
+        int id = dbHandler.getItemId(itemName);
+        List<InventoryModel> list = dbHandler.getInventoryItems();
+
+        for(int i = 0; i < list.size(); i++){
+            if(list.get(i).getItemId() == id) {
+                return list.get(i).getMinimumStockQuantity();
             }
         }
 
-        return -1;
+        return 0;
     }
 
     public Item getItem() {

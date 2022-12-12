@@ -298,6 +298,7 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
                 temp.setItem(item);
                 temp.setStockQuantity(cursor.getInt(1));
                 temp.setMinimumStockQuantity(cursor.getInt(2));
+                temp.setItemId(cursor.getInt(3));
 
                 inventoryList.add(temp);
             }while(cursor.moveToNext());
@@ -306,6 +307,48 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         db.close();
         return inventoryList;
     }
+    public void updateInventory(InventoryModel inventory) {
+
+        // calling a method to get writable database.
+        SQLiteDatabase db = this.getWritableDatabase();
+        String sql = "SELECT itemId FROM " + TABLE_INVENTORY + " WHERE " + ITEMID_COL + " = '" + inventory.getItemId() + "'";
+        ContentValues values = new ContentValues();
+        // passing all values along with its key and value pair
+        values.put(STOCKQUANTITY_COL, inventory.getStockQuantity());
+        values.put(MINIMUMSTOCKQUANTITY_COL, inventory.getMinimumStockQuantity());
+
+
+        // calling update method to update database and passing values and comparing it with name of product which is stored in originalProductName variable
+        db.update(TABLE_INVENTORY, values, "itemId = " + inventory.getItemId(),null);
+    }
+    public void updateItem(Item item) {
+        // calling a method to get writable database.
+        SQLiteDatabase db = this.getWritableDatabase();
+        String sql = "SELECT itemName FROM " + TABLE_ITEM + " WHERE " + ITEMNAME_COL + " = '" + item.getItemName() + "'";
+        ContentValues values = new ContentValues();
+        // passing all values along with its key and value pair
+        values.put(PRICE_COL,item.getPrice());
+        values.put(COST_COL,item.getCost());
+
+
+
+        // calling update method to update database and passing values and comparing it with name of product which is stored in originalProductName variable
+        db.update(TABLE_ITEM, values, "itemName=?", new String[]{item.getItemName()});
+    }
+    public void removeInventory(InventoryModel inventory) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        // calling a method to delete a product and comparing it with productNname
+        db.delete(TABLE_INVENTORY,"itemId = " + inventory.getItemId(),null);
+        //db.close();
+    }
+
+    public void removeItem(Item item) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        // calling a method to delete a product and comparing it with productNname
+        db.delete(TABLE_ITEM, "itemName=?", new String[]{item.getItemName()});
+        //db.close();
+    }
+
     /*
     public void addNewItem(String item, double price, int stocks, int minimumStock, String category){
         SQLiteDatabase db = this.getWritableDatabase();
@@ -321,20 +364,6 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         db.insert(TABLE_INVENTORY, null, values);
     }
 
-    public void updateInventory(String originalProductName, String productName, double productPrice, int productStock) {
-
-        // calling a method to get writable database.
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues values = new ContentValues();
-
-        // passing all values along with its key and value pair
-        values.put(PRODUCTNAME_COL, productName);
-        values.put(PRODUCTPRICE_COL, productPrice);
-        values.put(STOCKQUANTITY_COL, productStock);
-
-        // calling update method to update database and passing values and comparing it with name of product which is stored in originalProductName variable
-        db.update(TABLE_INVENTORY, values, "productname=?", new String[]{originalProductName});
-    }
 
 
 

@@ -2737,9 +2737,6 @@ int id btnDelete 0x7f090073
 int id btnLogin 0x7f090074
 int id btnNewItem 0x7f090075
 int id btnRegister 0x7f090076
-int id btnRemove 0x7f090077
-int id btnSelect 0x7f090078
-int id btnSelectItem 0x7f090079
 int id btnTakePicture 0x7f09007a
 int id btnUpdate 0x7f09007b
 int id buttonPanel 0x7f09007c
@@ -2838,9 +2835,6 @@ int id etCost_Details 0x7f0900d8
 int id etItem 0x7f0900d9
 int id etItemName 0x7f0900da
 int id etItemName_Details 0x7f0900db
-int id etItemname 0x7f0900dc
-int id etItemprice 0x7f0900dd
-int id etItemstocks 0x7f0900de
 int id etMinimum 0x7f0900df
 int id etMinimum_Details 0x7f0900e0
 int id etPassword 0x7f0900e1
@@ -2897,7 +2891,6 @@ int id horizontal_only 0x7f090113
 int id icon 0x7f090114
 int id icon_group 0x7f090115
 int id icon_only 0x7f090116
-int id idRVSelect 0x7f090117
 int id idTVCategory 0x7f090118
 int id idTVProductID 0x7f090119
 int id idTVProductName 0x7f09011a
@@ -2908,10 +2901,7 @@ int id ignore 0x7f09011e
 int id ignoreRequest 0x7f09011f
 int id image 0x7f090120
 int id imageView 0x7f090121
-int id imageView1 0x7f090122
 int id imageView2 0x7f090123
-int id imageView3 0x7f090124
-int id imageView4 0x7f090125
 int id imgEndDate 0x7f090126
 int id imgStartDate 0x7f090127
 int id imgViewPicture 0x7f090128
@@ -3052,7 +3042,6 @@ int id ratio 0x7f0901ae
 int id rectangles 0x7f0901af
 int id recycler_view 0x7f0901b0
 int id register_view 0x7f0901b1
-int id removeImageView 0x7f0901b2
 int id reverseSawtooth 0x7f0901b3
 int id right 0x7f0901b4
 int id rightToLeft 0x7f0901b5
@@ -3149,14 +3138,10 @@ int id test_radiobutton_app_button_tint 0x7f09020f
 int id text 0x7f090210
 int id text2 0x7f090211
 int id textEnd 0x7f090212
-int id textInputLayout4 0x7f090213
-int id textInputLayout5 0x7f090214
-int id textInputLayout6 0x7f090215
 int id textSpacerNoButtons 0x7f090216
 int id textSpacerNoTitle 0x7f090217
 int id textStart 0x7f090218
 int id textTop 0x7f090219
-int id textView 0x7f09021a
 int id textView6 0x7f09021b
 int id text_input_end_icon 0x7f09021c
 int id text_input_error_icon 0x7f09021d
@@ -3195,11 +3180,8 @@ int id tvInventoryQuantity 0x7f09023d
 int id tvItem 0x7f09023e
 int id tvLogoName 0x7f09023f
 int id tvLogoName2 0x7f090240
-int id tvLogoName3 0x7f090241
-int id tvLogoName4 0x7f090242
 int id tvMore 0x7f090243
 int id tvPrice 0x7f090244
-int id tvProductName 0x7f090245
 int id tvQty 0x7f090246
 int id tvRegister 0x7f090247
 int id tvResult 0x7f090248
@@ -3335,7 +3317,6 @@ int layout activity_main_fragment 0x7f0c001c
 int layout activity_month_year_dialog 0x7f0c001d
 int layout activity_year_picker_dialog 0x7f0c001e
 int layout addinventoryitem_view 0x7f0c001f
-int layout cat_dropdown 0x7f0c0020
 int layout custom_dialog 0x7f0c0021
 int layout design_bottom_navigation_item 0x7f0c0022
 int layout design_bottom_sheet_dialog 0x7f0c0023
@@ -3414,12 +3395,10 @@ int layout notification_template_icon_group 0x7f0c006b
 int layout notification_template_part_chronometer 0x7f0c006c
 int layout notification_template_part_time 0x7f0c006d
 int layout register_view 0x7f0c006e
-int layout removeinventoryitem_view 0x7f0c006f
 int layout sales_table_layout 0x7f0c0070
 int layout select_dialog_item_material 0x7f0c0071
 int layout select_dialog_multichoice_material 0x7f0c0072
 int layout select_dialog_singlechoice_material 0x7f0c0073
-int layout select_item 0x7f0c0074
 int layout support_simple_spinner_dropdown_item 0x7f0c0075
 int layout test_action_chip 0x7f0c0076
 int layout test_chip_zero_corner_radius 0x7f0c0077
@@ -3437,7 +3416,6 @@ int layout text_view_with_line_height_from_layout 0x7f0c0082
 int layout text_view_with_line_height_from_style 0x7f0c0083
 int layout text_view_with_theme_line_height 0x7f0c0084
 int layout text_view_without_line_height 0x7f0c0085
-int layout updateinventoryitem_view 0x7f0c0086
 int layout view_item_details 0x7f0c0087
 int menu bottom_nav_menu 0x7f0d0000
 int menu menu_main 0x7f0d0001

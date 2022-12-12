@@ -1,13 +1,16 @@
 package com.example.picsellapplication;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 
@@ -52,6 +55,54 @@ public class ViewItemDetails extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btnUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String sPrice = etPrice.getText().toString();
+                String sStock = etStock.getText().toString();
+                String sMin = etMinimum.getText().toString();
+                String sCost = etCost.getText().toString();
+                String itemName = etItemName.getText().toString();
+                String msg = "";
+                double cost = Double.parseDouble(sCost);
+                double price = Double.parseDouble(sPrice);
+                int min = Integer.parseInt(sMin);
+                int stock = Integer.parseInt(sStock);
+                Item item = new Item(itemName, cost, price);
+                InventoryModel inventory = new InventoryModel(item, min, stock);
+                dbModel.UpdateInventoryItem(inventory);
+                Toast.makeText(ViewItemDetails.this, "Item Updated..", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(ViewItemDetails.this, MainFragmentActivity.class);
+                    startActivity(i);
 
+            }
+        });
+        btnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(ViewItemDetails.this);
+                    builder.setCancelable(true);
+                    builder.setTitle("Confirmation");
+                    builder.setMessage("Do you wish to delete item?");
+                    builder.setPositiveButton("Yes",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                dbModel.RemoveInventoryItem(inventoryModel);
+                                    Toast.makeText(ViewItemDetails.this, "Item Deleted..", Toast.LENGTH_SHORT).show();
+                                    Intent i = new Intent(ViewItemDetails.this, MainFragmentActivity.class);
+                                    startActivity(i);
+                                }
+                            });
+                    builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                        }
+                    });
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+            }
+        });
     }
 }
