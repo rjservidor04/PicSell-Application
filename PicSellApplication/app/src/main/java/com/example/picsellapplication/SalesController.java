@@ -1,7 +1,9 @@
 package com.example.picsellapplication;
 
+import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
 
@@ -37,6 +39,7 @@ import java.util.Random;
 public class SalesController extends Fragment {
     SalesModel model;
 
+    SharedPreferences previousPage;
     TextView tvStartDate, tvEndDate, tvResult;
     ImageView imgStartDate, imgEndDate;
     View.OnClickListener clicked;
@@ -104,6 +107,12 @@ public class SalesController extends Fragment {
         layoutView = inflater.inflate(R.layout.fragment_sales_view, container, false);
         Spinner dropdown = (Spinner) layoutView.findViewById(R.id.spinnerReport);
         String[] typeOfReport = new String[]{"Day", "Month", "Year"};
+
+        previousPage = getActivity().getSharedPreferences("MYPREFS", Activity.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = previousPage.edit();
+        editor.putString("prev", "sales");
+        editor.commit();
 
         //create an adapter to describe how the typeOfReport are displayed
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_dropdown_item, typeOfReport);

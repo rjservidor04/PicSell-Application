@@ -19,6 +19,7 @@ public class UserModel {
         this.password = password;
     }
 
+
     public String getStoreName() {
         return storeName;
     }
@@ -47,6 +48,10 @@ public class UserModel {
         db.addNewUser(this.storeName, this.username, this.password);
     }
 
+    public void changeUser(String originalUsername) { db.changeUser(originalUsername, this.storeName, this.username); }
+
+    public void changePass(String originalUsername) { db.changePass(originalUsername, this.password); }
+
     public ArrayList<UserModel> readUsers(){
         return db.readUsers();
     }
@@ -57,5 +62,9 @@ public class UserModel {
 
     public boolean checkDuplicates(String storeName, String username){
         return db.checkForDuplicates(storeName, username);
+    }
+
+    public boolean checkUsername(String username){
+        return db.checkusername(username);
     }
 }

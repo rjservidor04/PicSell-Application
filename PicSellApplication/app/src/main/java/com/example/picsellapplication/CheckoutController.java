@@ -2,8 +2,10 @@ package com.example.picsellapplication;
 
 import static android.app.Activity.RESULT_OK;
 
+import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 
@@ -35,6 +37,7 @@ import me.xdrop.fuzzywuzzy.FuzzySearch;
 
 public class CheckoutController extends Fragment {
 
+    SharedPreferences previousPage;
     private SalesModel salesModel;
     private InventoryModel inventoryModel;
     private EditText etItem, etQuantity;
@@ -90,6 +93,12 @@ public class CheckoutController extends Fragment {
         View layoutView = inflater.inflate(R.layout.fragment_checkout_view, container, false);
         inventoryModel = new InventoryModel(getActivity());
         salesModel = new SalesModel(getActivity());
+
+        previousPage = getActivity().getSharedPreferences("MYPREFS", Activity.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = previousPage.edit();
+        editor.putString("prev", "checkout");
+        editor.commit();
 
         imageView = (ImageView) layoutView.findViewById(R.id.imgViewPicture);
         etItem = (EditText) layoutView.findViewById(R.id.etItem);

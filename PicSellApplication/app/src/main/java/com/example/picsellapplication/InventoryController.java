@@ -1,7 +1,9 @@
 package com.example.picsellapplication;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -23,6 +25,7 @@ import java.util.List;
  */
 public class InventoryController extends Fragment {
 
+    SharedPreferences previousPage;
     InventoryModel inventoryModel;
     Button btnNewItem;
     RecyclerView recyclerView;
@@ -74,6 +77,12 @@ public class InventoryController extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View layoutView = inflater.inflate(R.layout.fragment_inventory_view, container, false);
+
+        previousPage = getActivity().getSharedPreferences("MYPREFS", Activity.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = previousPage.edit();
+        editor.putString("prev", "inventory");
+        editor.commit();
 
         btnNewItem = (Button) layoutView.findViewById(R.id.btnNewItem);
         recyclerView = (RecyclerView) layoutView.findViewById(R.id.inventory_recycler_view);

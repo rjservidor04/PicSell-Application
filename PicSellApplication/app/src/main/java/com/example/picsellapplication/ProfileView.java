@@ -1,5 +1,8 @@
 package com.example.picsellapplication;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +10,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +20,13 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class ProfileView extends Fragment {
+
+    SharedPreferences previousPage;
+    UserModel userModel;
+    TextView storename, username, password;
+    Button editProfile, changePassword;
+    ImageButton back;
+    TextView logOut;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +72,69 @@ public class ProfileView extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile_view, container, false);
+        View layoutView = inflater.inflate(R.layout.fragment_profile_view, container, false);
+
+        storename = (TextView) layoutView.findViewById(R.id.tvStoreName);
+        username = (TextView) layoutView.findViewById(R.id.tvUsername);
+        password = (TextView) layoutView.findViewById(R.id.tvPassword);
+        editProfile = (Button) layoutView.findViewById(R.id.btnChangeProfileDetails);
+        changePassword = (Button) layoutView.findViewById(R.id.btnChangePasswordDetails);
+
+        previousPage = getActivity().getSharedPreferences("MYPREFS", Activity.MODE_PRIVATE);
+
+        String storeName = userModel.getStoreName();
+        String userName = userModel.getUsername();
+        String passWord = userModel.getPassword();
+
+        storename.setText(storeName);
+        username.setText(userName);
+        password.setText(passWord);
+
+        editProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), ChangeProfileDetailsView.class);
+                startActivity(i);
+            }
+        });
+
+        changePassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), ChangePasswordView.class);
+                startActivity(i);
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String prev = previousPage.getString("prev", "");
+                if(prev == "inventory"){
+                    Intent i = new Intent(getActivity(), InventoryController.class);
+                    startActivity(i);
+                }else if(prev == "sales"){
+                    Intent i = new Intent(getActivity(), SalesController.class);
+                    startActivity(i);
+                }else if(prev == "checkout"){
+                    Intent i = new Intent(getActivity(), CheckoutController.class);
+                    startActivity(i);
+                }else{
+                    Intent i = new Intent(getActivity(), InventoryController.class);
+                    startActivity(i);
+                }
+            }
+        });
+
+        logOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                dbHandler.closeDB();
+                Intent i = new Intent(getActivity(), LoginController.class);
+                startActivity(i);
+            }
+        });
+
+        return layoutView;
     }
 }
