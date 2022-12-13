@@ -45,6 +45,9 @@ public class AddInventoryItemController extends AppCompatActivity {
 
                 if(itemName.isEmpty() || sPrice.isEmpty() || sStock.isEmpty() || sMin.isEmpty()|| sCost.isEmpty())
                     msg = "Please input all fields";
+                else if(Double.parseDouble(sCost) >= Double.parseDouble(sPrice)){
+                    msg = "Cost is either greater than or equal to price";
+                }
                 else{
                     try {
                         double cost = Double.parseDouble(sCost);

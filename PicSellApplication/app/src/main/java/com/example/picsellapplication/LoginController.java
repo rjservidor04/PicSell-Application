@@ -1,7 +1,10 @@
 package com.example.picsellapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -12,12 +15,17 @@ import android.widget.Toast;
 public class LoginController extends AppCompatActivity {
     private final UserModel userModel = new UserModel(LoginController.this);
 
+    SharedPreferences account;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_view);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE|
                 WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
+
+        account = getSharedPreferences("MYPREFS", Activity.MODE_PRIVATE);
+
         Button login = findViewById(R.id.btnLogin);
 
         login.setOnClickListener(LoginController.this::loginButtonClicked);
@@ -47,6 +55,11 @@ public class LoginController extends AppCompatActivity {
 
         else if(userModel.verify(username, password)){
             Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show();
+
+            SharedPreferences.Editor editor = account.edit();
+            editor.putString("username", username);
+            editor.commit();
+
             Intent i = new Intent(LoginController.this, MainFragmentActivity.class);
             startActivity(i);
         }

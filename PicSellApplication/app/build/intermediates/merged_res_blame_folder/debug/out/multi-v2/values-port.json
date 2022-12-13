@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.picsellapplication.app-mergeDebugResources-41:/values-port/values-port.xml",
+            "outputFile": "com.example.picsellapplication.app-mergeDebugResources-42:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sinon\\.gradle\\caches\\transforms-3\\360e78b4b30c2a1b7d8be59ae77e414e\\transformed\\appcompat-1.5.1\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\IanLloyd\\.gradle\\caches\\transforms-3\\360e78b4b30c2a1b7d8be59ae77e414e\\transformed\\appcompat-1.5.1\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

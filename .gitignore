@@ -660,3 +660,7 @@ PicSellApplication/app/build/intermediates/project_dex_archive/debug/out/com/exa
 PicSellApplication/app/build/intermediates/project_dex_archive/debug/out/com/example/picsellapplication/RegisterView.dex
 PicSellApplication/app/build/intermediates/project_dex_archive/debug/out/com/example/picsellapplication/UserModel.dex
 PicSellApplication/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin
+*.lock
+*.bin
+*.lock
+*.bin

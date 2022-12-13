@@ -18,7 +18,7 @@
         tools:layout="@layout/fragment_checkout_view" />
     <fragment
         android:id="@+id/profileView"
-        android:name="com.example.picsellapplication.ProfileView"
+        android:name="com.example.picsellapplication.ProfileController"
         android:label="Profile"
         tools:layout="@layout/fragment_profile_view" />
     <fragment

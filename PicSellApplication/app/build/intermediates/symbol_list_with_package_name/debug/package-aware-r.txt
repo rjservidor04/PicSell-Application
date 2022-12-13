@@ -273,6 +273,20 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border
+attr civ_border_color
+attr civ_border_color_direction
+attr civ_border_color_end
+attr civ_border_color_start
+attr civ_border_width
+attr civ_circle_color
+attr civ_circle_color_direction
+attr civ_circle_color_end
+attr civ_circle_color_start
+attr civ_shadow
+attr civ_shadow_color
+attr civ_shadow_gravity
+attr civ_shadow_radius
 attr clearTop
 attr clearsTag
 attr clickAction
@@ -1333,6 +1347,7 @@ color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
 color gold_orange
+color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color light_gray
@@ -1811,6 +1826,8 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color orange
+color orange2
 color orange_100
 color orange_200
 color orange_300
@@ -2552,9 +2569,13 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable fragment_profile_view
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gradient_account_background
+drawable ic_baseline_password_24
+drawable ic_baseline_person_24
+drawable ic_baseline_store_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2610,6 +2631,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable picsell_logo
+drawable profilepic
 drawable rounded_buttons
 drawable sales
 drawable sales_orange
@@ -2728,11 +2750,18 @@ id bestChoice
 id blocking
 id bottom
 id bottomNavigationView
+id bottom_to_top
 id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
 id btnAdd
+id btnBack
+id btnBack2
+id btnCancelChangePassword
+id btnCancelChangeProfileDetails
+id btnChangePasswordDetails
+id btnChangeProfileDetails
 id btnCheckout
 id btnDelete
 id btnLogin
@@ -2740,6 +2769,8 @@ id btnNewItem
 id btnRegister
 id btnTakePicture
 id btnUpdate
+id btnUpdatePassword
+id btnUpdateProfileDetails
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2753,6 +2784,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id changeprofiledetailsContainer
 id checkbox
 id checked
 id checkoutView
@@ -2763,6 +2795,7 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
+id circularImageView
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -2830,9 +2863,12 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id etChangeNewPassword
+id etChangeUsername
 id etConfirmPassword
 id etCost
 id etCost_Details
+id etCurrentPassword
 id etItem
 id etItemName
 id etItemName_Details
@@ -2842,6 +2878,7 @@ id etPassword
 id etPrice
 id etPrice_Details
 id etQuantity
+id etRetypeNewPassword
 id etStocks
 id etStocks_Details
 id etStoreName
@@ -2892,17 +2929,13 @@ id horizontal_only
 id icon
 id icon_group
 id icon_only
-id idTVCategory
-id idTVProductID
-id idTVProductName
-id idTVProductPrice
-id idTVProductStock
 id ifRoom
 id ignore
 id ignoreRequest
 id image
 id imageView
 id imageView2
+id imageView5
 id imgEndDate
 id imgStartDate
 id imgViewPicture
@@ -2926,11 +2959,13 @@ id layoutPrice
 id layoutStock
 id left
 id leftToRight
+id left_to_right
 id legacy
 id light
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
 id list_item
 id locale
@@ -3032,10 +3067,12 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id picture
 id pin
 id position
 id postLayout
 id profileView
+id profileviewContainer
 id progress_circular
 id progress_horizontal
 id radio
@@ -3048,6 +3085,7 @@ id right
 id rightToLeft
 id right_icon
 id right_side
+id right_to_left
 id rounded
 id row_index_key
 id rtl
@@ -3143,6 +3181,11 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
+id textView3
+id textView4
+id textView5
 id textView6
 id text_input_end_icon
 id text_input_error_icon
@@ -3160,6 +3203,7 @@ id title_template
 id toggle
 id top
 id topPanel
+id top_to_bottom
 id touch_outside
 id trRowData
 id transitionToEnd
@@ -3181,18 +3225,22 @@ id tvInventoryQuantity
 id tvItem
 id tvLogoName
 id tvLogoName2
+id tvLogout
 id tvMore
+id tvPassword
 id tvPrice
 id tvQty
 id tvRegister
 id tvResult
 id tvSelectedYear
 id tvStartDate
+id tvStoreName
 id tvTagline
 id tvTagline2
 id tvTest_InventoryView
 id tvTitle
 id tvTotal
+id tvUsername
 id tv_profit
 id tv_sales
 id unchecked
@@ -3201,6 +3249,11 @@ id unlabeled
 id up
 id useLogo
 id vertical_only
+id view
+id view2
+id view3
+id view4
+id view5
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3318,6 +3371,8 @@ layout activity_main_fragment
 layout activity_month_year_dialog
 layout activity_year_picker_dialog
 layout addinventoryitem_view
+layout change_password_view
+layout change_profile_details_view
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3338,7 +3393,6 @@ layout fragment_checkout_view
 layout fragment_inventory_view
 layout fragment_profile_view
 layout fragment_sales_view
-layout inventory_item
 layout inventory_table_layout
 layout login_view
 layout m3_alert_dialog
@@ -4664,6 +4718,7 @@ styleable Carousel carousel_backwardTransition carousel_emptyViewsBehavior carou
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircularImageView civ_border civ_border_color civ_border_color_direction civ_border_color_end civ_border_color_start civ_border_width civ_circle_color civ_circle_color_direction civ_circle_color_end civ_circle_color_start civ_shadow civ_shadow_color civ_shadow_gravity civ_shadow_radius
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize

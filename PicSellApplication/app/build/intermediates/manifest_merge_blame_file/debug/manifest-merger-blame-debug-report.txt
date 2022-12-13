@@ -6,321 +6,341 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml
+8-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml
+9-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml
 10
 11    <uses-feature
-11-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:6:5-7:35
+11-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:6:5-8:35
 12        android:name="android.hardware.camera"
-12-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:6:19-57
+12-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:7:9-47
 13        android:required="true" />
-13-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:7:9-32
+13-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:8:9-32
 14
 15    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 16    <!-- <uses-sdk android:minSdkVersion="14"/> -->
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sinon\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79
-17-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sinon\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:25:22-76
+17-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\IanLloyd\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79
+17-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\IanLloyd\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:25:22-76
 18    <uses-permission android:name="android.permission.INTERNET" />
-18-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sinon\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:26:5-67
-18-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sinon\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:26:22-64
+18-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\IanLloyd\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:26:5-67
+18-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\IanLloyd\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:26:22-64
 19
 20    <application
-20-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:9:5-105:19
+20-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:10:5-110:19
 21        android:allowBackup="true"
-21-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:10:9-35
+21-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:11:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.8.0] C:\Users\sinon\.gradle\caches\transforms-3\d9c280f6f5fee137af48244fdf51755e\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+22-->[androidx.core:core:1.8.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\d9c280f6f5fee137af48244fdf51755e\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 23        android:dataExtractionRules="@xml/data_extraction_rules"
-23-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:11:9-65
+23-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:12:9-65
 24        android:debuggable="true"
 25        android:fullBackupContent="@xml/backup_rules"
-25-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:12:9-54
+25-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:13:9-54
 26        android:icon="@drawable/picsell_logo"
-26-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:13:9-46
+26-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:14:9-46
 27        android:label="@string/app_name"
-27-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:14:9-41
+27-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:15:9-41
 28        android:roundIcon="@drawable/picsell_logo"
-28-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:15:9-51
+28-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:16:9-51
 29        android:supportsRtl="true"
-29-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:16:9-35
+29-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:17:9-35
 30        android:testOnly="true"
 31        android:theme="@style/Theme.PicSellApplication" >
-31-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:17:9-56
+31-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:18:9-56
 32        <activity
-32-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:20:9-26:20
-33            android:name="com.example.picsellapplication.ViewItemDetails"
-33-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:21:13-44
+32-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:20:9-26:20
+33            android:name="com.example.picsellapplication.ChangePasswordController"
+33-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:21:13-53
 34            android:exported="false" >
-34-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:22:13-37
+34-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:22:13-37
 35            <meta-data
-35-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:23:13-25:36
+35-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:23:13-25:36
 36                android:name="android.app.lib_name"
-36-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:24:17-52
+36-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:24:17-52
 37                android:value="" />
-37-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:25:17-33
+37-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:25:17-33
 38        </activity>
 39        <activity
-39-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:27:9-33:20
-40            android:name="com.example.picsellapplication.YearPickerDialog"
-40-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:28:13-45
+39-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:27:9-33:20
+40            android:name="com.example.picsellapplication.ChangeProfileDetailsController"
+40-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:28:13-59
 41            android:exported="false" >
-41-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:29:13-37
+41-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:29:13-37
 42            <meta-data
-42-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:23:13-25:36
+42-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:23:13-25:36
 43                android:name="android.app.lib_name"
-43-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:24:17-52
+43-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:24:17-52
 44                android:value="" />
-44-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:25:17-33
+44-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:25:17-33
 45        </activity>
 46        <activity
-46-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:34:9-40:20
-47            android:name="com.example.picsellapplication.MonthYearDialog"
-47-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:35:13-44
+46-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:34:9-40:20
+47            android:name="com.example.picsellapplication.ViewItemDetails"
+47-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:35:13-44
 48            android:exported="false" >
-48-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:36:13-37
+48-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:36:13-37
 49            <meta-data
-49-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:23:13-25:36
+49-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:23:13-25:36
 50                android:name="android.app.lib_name"
-50-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:24:17-52
+50-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:24:17-52
 51                android:value="" />
-51-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:25:17-33
+51-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:25:17-33
 52        </activity>
 53        <activity
-53-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:41:9-47:20
-54            android:name="com.example.picsellapplication.MainFragmentActivity"
-54-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:42:13-49
+53-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:41:9-47:20
+54            android:name="com.example.picsellapplication.YearPickerDialog"
+54-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:42:13-45
 55            android:exported="false" >
-55-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:43:13-37
+55-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:43:13-37
 56            <meta-data
-56-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:23:13-25:36
+56-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:23:13-25:36
 57                android:name="android.app.lib_name"
-57-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:24:17-52
+57-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:24:17-52
 58                android:value="" />
-58-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:25:17-33
+58-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:25:17-33
 59        </activity>
 60        <activity
-60-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:48:9-59:20
-61            android:name="com.example.picsellapplication.LoginController"
-61-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:49:13-44
-62            android:exported="true"
-62-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:50:13-36
-63            android:label="@string/app_name"
-63-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:51:13-45
-64            android:theme="@style/Theme.PicSellApplication.NoActionBar"
-64-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:52:13-72
-65            android:windowSoftInputMode="adjustResize" >
-65-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:53:13-55
-66            <intent-filter>
-66-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:54:13-58:29
-67                <action android:name="android.intent.action.MAIN" />
-67-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:55:17-69
-67-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:55:25-66
-68
-69                <category android:name="android.intent.category.LAUNCHER" />
-69-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:57:17-77
-69-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:57:27-74
-70            </intent-filter>
-71        </activity>
-72        <activity
-72-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:60:9-66:20
-73            android:name="com.example.picsellapplication.RegisterController"
-73-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:61:13-47
-74            android:exported="true"
-74-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:62:13-36
-75            android:label="@string/app_name"
-75-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:63:13-45
-76            android:theme="@style/Theme.PicSellApplication.NoActionBar"
-76-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:64:13-72
-77            android:windowSoftInputMode="adjustResize" >
-77-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:65:13-55
-78        </activity>
-79        <activity
-79-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:67:9-73:20
-80            android:name="com.example.picsellapplication.InventoryController"
-80-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:68:13-48
-81            android:exported="true"
-81-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:69:13-36
-82            android:label="@string/app_name"
-82-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:70:13-45
-83            android:theme="@style/Theme.PicSellApplication.NoActionBar"
-83-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:71:13-72
-84            android:windowSoftInputMode="adjustResize" >
-84-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:72:13-55
+60-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:48:9-54:20
+61            android:name="com.example.picsellapplication.MonthYearDialog"
+61-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:49:13-44
+62            android:exported="false" >
+62-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:50:13-37
+63            <meta-data
+63-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:23:13-25:36
+64                android:name="android.app.lib_name"
+64-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:24:17-52
+65                android:value="" />
+65-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:25:17-33
+66        </activity>
+67        <activity
+67-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:55:9-61:20
+68            android:name="com.example.picsellapplication.MainFragmentActivity"
+68-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:56:13-49
+69            android:exported="false" >
+69-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:57:13-37
+70            <meta-data
+70-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:23:13-25:36
+71                android:name="android.app.lib_name"
+71-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:24:17-52
+72                android:value="" />
+72-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:25:17-33
+73        </activity>
+74        <activity
+74-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:62:9-73:20
+75            android:name="com.example.picsellapplication.LoginController"
+75-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:63:13-44
+76            android:exported="true"
+76-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:64:13-36
+77            android:label="@string/app_name"
+77-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:65:13-45
+78            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+78-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:66:13-72
+79            android:windowSoftInputMode="adjustResize" >
+79-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:67:13-55
+80            <intent-filter>
+80-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:68:13-72:29
+81                <action android:name="android.intent.action.MAIN" />
+81-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:69:17-69
+81-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:69:25-66
+82
+83                <category android:name="android.intent.category.LAUNCHER" />
+83-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:71:17-77
+83-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:71:27-74
+84            </intent-filter>
 85        </activity>
 86        <activity
-86-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:74:9-80:20
-87            android:name="com.example.picsellapplication.AddInventoryItemController"
-87-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:75:13-55
+86-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:74:9-79:58
+87            android:name="com.example.picsellapplication.RegisterController"
+87-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:75:13-47
 88            android:exported="true"
-88-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:76:13-36
+88-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:76:13-36
 89            android:label="@string/app_name"
-89-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:77:13-45
+89-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:77:13-45
 90            android:theme="@style/Theme.PicSellApplication.NoActionBar"
-90-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:78:13-72
-91            android:windowSoftInputMode="adjustResize" >
-91-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:79:13-55
-92        </activity>
-93        <activity
-93-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:81:9-87:20
-94            android:name="com.example.picsellapplication.RemoveInventoryItemView"
-94-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:82:13-52
-95            android:exported="true"
-95-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:83:13-36
-96            android:label="@string/app_name"
-96-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:84:13-45
-97            android:theme="@style/Theme.PicSellApplication.NoActionBar"
-97-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:85:13-72
-98            android:windowSoftInputMode="adjustResize" >
-98-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:86:13-55
-99        </activity>
-100        <activity
-100-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:88:9-94:20
-101            android:name="com.example.picsellapplication.UpdateInventoryItemView"
-101-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:89:13-52
-102            android:exported="true"
-102-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:90:13-36
-103            android:label="@string/app_name"
-103-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:91:13-45
-104            android:theme="@style/Theme.PicSellApplication.NoActionBar"
-104-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:92:13-72
-105            android:windowSoftInputMode="adjustResize" >
-105-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:93:13-55
-106        </activity>
-107        <activity
-107-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:95:9-101:20
-108            android:name="com.example.picsellapplication.SelectItem"
-108-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:96:13-39
-109            android:exported="true"
-109-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:97:13-36
-110            android:label="@string/app_name"
-110-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:98:13-45
-111            android:theme="@style/Theme.PicSellApplication.NoActionBar"
-111-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:99:13-72
-112            android:windowSoftInputMode="adjustResize" >
-112-->C:\Users\sinon\StudioProjects\PicSell-Application12\PicSellApplication\app\src\main\AndroidManifest.xml:100:13-55
-113        </activity>
-114
-115        <service
-115-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\sinon\.gradle\caches\transforms-3\2a33568049cf7c9c98789b6ec0f37a52\transformed\play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:9:9-15:19
-116            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
-116-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\sinon\.gradle\caches\transforms-3\2a33568049cf7c9c98789b6ec0f37a52\transformed\play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:10:13-91
-117            android:directBootAware="true"
-117-->[com.google.mlkit:common:18.5.0] C:\Users\sinon\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:17:13-43
-118            android:exported="false" >
-118-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\sinon\.gradle\caches\transforms-3\2a33568049cf7c9c98789b6ec0f37a52\transformed\play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:11:13-37
-119            <meta-data
-119-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\sinon\.gradle\caches\transforms-3\2a33568049cf7c9c98789b6ec0f37a52\transformed\play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:12:13-14:85
-120                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
-120-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\sinon\.gradle\caches\transforms-3\2a33568049cf7c9c98789b6ec0f37a52\transformed\play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:13:17-114
-121                android:value="com.google.firebase.components.ComponentRegistrar" />
-121-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\sinon\.gradle\caches\transforms-3\2a33568049cf7c9c98789b6ec0f37a52\transformed\play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:14:17-82
-122            <meta-data
-122-->[com.google.mlkit:vision-common:17.2.1] C:\Users\sinon\.gradle\caches\transforms-3\1ed83dd60e67d3a9c0a2faebfcabe422\transformed\vision-common-17.2.1\AndroidManifest.xml:12:13-14:85
-123                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
-123-->[com.google.mlkit:vision-common:17.2.1] C:\Users\sinon\.gradle\caches\transforms-3\1ed83dd60e67d3a9c0a2faebfcabe422\transformed\vision-common-17.2.1\AndroidManifest.xml:13:17-124
-124                android:value="com.google.firebase.components.ComponentRegistrar" />
-124-->[com.google.mlkit:vision-common:17.2.1] C:\Users\sinon\.gradle\caches\transforms-3\1ed83dd60e67d3a9c0a2faebfcabe422\transformed\vision-common-17.2.1\AndroidManifest.xml:14:17-82
-125            <meta-data
-125-->[com.google.mlkit:common:18.5.0] C:\Users\sinon\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:20:13-22:85
-126                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
-126-->[com.google.mlkit:common:18.5.0] C:\Users\sinon\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:21:17-120
-127                android:value="com.google.firebase.components.ComponentRegistrar" />
-127-->[com.google.mlkit:common:18.5.0] C:\Users\sinon\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:22:17-82
-128        </service>
-129
-130        <provider
-130-->[com.google.mlkit:common:18.5.0] C:\Users\sinon\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:9:9-13:38
-131            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
-131-->[com.google.mlkit:common:18.5.0] C:\Users\sinon\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:10:13-78
-132            android:authorities="com.example.picsellapplication.mlkitinitprovider"
-132-->[com.google.mlkit:common:18.5.0] C:\Users\sinon\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:11:13-69
-133            android:exported="false"
-133-->[com.google.mlkit:common:18.5.0] C:\Users\sinon\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:12:13-37
-134            android:initOrder="99" />
-134-->[com.google.mlkit:common:18.5.0] C:\Users\sinon\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:13:13-35
-135
-136        <activity
-136-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\sinon\.gradle\caches\transforms-3\02ac22cd6b0fdd5264a64edfb7abfc00\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-137            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-137-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\sinon\.gradle\caches\transforms-3\02ac22cd6b0fdd5264a64edfb7abfc00\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-138            android:exported="false"
-138-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\sinon\.gradle\caches\transforms-3\02ac22cd6b0fdd5264a64edfb7abfc00\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-139            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-139-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\sinon\.gradle\caches\transforms-3\02ac22cd6b0fdd5264a64edfb7abfc00\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
-140
-141        <meta-data
-141-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sinon\.gradle\caches\transforms-3\7d6dcc3ee101bb3c25af073bddee4724\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-142            android:name="com.google.android.gms.version"
-142-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sinon\.gradle\caches\transforms-3\7d6dcc3ee101bb3c25af073bddee4724\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-143            android:value="@integer/google_play_services_version" />
-143-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sinon\.gradle\caches\transforms-3\7d6dcc3ee101bb3c25af073bddee4724\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-144
-145        <provider
-145-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sinon\.gradle\caches\transforms-3\40b84e3ad762d88d635885046ce75eb0\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-146            android:name="androidx.startup.InitializationProvider"
-146-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sinon\.gradle\caches\transforms-3\40b84e3ad762d88d635885046ce75eb0\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-147            android:authorities="com.example.picsellapplication.androidx-startup"
-147-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sinon\.gradle\caches\transforms-3\40b84e3ad762d88d635885046ce75eb0\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-148            android:exported="false" >
-148-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sinon\.gradle\caches\transforms-3\40b84e3ad762d88d635885046ce75eb0\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-149            <meta-data
-149-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sinon\.gradle\caches\transforms-3\40b84e3ad762d88d635885046ce75eb0\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-150                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-150-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sinon\.gradle\caches\transforms-3\40b84e3ad762d88d635885046ce75eb0\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-151                android:value="androidx.startup" />
-151-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sinon\.gradle\caches\transforms-3\40b84e3ad762d88d635885046ce75eb0\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-152            <meta-data
-152-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\sinon\.gradle\caches\transforms-3\267aae9086148b6c067542d1183a6486\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-153                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-153-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\sinon\.gradle\caches\transforms-3\267aae9086148b6c067542d1183a6486\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-154                android:value="androidx.startup" />
-154-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\sinon\.gradle\caches\transforms-3\267aae9086148b6c067542d1183a6486\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-155        </provider>
-156
-157        <uses-library
-157-->[androidx.window:window:1.0.0] C:\Users\sinon\.gradle\caches\transforms-3\01c78597536fb06d72fe74388c168b31\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-158            android:name="androidx.window.extensions"
-158-->[androidx.window:window:1.0.0] C:\Users\sinon\.gradle\caches\transforms-3\01c78597536fb06d72fe74388c168b31\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-159            android:required="false" />
-159-->[androidx.window:window:1.0.0] C:\Users\sinon\.gradle\caches\transforms-3\01c78597536fb06d72fe74388c168b31\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-160        <uses-library
-160-->[androidx.window:window:1.0.0] C:\Users\sinon\.gradle\caches\transforms-3\01c78597536fb06d72fe74388c168b31\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-161            android:name="androidx.window.sidecar"
-161-->[androidx.window:window:1.0.0] C:\Users\sinon\.gradle\caches\transforms-3\01c78597536fb06d72fe74388c168b31\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-162            android:required="false" />
-162-->[androidx.window:window:1.0.0] C:\Users\sinon\.gradle\caches\transforms-3\01c78597536fb06d72fe74388c168b31\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-163
-164        <service
-164-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sinon\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
-165            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-165-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sinon\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
-166            android:exported="false" >
-166-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sinon\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
-167            <meta-data
-167-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sinon\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
-168                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-168-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sinon\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
-169                android:value="cct" />
-169-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\sinon\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
-170        </service>
-171        <service
-171-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\sinon\.gradle\caches\transforms-3\2a3986254897d5df460a22e5156874df\transformed\transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
-172            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-172-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\sinon\.gradle\caches\transforms-3\2a3986254897d5df460a22e5156874df\transformed\transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
-173            android:exported="false"
-173-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\sinon\.gradle\caches\transforms-3\2a3986254897d5df460a22e5156874df\transformed\transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
-174            android:permission="android.permission.BIND_JOB_SERVICE" >
-174-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\sinon\.gradle\caches\transforms-3\2a3986254897d5df460a22e5156874df\transformed\transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
-175        </service>
-176
-177        <receiver
-177-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\sinon\.gradle\caches\transforms-3\2a3986254897d5df460a22e5156874df\transformed\transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
-178            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-178-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\sinon\.gradle\caches\transforms-3\2a3986254897d5df460a22e5156874df\transformed\transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
-179            android:exported="false" />
-179-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\sinon\.gradle\caches\transforms-3\2a3986254897d5df460a22e5156874df\transformed\transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
-180    </application>
-181
-182</manifest>
+90-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:78:13-72
+91            android:windowSoftInputMode="adjustResize" />
+91-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:79:13-55
+92        <activity
+92-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:80:9-85:58
+93            android:name="com.example.picsellapplication.InventoryController"
+93-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:81:13-48
+94            android:exported="true"
+94-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:82:13-36
+95            android:label="@string/app_name"
+95-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:83:13-45
+96            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+96-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:84:13-72
+97            android:windowSoftInputMode="adjustResize" />
+97-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:85:13-55
+98        <activity
+98-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:86:9-91:58
+99            android:name="com.example.picsellapplication.AddInventoryItemController"
+99-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:87:13-55
+100            android:exported="true"
+100-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:88:13-36
+101            android:label="@string/app_name"
+101-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:89:13-45
+102            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+102-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:90:13-72
+103            android:windowSoftInputMode="adjustResize" />
+103-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:91:13-55
+104        <activity
+104-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:92:9-97:58
+105            android:name="com.example.picsellapplication.RemoveInventoryItemView"
+105-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:93:13-52
+106            android:exported="true"
+106-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:94:13-36
+107            android:label="@string/app_name"
+107-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:95:13-45
+108            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+108-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:96:13-72
+109            android:windowSoftInputMode="adjustResize" />
+109-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:97:13-55
+110        <activity
+110-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:98:9-103:58
+111            android:name="com.example.picsellapplication.UpdateInventoryItemView"
+111-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:99:13-52
+112            android:exported="true"
+112-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:100:13-36
+113            android:label="@string/app_name"
+113-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:101:13-45
+114            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+114-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:102:13-72
+115            android:windowSoftInputMode="adjustResize" />
+115-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:103:13-55
+116        <activity
+116-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:104:9-109:58
+117            android:name="com.example.picsellapplication.SelectItem"
+117-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:105:13-39
+118            android:exported="true"
+118-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:106:13-36
+119            android:label="@string/app_name"
+119-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:107:13-45
+120            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+120-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:108:13-72
+121            android:windowSoftInputMode="adjustResize" />
+121-->C:\Users\IanLloyd\Documents\GitHub\PicSell-Application\PicSellApplication\app\src\main\AndroidManifest.xml:109:13-55
+122
+123        <service
+123-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\2a33568049cf7c9c98789b6ec0f37a52\transformed\play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:9:9-15:19
+124            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+124-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\2a33568049cf7c9c98789b6ec0f37a52\transformed\play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:10:13-91
+125            android:directBootAware="true"
+125-->[com.google.mlkit:common:18.5.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:17:13-43
+126            android:exported="false" >
+126-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\2a33568049cf7c9c98789b6ec0f37a52\transformed\play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:11:13-37
+127            <meta-data
+127-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\2a33568049cf7c9c98789b6ec0f37a52\transformed\play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:12:13-14:85
+128                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+128-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\2a33568049cf7c9c98789b6ec0f37a52\transformed\play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:13:17-114
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\2a33568049cf7c9c98789b6ec0f37a52\transformed\play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:14:17-82
+130            <meta-data
+130-->[com.google.mlkit:vision-common:17.2.1] C:\Users\IanLloyd\.gradle\caches\transforms-3\1ed83dd60e67d3a9c0a2faebfcabe422\transformed\vision-common-17.2.1\AndroidManifest.xml:12:13-14:85
+131                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+131-->[com.google.mlkit:vision-common:17.2.1] C:\Users\IanLloyd\.gradle\caches\transforms-3\1ed83dd60e67d3a9c0a2faebfcabe422\transformed\vision-common-17.2.1\AndroidManifest.xml:13:17-124
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.mlkit:vision-common:17.2.1] C:\Users\IanLloyd\.gradle\caches\transforms-3\1ed83dd60e67d3a9c0a2faebfcabe422\transformed\vision-common-17.2.1\AndroidManifest.xml:14:17-82
+133            <meta-data
+133-->[com.google.mlkit:common:18.5.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:20:13-22:85
+134                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+134-->[com.google.mlkit:common:18.5.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:21:17-120
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.mlkit:common:18.5.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:22:17-82
+136        </service>
+137
+138        <provider
+138-->[com.google.mlkit:common:18.5.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:9:9-13:38
+139            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+139-->[com.google.mlkit:common:18.5.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:10:13-78
+140            android:authorities="com.example.picsellapplication.mlkitinitprovider"
+140-->[com.google.mlkit:common:18.5.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:11:13-69
+141            android:exported="false"
+141-->[com.google.mlkit:common:18.5.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:12:13-37
+142            android:initOrder="99" />
+142-->[com.google.mlkit:common:18.5.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\58038a86b7ef76cf4d0bee2ef3158455\transformed\common-18.5.0\AndroidManifest.xml:13:13-35
+143
+144        <activity
+144-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\02ac22cd6b0fdd5264a64edfb7abfc00\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+145            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+145-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\02ac22cd6b0fdd5264a64edfb7abfc00\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+146            android:exported="false"
+146-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\02ac22cd6b0fdd5264a64edfb7abfc00\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+147            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+147-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\02ac22cd6b0fdd5264a64edfb7abfc00\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+148
+149        <meta-data
+149-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\7d6dcc3ee101bb3c25af073bddee4724\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+150            android:name="com.google.android.gms.version"
+150-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\7d6dcc3ee101bb3c25af073bddee4724\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+151            android:value="@integer/google_play_services_version" />
+151-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\7d6dcc3ee101bb3c25af073bddee4724\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+152
+153        <provider
+153-->[androidx.emoji2:emoji2:1.2.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\40b84e3ad762d88d635885046ce75eb0\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+154            android:name="androidx.startup.InitializationProvider"
+154-->[androidx.emoji2:emoji2:1.2.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\40b84e3ad762d88d635885046ce75eb0\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+155            android:authorities="com.example.picsellapplication.androidx-startup"
+155-->[androidx.emoji2:emoji2:1.2.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\40b84e3ad762d88d635885046ce75eb0\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+156            android:exported="false" >
+156-->[androidx.emoji2:emoji2:1.2.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\40b84e3ad762d88d635885046ce75eb0\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+157            <meta-data
+157-->[androidx.emoji2:emoji2:1.2.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\40b84e3ad762d88d635885046ce75eb0\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+158                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+158-->[androidx.emoji2:emoji2:1.2.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\40b84e3ad762d88d635885046ce75eb0\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+159                android:value="androidx.startup" />
+159-->[androidx.emoji2:emoji2:1.2.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\40b84e3ad762d88d635885046ce75eb0\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+160            <meta-data
+160-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\IanLloyd\.gradle\caches\transforms-3\267aae9086148b6c067542d1183a6486\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+161                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+161-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\IanLloyd\.gradle\caches\transforms-3\267aae9086148b6c067542d1183a6486\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+162                android:value="androidx.startup" />
+162-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\IanLloyd\.gradle\caches\transforms-3\267aae9086148b6c067542d1183a6486\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+163        </provider>
+164
+165        <uses-library
+165-->[androidx.window:window:1.0.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\01c78597536fb06d72fe74388c168b31\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+166            android:name="androidx.window.extensions"
+166-->[androidx.window:window:1.0.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\01c78597536fb06d72fe74388c168b31\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+167            android:required="false" />
+167-->[androidx.window:window:1.0.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\01c78597536fb06d72fe74388c168b31\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+168        <uses-library
+168-->[androidx.window:window:1.0.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\01c78597536fb06d72fe74388c168b31\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+169            android:name="androidx.window.sidecar"
+169-->[androidx.window:window:1.0.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\01c78597536fb06d72fe74388c168b31\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+170            android:required="false" />
+170-->[androidx.window:window:1.0.0] C:\Users\IanLloyd\.gradle\caches\transforms-3\01c78597536fb06d72fe74388c168b31\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+171
+172        <service
+172-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\IanLloyd\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+173            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+173-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\IanLloyd\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+174            android:exported="false" >
+174-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\IanLloyd\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+175            <meta-data
+175-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\IanLloyd\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+176                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+176-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\IanLloyd\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+177                android:value="cct" />
+177-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\IanLloyd\.gradle\caches\transforms-3\f7b02939411670ed15377cf0aa569b19\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+178        </service>
+179        <service
+179-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\IanLloyd\.gradle\caches\transforms-3\2a3986254897d5df460a22e5156874df\transformed\transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+180            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+180-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\IanLloyd\.gradle\caches\transforms-3\2a3986254897d5df460a22e5156874df\transformed\transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+181            android:exported="false"
+181-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\IanLloyd\.gradle\caches\transforms-3\2a3986254897d5df460a22e5156874df\transformed\transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+182            android:permission="android.permission.BIND_JOB_SERVICE" >
+182-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\IanLloyd\.gradle\caches\transforms-3\2a3986254897d5df460a22e5156874df\transformed\transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+183        </service>
+184
+185        <receiver
+185-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\IanLloyd\.gradle\caches\transforms-3\2a3986254897d5df460a22e5156874df\transformed\transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+186            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+186-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\IanLloyd\.gradle\caches\transforms-3\2a3986254897d5df460a22e5156874df\transformed\transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+187            android:exported="false" />
+187-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\IanLloyd\.gradle\caches\transforms-3\2a3986254897d5df460a22e5156874df\transformed\transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+188    </application>
+189
+190</manifest>

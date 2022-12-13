@@ -1,202 +1,214 @@
 [
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\layout_activity_main_fragment.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\activity_main_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\drawable_checkout_orange.png.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\drawable\\checkout_orange.png"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_user.png.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\user.png"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\drawable_calendar_.png.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\drawable\\calendar_.png"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_ic_baseline_password_24.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\ic_baseline_password_24.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_activity_main_fragment.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\activity_main_fragment.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\menu_menu_main.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\menu\\menu_main.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_activity_year_picker_dialog.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\activity_year_picker_dialog.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\layout_fragment_checkout_view.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\fragment_checkout_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\drawable_sales.png.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\drawable\\sales.png"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_user_orange.png.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\user_orange.png"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_activity_month_year_dialog.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\activity_month_year_dialog.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\layout_change_password_view.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\change_password_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\drawable_picsell_logo.png.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\drawable\\picsell_logo.png"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\menu_bottom_nav_menu.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\menu\\bottom_nav_menu.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_profilepic.jpg.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\profilepic.jpg"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-pngs-38:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_ic_baseline_store_24.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\ic_baseline_store_24.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_updateinventoryitem_view.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\updateinventoryitem_view.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_fragment_checkout_view.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\fragment_checkout_view.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\layout_addinventoryitem_view.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\addinventoryitem_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_addinventoryitem_view.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\addinventoryitem_view.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_checkout_orange.png.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\checkout_orange.png"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_picsell_logo.png.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\picsell_logo.png"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\drawable_inventory.png.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\drawable\\inventory.png"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\layout_login_view.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\login_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\drawable_rounded_buttons.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\drawable\\rounded_buttons.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\navigation_my_nav.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\navigation\\my_nav.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_checkout.png.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\checkout.png"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_fragment_profile_view.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\fragment_profile_view.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\layout_activity_year_picker_dialog.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\activity_year_picker_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\drawable_inventory_orange.png.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\drawable\\inventory_orange.png"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_inventory.png.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\inventory.png"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\menu_menu_main.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\menu\\menu_main.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\layout_fragment_profile_view.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\fragment_profile_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_sales_table_layout.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\sales_table_layout.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_calendar_.png.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\calendar_.png"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_fragment_sales_view.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\fragment_sales_view.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\layout_fragment_sales_view.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\fragment_sales_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\layout_sales_table_layout.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\sales_table_layout.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\drawable_user.png.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\drawable\\user.png"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_gradient_account_background.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\gradient_account_background.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_removeinventoryitem_view.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\removeinventoryitem_view.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\layout_fragment_inventory_view.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\fragment_inventory_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\navigation_my_nav.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\navigation\\my_nav.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_inventory_orange.png.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\inventory_orange.png"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_fragment_inventory_view.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\fragment_inventory_view.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_cat_dropdown.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\cat_dropdown.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\layout_register_view.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\register_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\navigation_nav_graph.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\navigation\\nav_graph.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\drawable_gradient_account_background.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\drawable\\gradient_account_background.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_fragment_profile_view.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\fragment_profile_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_inventory_table_layout.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\inventory_table_layout.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-pngs-39:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_login_view.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\login_view.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\layout_view_item_details.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\view_item_details.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\layout_change_profile_details_view.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\change_profile_details_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.picsellapplication.app-merged_res-44:/layout_fragment_profile_view.xml.flat",
+        "source": "com.example.picsellapplication.app-main-46:/layout/fragment_profile_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_inventory_item.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\inventory_item.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_view_item_details.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\view_item_details.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\drawable_checkout.png.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\drawable\\checkout.png"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_register_view.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\register_view.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_sales_orange.png.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\sales_orange.png"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\layout_inventory_table_layout.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\inventory_table_layout.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\drawable_sales_orange.png.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\drawable\\sales_orange.png"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\ic_baseline_person_24.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\drawable_user_orange.png.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\drawable\\user_orange.png"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-43:\\layout_select_item.xml.flat",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-45:\\layout\\select_item.xml"
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_sales.png.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\sales.png"
+    },
+    {
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\drawable_rounded_buttons.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\drawable\\rounded_buttons.xml"
+    },
+    {
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\layout_activity_month_year_dialog.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\activity_month_year_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-merged_res-44:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\navigation\\nav_graph.xml"
     }
 ]

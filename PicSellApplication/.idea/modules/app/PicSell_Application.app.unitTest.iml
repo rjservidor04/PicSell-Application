@@ -109,6 +109,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.mlkit:vision-common:17.2.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.exifinterface:exifinterface:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.mlkit:vision-interfaces:16.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.mikhaellopez:circularimageview:4.3.1@aar" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="PicSell_Application.app.main" />
 </module>

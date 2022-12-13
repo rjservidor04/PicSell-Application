@@ -165,6 +165,46 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         }
     }
 
+    public void changeUser(String originalUsername, String storeName, String userName){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+
+        values.put(STORENAME_COL, storeName);
+        values.put(USERNAME_COL, userName);
+
+        // update values with condition that UserID must match the provided UserID
+        db.update(TABLE_USER, values, "Username = ?", new String[] {originalUsername});
+//        db.close();
+    }
+
+    public void changePass(String originalUsername, String newPassword){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+
+        values.put(PASSWORD_COL, newPassword);
+
+        // update values with condition that UserID must match the provided UserID
+        db.update(TABLE_USER, values, "Username = ?", new String[] {originalUsername});
+//        db.close();
+    }
+
+    public UserModel getUser(String uName){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String sql = "select * from Users where Username = ?";
+//        System.out.println("NANA KO DIRI");
+        Cursor cursor = db.rawQuery(sql, new String[]{uName});
+
+        UserModel temp = new UserModel();
+        if(cursor.moveToFirst()){
+            temp.setStoreName(cursor.getString(1));
+            temp.setUsername(cursor.getString(2));
+            temp.setPassword(cursor.getString(3));
+        }
+
+        cursor.close();
+        return temp;
+    }
+
     public void updateUser(String originalUsername, String storeName, String userName, String passWord){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -185,6 +225,23 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         db.delete(TABLE_USER, "username", new String[] {username});
         db.close();
     }
+
+    //for changing profile details (username duplicate check)
+    public boolean checkUsername(String uName){
+        // System.out.println("CHECKING WORKS");
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("Select * From Users Where Username = ?",
+                new String[]{uName});
+        if(cursor.getCount()>0) {
+            cursor.close();
+            return true;
+        }
+        else {
+            cursor.close();
+            return false;
+        }
+    }
+
     // ITEM DATABASE QUERIES
 
     public String addNewItem(Item item) {
