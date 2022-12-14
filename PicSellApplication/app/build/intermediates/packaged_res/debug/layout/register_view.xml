@@ -36,19 +36,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/ftvStoreOwnerName"
-
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="32dp"
-            android:layout_below="@id/ftvStoreName"
-            android:hint="Enter Store Owner Name"/>
-
-        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ftvUsername"
 
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -58,7 +45,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="32dp"
-            android:layout_below="@id/ftvStoreOwnerName"
+            android:layout_below="@id/ftvStoreName"
             android:hint="Enter Username">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -137,7 +124,7 @@
             android:layout_below="@id/btnRegister" />
 
         <TextView
-            android:id="@+id/tvRegister"
+            android:id="@+id/tvLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"

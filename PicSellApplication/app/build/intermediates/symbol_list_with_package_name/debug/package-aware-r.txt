@@ -2908,7 +2908,6 @@ id ftvItem
 id ftvPassword
 id ftvQuantity
 id ftvStoreName
-id ftvStoreOwnerName
 id ftvUsername
 id fullscreen_header
 id ghost_view
@@ -3223,6 +3222,7 @@ id tvInventoryAction
 id tvInventoryItem
 id tvInventoryQuantity
 id tvItem
+id tvLogin
 id tvLogoName
 id tvLogoName2
 id tvLogout

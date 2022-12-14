@@ -98,7 +98,6 @@ id ftvItem
 id ftvPassword
 id ftvQuantity
 id ftvStoreName
-id ftvStoreOwnerName
 id ftvUsername
 id imageView
 id imageView2
@@ -142,6 +141,7 @@ id tvInventoryAction
 id tvInventoryItem
 id tvInventoryQuantity
 id tvItem
+id tvLogin
 id tvLogoName
 id tvLogoName2
 id tvLogout

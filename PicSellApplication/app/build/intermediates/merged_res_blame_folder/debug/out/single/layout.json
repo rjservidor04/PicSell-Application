@@ -12,12 +12,12 @@
         "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\activity_month_year_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\change_profile_details_view.xml",
-        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\change_profile_details_view.xml"
-    },
-    {
         "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\login_view.xml",
         "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\login_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\change_profile_details_view.xml",
+        "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\change_profile_details_view.xml"
     },
     {
         "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\activity_year_picker_dialog.xml",
@@ -34,10 +34,6 @@
     {
         "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\activity_main_fragment.xml",
         "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\activity_main_fragment.xml"
-    },
-    {
-        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/fragment_profile_view.xml",
-        "source": "com.example.picsellapplication.app-main-46:/layout/fragment_profile_view.xml"
     },
     {
         "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\fragment_profile_view.xml",
@@ -58,6 +54,10 @@
     {
         "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\addinventoryitem_view.xml",
         "source": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\addinventoryitem_view.xml"
+    },
+    {
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/register_view.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/register_view.xml"
     },
     {
         "merged": "C:\\Users\\IanLloyd\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\fragment_sales_view.xml",

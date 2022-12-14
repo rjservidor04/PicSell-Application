@@ -2907,7 +2907,6 @@ int id ftvItem 0x7f090107
 int id ftvPassword 0x7f090108
 int id ftvQuantity 0x7f090109
 int id ftvStoreName 0x7f09010a
-int id ftvStoreOwnerName 0x7f09010b
 int id ftvUsername 0x7f09010c
 int id fullscreen_header 0x7f09010d
 int id ghost_view 0x7f09010e
@@ -3222,6 +3221,7 @@ int id tvInventoryAction 0x7f090242
 int id tvInventoryItem 0x7f090243
 int id tvInventoryQuantity 0x7f090244
 int id tvItem 0x7f090245
+int id tvLogin 0x7f090278
 int id tvLogoName 0x7f090246
 int id tvLogoName2 0x7f090247
 int id tvLogout 0x7f090248

@@ -47,16 +47,13 @@ public final class RegisterViewBinding implements ViewBinding {
   public final TextInputLayout ftvStoreName;
 
   @NonNull
-  public final TextInputLayout ftvStoreOwnerName;
-
-  @NonNull
   public final TextInputLayout ftvUsername;
 
   @NonNull
   public final ScrollView registerView;
 
   @NonNull
-  public final TextView tvRegister;
+  public final TextView tvLogin;
 
   @NonNull
   public final TextView tvTagline;
@@ -65,9 +62,8 @@ public final class RegisterViewBinding implements ViewBinding {
       @NonNull TextInputEditText etConfirmPassword, @NonNull TextInputEditText etPassword,
       @NonNull TextInputEditText etStoreName, @NonNull TextInputEditText etUsername,
       @NonNull TextInputLayout ftvConfirmPassword, @NonNull TextInputLayout ftvPassword,
-      @NonNull TextInputLayout ftvStoreName, @NonNull TextInputLayout ftvStoreOwnerName,
-      @NonNull TextInputLayout ftvUsername, @NonNull ScrollView registerView,
-      @NonNull TextView tvRegister, @NonNull TextView tvTagline) {
+      @NonNull TextInputLayout ftvStoreName, @NonNull TextInputLayout ftvUsername,
+      @NonNull ScrollView registerView, @NonNull TextView tvLogin, @NonNull TextView tvTagline) {
     this.rootView = rootView;
     this.btnRegister = btnRegister;
     this.etConfirmPassword = etConfirmPassword;
@@ -77,10 +73,9 @@ public final class RegisterViewBinding implements ViewBinding {
     this.ftvConfirmPassword = ftvConfirmPassword;
     this.ftvPassword = ftvPassword;
     this.ftvStoreName = ftvStoreName;
-    this.ftvStoreOwnerName = ftvStoreOwnerName;
     this.ftvUsername = ftvUsername;
     this.registerView = registerView;
-    this.tvRegister = tvRegister;
+    this.tvLogin = tvLogin;
     this.tvTagline = tvTagline;
   }
 
@@ -159,12 +154,6 @@ public final class RegisterViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.ftvStoreOwnerName;
-      TextInputLayout ftvStoreOwnerName = ViewBindings.findChildViewById(rootView, id);
-      if (ftvStoreOwnerName == null) {
-        break missingId;
-      }
-
       id = R.id.ftvUsername;
       TextInputLayout ftvUsername = ViewBindings.findChildViewById(rootView, id);
       if (ftvUsername == null) {
@@ -173,9 +162,9 @@ public final class RegisterViewBinding implements ViewBinding {
 
       ScrollView registerView = (ScrollView) rootView;
 
-      id = R.id.tvRegister;
-      TextView tvRegister = ViewBindings.findChildViewById(rootView, id);
-      if (tvRegister == null) {
+      id = R.id.tvLogin;
+      TextView tvLogin = ViewBindings.findChildViewById(rootView, id);
+      if (tvLogin == null) {
         break missingId;
       }
 
@@ -187,7 +176,7 @@ public final class RegisterViewBinding implements ViewBinding {
 
       return new RegisterViewBinding((ScrollView) rootView, btnRegister, etConfirmPassword,
           etPassword, etStoreName, etUsername, ftvConfirmPassword, ftvPassword, ftvStoreName,
-          ftvStoreOwnerName, ftvUsername, registerView, tvRegister, tvTagline);
+          ftvUsername, registerView, tvLogin, tvTagline);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

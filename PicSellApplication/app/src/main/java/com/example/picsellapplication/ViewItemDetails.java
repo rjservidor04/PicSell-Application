@@ -63,17 +63,21 @@ public class ViewItemDetails extends AppCompatActivity {
                 String sMin = etMinimum.getText().toString();
                 String sCost = etCost.getText().toString();
                 String itemName = etItemName.getText().toString();
-                String msg = "";
                 double cost = Double.parseDouble(sCost);
                 double price = Double.parseDouble(sPrice);
                 int min = Integer.parseInt(sMin);
                 int stock = Integer.parseInt(sStock);
-                Item item = new Item(itemName, cost, price);
-                InventoryModel inventory = new InventoryModel(item, min, stock);
-                dbModel.UpdateInventoryItem(inventory);
-                Toast.makeText(ViewItemDetails.this, "Item Updated..", Toast.LENGTH_SHORT).show();
+                if(cost >= price){
+                    Toast.makeText(ViewItemDetails.this, "Cost is either greater or equal to price", Toast.LENGTH_SHORT).show();
+                }else{
+                    Item item = new Item(itemName, cost, price);
+                    InventoryModel inventory = new InventoryModel(item, min, stock);
+                    dbModel.UpdateInventoryItem(inventory);
+                    Toast.makeText(ViewItemDetails.this, "Item Updated..", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(ViewItemDetails.this, MainFragmentActivity.class);
                     startActivity(i);
+                }
+
 
             }
         });

@@ -122,7 +122,7 @@ public class CheckoutController extends Fragment {
                 String qty = etQuantity.getText().toString();
                 String msg = "";
 
-                if(qty.equals("") || itemName.equals(""))  msg = "Please fill all fields";
+                if(qty.isEmpty() || itemName.isEmpty())  Toast.makeText(getActivity(), "Please fill all fields", Toast.LENGTH_SHORT).show();
 
                 else {
                     try{
@@ -224,10 +224,12 @@ public class CheckoutController extends Fragment {
             String extractedText = visionText.getText();
             ArrayList<String> list = inventoryModel.getItemNames();
 
-            String closestString = FuzzySearch.extractOne(extractedText, list).getString();
-
-            etItem.setText(closestString);
-
+            if(FuzzySearch.extractOne(extractedText, list).getScore() < 50)
+                Toast.makeText(getActivity(), "The image has no text found.", Toast.LENGTH_SHORT).show();
+            else {
+                String closestString = FuzzySearch.extractOne(extractedText, list).getString();
+                etItem.setText(closestString);
+            }
         }
     }
 }
