@@ -223,9 +223,12 @@ public class CheckoutController extends Fragment {
         else{
             String extractedText = visionText.getText();
             ArrayList<String> list = inventoryModel.getItemNames();
-
-            if(FuzzySearch.extractOne(extractedText, list).getScore() < 50)
+            if(list.isEmpty()){
+                Toast.makeText(getActivity(), "There are no items in inventory. Please add an item.", Toast.LENGTH_SHORT).show();
+            }
+            else if(FuzzySearch.extractOne(extractedText, list).getScore() < 50)
                 Toast.makeText(getActivity(), "The image has no text found.", Toast.LENGTH_SHORT).show();
+
             else {
                 String closestString = FuzzySearch.extractOne(extractedText, list).getString();
                 etItem.setText(closestString);
