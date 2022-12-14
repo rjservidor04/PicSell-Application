@@ -12,57 +12,38 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/picsell_logo"
-        android:label="@string/app_name"
         android:roundIcon="@drawable/picsell_logo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PicSellApplication"
+        android:theme="@style/Theme.PicSellApplication.NoActionBar"
         tools:targetApi="31">
+
         <activity
             android:name=".ChangePasswordController"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="true"
+            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+            android:windowSoftInputMode="adjustResize"/>
+
         <activity
             android:name=".ChangeProfileDetailsController"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="true"
+            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+            android:windowSoftInputMode="adjustResize"/>
+
         <activity
             android:name=".ViewItemDetails"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".YearPickerDialog"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".MonthYearDialog"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="true"
+            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+            android:windowSoftInputMode="adjustResize"/>
+
         <activity
             android:name=".MainFragmentActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="true"
+            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+            android:windowSoftInputMode="adjustResize"/>
+
         <activity
             android:name=".LoginController"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.PicSellApplication.NoActionBar"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -71,42 +52,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".RegisterController"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.PicSellApplication.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".InventoryController"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.PicSellApplication.NoActionBar"
-            android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".AddInventoryItemController"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.PicSellApplication.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".RemoveInventoryItemView"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.PicSellApplication.NoActionBar"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".UpdateInventoryItemView"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.PicSellApplication.NoActionBar"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".SelectItem"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.PicSellApplication.NoActionBar"
-            android:windowSoftInputMode="adjustResize" />
+
     </application>
 
 </manifest>
