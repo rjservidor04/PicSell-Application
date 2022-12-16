@@ -11,7 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 /**
@@ -72,7 +71,7 @@ public class ProfileController extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View layoutView = inflater.inflate(R.layout.fragment_profile_view, container, false);
+        View layoutView = inflater.inflate(R.layout.profile_view, container, false);
 
         storename = (TextView) layoutView.findViewById(R.id.tvStoreName);
         username = (TextView) layoutView.findViewById(R.id.tvUsername);

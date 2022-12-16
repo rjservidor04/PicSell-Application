@@ -50,12 +50,7 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
 
 
     // creating constructor for database.
-//    public PicSellApplicationDatabase(SelectItem context) {super(context, DB_NAME, null, DB_VERSION);}
-//    public PicSellApplicationDatabase(InventoryView inventoryView) {super(inventoryView, DB_NAME, null, DB_VERSION);}
-//    public PicSellApplicationDatabase(AddInventoryItemView addInventoryItemView) {super(addInventoryItemView, DB_NAME, null, DB_VERSION);}
-//    public PicSellApplicationDatabase(RemoveInventoryItemView removeInventoryItemView) {super(removeInventoryItemView,DB_NAME, null, DB_VERSION);}
-//    public PicSellApplicationDatabase(UpdateInventoryItemView updateInventoryItemView) {super(updateInventoryItemView,DB_NAME, null, DB_VERSION);}
-    public PicSellApplicationDatabase(Context context){
+  public PicSellApplicationDatabase(Context context){
         super(context, DB_NAME, null, DB_VERSION);
     }
 
@@ -244,7 +239,7 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
 
     // ITEM DATABASE QUERIES
 
-    public String addNewItem(Item item) {
+    public String addNewItem(ItemModel item) {
         Boolean isUnique = isItemUnique(item.getItemName());
 
         if(!isUnique)
@@ -278,11 +273,11 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         }
         return true;
     }
-    public Item getItem(int itemId){
+    public ItemModel getItem(int itemId){
         SQLiteDatabase db = this.getReadableDatabase();
         String sql = "SELECT * FROM " + TABLE_ITEM + " WHERE " + ITEMID_COL + " = " + itemId;
         Cursor cursor = db.rawQuery(sql, null);
-        Item temp = new Item();
+        ItemModel temp = new ItemModel();
         if(cursor.moveToFirst()){
             temp.setItemId(cursor.getInt(0));
             temp.setItemName(cursor.getString(1));
@@ -293,11 +288,11 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         return temp;
     }
 
-    public Item getItem(String itemName){
+    public ItemModel getItem(String itemName){
         SQLiteDatabase db = this.getReadableDatabase();
         String sql = "SELECT * FROM " + TABLE_ITEM + " WHERE " + ITEMNAME_COL + " = '" + itemName + "'";
         Cursor cursor = db.rawQuery(sql, null);
-        Item temp = new Item();
+        ItemModel temp = new ItemModel();
         if(cursor.moveToFirst()){
             temp.setItemId(cursor.getInt(0));
             temp.setItemName(cursor.getString(1));
@@ -349,7 +344,7 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
 
         if(cursor.moveToFirst()){
             do{
-                Item item = getItem(cursor.getInt(3));
+                ItemModel item = getItem(cursor.getInt(3));
                 InventoryModel temp = new InventoryModel();
 
                 temp.setItem(item);
@@ -378,7 +373,7 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         // calling update method to update database and passing values and comparing it with name of product which is stored in originalProductName variable
         db.update(TABLE_INVENTORY, values, "itemId = " + inventory.getItemId(),null);
     }
-    public void updateItem(Item item) {
+    public void updateItem(ItemModel item) {
         // calling a method to get writable database.
         SQLiteDatabase db = this.getWritableDatabase();
         String sql = "SELECT itemName FROM " + TABLE_ITEM + " WHERE " + ITEMNAME_COL + " = '" + item.getItemName() + "'";
@@ -386,8 +381,6 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         // passing all values along with its key and value pair
         values.put(PRICE_COL,item.getPrice());
         values.put(COST_COL,item.getCost());
-
-
 
         // calling update method to update database and passing values and comparing it with name of product which is stored in originalProductName variable
         db.update(TABLE_ITEM, values, "itemName=?", new String[]{item.getItemName()});
@@ -399,39 +392,13 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         //db.close();
     }
 
-    public void removeItem(Item item) {
+    public void removeItem(ItemModel item) {
         SQLiteDatabase db = this.getWritableDatabase();
         // calling a method to delete a product and comparing it with productNname
         db.delete(TABLE_ITEM, "itemName=?", new String[]{item.getItemName()});
         //db.close();
     }
 
-    /*
-    public void addNewItem(String item, double price, int stocks, int minimumStock, String category){
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        ContentValues values = new ContentValues();
-
-        values.put(PRODUCTNAME_COL, item);
-        values.put(PRODUCTPRICE_COL, price);
-        values.put(STOCKQUANTITY_COL, stocks);
-        values.put(MINIMUMSTOCKQUANTITY_COL, minimumStock);
-        values.put(CATEGORY_COL, category);
-
-        db.insert(TABLE_INVENTORY, null, values);
-    }
-
-
-
-
-    public void removeInventory(String productName) {
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        // calling a method to delete a product and comparing it with productNname
-        db.delete(TABLE_INVENTORY, "productname=?", new String[]{productName});
-//        db.close();
-    }
-    */
     public boolean checkProduct(String productName){
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("select * from Inventory where productname=?", new String[]{productName});
@@ -444,113 +411,7 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
             return false;
         }
     }
-    /*
-    public ArrayList<InventoryModel> readInventory() {
-        SQLiteDatabase db = this.getReadableDatabase();
 
-        // creating a cursor with query to read data from database.
-        Cursor cursorInventory = db.rawQuery("SELECT * FROM " + TABLE_INVENTORY, null);
-
-        // creating a new array list.
-        ArrayList<InventoryModel> inventoryModalArrayList = new ArrayList<>();
-
-        // moving cursor to first position.
-        if (cursorInventory.moveToFirst()) {
-            do {
-                // adding the data from cursor to array list.
-                inventoryModalArrayList.add(new InventoryModel(cursorInventory.getInt(0),
-                        cursorInventory.getString(1),
-                        cursorInventory.getDouble(2),
-                        cursorInventory.getInt(3),
-                        cursorInventory.getString(4),
-                        cursorInventory.getInt(5)));
-            } while (cursorInventory.moveToNext());
-            // moving cursor to next.
-        }
-        // at last closing cursor and returning array list
-        cursorInventory.close();
-        return inventoryModalArrayList;
-    }
-
-    public ArrayList<InventoryModel> readCat1() {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        // creating a cursor with query to read data from database.
-        Cursor cursorInventory = db.rawQuery("Select * from inventory where category = ?" , new String[]{"Candies"});
-
-        // creating a new array list.
-        ArrayList<InventoryModel> inventoryModalArrayList = new ArrayList<>();
-
-        // moving cursor to first position.
-        if (cursorInventory.moveToFirst()) {
-            do {
-                // adding the data from cursor to array list.
-                inventoryModalArrayList.add(new InventoryModel(cursorInventory.getInt(0),
-                        cursorInventory.getString(1),
-                        cursorInventory.getDouble(2),
-                        cursorInventory.getInt(3),
-                        cursorInventory.getString(4),
-                        cursorInventory.getInt(5)));
-            } while (cursorInventory.moveToNext());
-            // moving cursor to next.
-        }
-        // at last closing cursor and returning array list
-        cursorInventory.close();
-        return inventoryModalArrayList;
-    }
-    public ArrayList<InventoryModel> readCat2() {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        // creating a cursor with query to read data from database.
-        Cursor cursorInventory = db.rawQuery("select * from inventory where category=?" , new String[]{"Junk Foods"});
-
-        // creating a new array list.
-        ArrayList<InventoryModel> inventoryModalArrayList = new ArrayList<>();
-
-        // moving cursor to first position.
-        if (cursorInventory.moveToFirst()) {
-            do {
-                // adding the data from cursor to array list.
-                inventoryModalArrayList.add(new InventoryModel(cursorInventory.getInt(0),
-                        cursorInventory.getString(1),
-                        cursorInventory.getDouble(2),
-                        cursorInventory.getInt(3),
-                        cursorInventory.getString(4),
-                        cursorInventory.getInt(5)));
-            } while (cursorInventory.moveToNext());
-            // moving cursor to next.
-        }
-        // at last closing cursor and returning array list
-        cursorInventory.close();
-        return inventoryModalArrayList;
-    }
-    public ArrayList<InventoryModel> readCat3() {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        // creating a cursor with query to read data from database.
-        Cursor cursorInventory = db.rawQuery("select * from inventory where category=?" , new String[]{"Beverages"});
-
-        // creating a new array list.
-        ArrayList<InventoryModel> inventoryModalArrayList = new ArrayList<>();
-
-        // moving cursor to first position.
-        if (cursorInventory.moveToFirst()) {
-            do {
-                // adding the data from cursor to array list.
-                inventoryModalArrayList.add(new InventoryModel(cursorInventory.getInt(0),
-                        cursorInventory.getString(1),
-                        cursorInventory.getDouble(2),
-                        cursorInventory.getInt(3),
-                        cursorInventory.getString(4),
-                        cursorInventory.getInt(5)));
-            } while (cursorInventory.moveToNext());
-            // moving cursor to next.
-        }
-        // at last closing cursor and returning array list
-        cursorInventory.close();
-        return inventoryModalArrayList;
-    }
-    */
     public void closeDB() {
         SQLiteDatabase db = this.getReadableDatabase();
         if (db != null && db.isOpen())
@@ -603,10 +464,8 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
             // increment db quantity with user-input quantity
             values.put(QUANTITY_COL, (sales.getQuantity() + dbQuantity));
             String dateSoldToString = String.valueOf(sales.getDateSold());
-            result = write.update(TABLE_SALES, values, "DateSold = ?", new String[]{ dateSoldToString });
 
-            if(result == -1) returnMsg = "Error during update process.";
-            else returnMsg = "Update process successful.";
+            result = write.update(TABLE_SALES, values, "DateSold = ?", new String[]{ dateSoldToString });
         }
         else{ // first item to be sold today
             // insert new record to sales table
@@ -617,26 +476,23 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
             values.put(PRICE_COL, sales.getPrice());
 
             result = write.insert(TABLE_SALES, null, values);
-
-            if(result == -1) returnMsg = "Error during insertion process.";
-            else returnMsg = "Insertion process successful.";
         }
         // update the stock quantity in Sales table
         if(result != -1){
             values.clear();
             values.put(STOCKQUANTITY_COL, (stock - sales.getQuantity()));
             String itemIdtoString = String.valueOf(thisItemId);
-            result = write.update(TABLE_INVENTORY, values, "itemId = ?", new String[]{ itemIdtoString });
 
-            if(result == -1) returnMsg = "Error during insertion process.";
-            else returnMsg = "Insertion process successful.";
+            result = write.update(TABLE_INVENTORY, values, "itemId = ?", new String[]{ itemIdtoString });
         }
+        if(result == -1) returnMsg = "Error during checkout process.";
+        else returnMsg = "Checkout process successful.";
 
         inventoryCursor.close();
         salesCursor.close();
-
         write.close();
         read.close();
+
         return returnMsg;
     }
 
@@ -656,8 +512,6 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         else
             return true;
     }
-
-
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

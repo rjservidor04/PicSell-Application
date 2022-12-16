@@ -31,7 +31,7 @@ public class MonthYearDialog extends DialogFragment {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
 
-        View dialog = inflater.inflate(R.layout.activity_month_year_dialog, null);
+        View dialog = inflater.inflate(R.layout.dialog_month_year_, null);
         TextView tvTitle = (TextView) dialog.findViewById(R.id.tvTitle);
         TextView tvHeader = (TextView) dialog.findViewById(R.id.tvHeader);
         NumberPicker monthPicker = (NumberPicker) dialog.findViewById(R.id.datePicker_month);

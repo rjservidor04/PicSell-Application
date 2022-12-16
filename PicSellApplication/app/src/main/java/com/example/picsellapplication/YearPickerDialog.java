@@ -1,6 +1,5 @@
 package com.example.picsellapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
 import android.app.AlertDialog;
@@ -31,7 +30,7 @@ public class YearPickerDialog extends DialogFragment {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
 
-        View dialog = inflater.inflate(R.layout.activity_year_picker_dialog, null);
+        View dialog = inflater.inflate(R.layout.dialog_year_picker, null);
 
         TextView tvTitle = (TextView) dialog.findViewById(R.id.tvDateType);
         TextView tvHeader = (TextView) dialog.findViewById(R.id.tvSelectedYear);

@@ -78,4 +78,15 @@ public class UserModel {
         System.out.println("CHECKING..." + " " + uName);
         return db.checkUsername(uName);
     }
+
+//    public boolean deleteSalesRecords(){
+//        return db.deleteSalesRecords();
+//    }
+//    public boolean deleteItemRecords(){
+//        return db.deleteItemRecords();
+//    }
+//
+//    public boolean deleteInventoryRecords(){
+////        return db.
+//    }
 }

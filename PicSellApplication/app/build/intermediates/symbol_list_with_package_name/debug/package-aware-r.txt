@@ -3215,6 +3215,8 @@ id transition_transform
 id triangle
 id tvBack
 id tvDateType
+id tvDisplayProfit
+id tvDisplayTotalSales
 id tvEndDate
 id tvHeader
 id tvInventory
@@ -3368,11 +3370,9 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main_fragment
-layout activity_month_year_dialog
-layout activity_year_picker_dialog
-layout addinventoryitem_view
 layout change_password_view
 layout change_profile_details_view
+layout checkout_view
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3389,11 +3389,12 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_checkout_view
-layout fragment_inventory_view
-layout fragment_profile_view
-layout fragment_sales_view
+layout dialog_month_year_
+layout dialog_year_picker
+layout inventory_add_item_view
 layout inventory_table_layout
+layout inventory_view
+layout inventory_view_item_details
 layout login_view
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3449,8 +3450,10 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout profile_view
 layout register_view
 layout sales_table_layout
+layout sales_view
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -3471,7 +3474,6 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-layout view_item_details
 menu bottom_nav_menu
 menu menu_main
 mipmap ic_launcher

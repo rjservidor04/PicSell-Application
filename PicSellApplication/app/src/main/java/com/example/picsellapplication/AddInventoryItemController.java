@@ -1,12 +1,8 @@
 package com.example.picsellapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationCompat;
 
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +17,7 @@ public class AddInventoryItemController extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.addinventoryitem_view);
+        setContentView(R.layout.inventory_add_item_view);
         etItemName = (EditText) findViewById(R.id.etItemName);
         etCost = (EditText) findViewById(R.id.etCost);
         etPrice =(EditText) findViewById(R.id.etPrice);
@@ -55,7 +51,7 @@ public class AddInventoryItemController extends AppCompatActivity {
                         int min = Integer.parseInt(sMin);
                         int stock = Integer.parseInt(sStock);
 
-                        Item item = new Item(itemName, cost, price);
+                        ItemModel item = new ItemModel(itemName, cost, price);
                         InventoryModel inventory = new InventoryModel(item, min, stock);
 
                         if(model.isItemUnique(itemName)){

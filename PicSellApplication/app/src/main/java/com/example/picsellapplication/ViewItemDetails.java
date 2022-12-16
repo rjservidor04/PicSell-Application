@@ -22,7 +22,7 @@ public class ViewItemDetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.view_item_details);
+        setContentView(R.layout.inventory_view_item_details);
 
         TextView tvBack = (TextView) findViewById(R.id.tvBack);
         etPrice = findViewById(R.id.etPrice_Details);
@@ -70,7 +70,7 @@ public class ViewItemDetails extends AppCompatActivity {
                 if(cost >= price){
                     Toast.makeText(ViewItemDetails.this, "Cost is either greater or equal to price", Toast.LENGTH_SHORT).show();
                 }else{
-                    Item item = new Item(itemName, cost, price);
+                    ItemModel item = new ItemModel(itemName, cost, price);
                     InventoryModel inventory = new InventoryModel(item, min, stock);
                     dbModel.UpdateInventoryItem(inventory);
                     Toast.makeText(ViewItemDetails.this, "Item Updated..", Toast.LENGTH_SHORT).show();

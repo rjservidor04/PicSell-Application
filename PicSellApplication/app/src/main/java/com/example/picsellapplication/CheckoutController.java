@@ -105,7 +105,7 @@ public class CheckoutController extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View layoutView = inflater.inflate(R.layout.fragment_checkout_view, container, false);
+        View layoutView = inflater.inflate(R.layout.checkout_view, container, false);
         inventoryModel = new InventoryModel(getActivity());
         salesModel = new SalesModel(getActivity());
 

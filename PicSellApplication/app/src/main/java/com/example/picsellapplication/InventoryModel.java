@@ -4,14 +4,12 @@ import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class InventoryModel implements Parcelable {
     PicSellApplicationDatabase dbHandler;
-    private Item item;
+    private ItemModel item;
     private int inventoryId;
     private int minimumStockQuantity;
     private int stockQuantity;
@@ -24,12 +22,12 @@ public class InventoryModel implements Parcelable {
         dbHandler = new PicSellApplicationDatabase(context);
     }
 
-    public InventoryModel(Item item, int minQuan, int stockQuantity){
+    public InventoryModel(ItemModel item, int minQuan, int stockQuantity){
         this.item = item;
         this.minimumStockQuantity = minQuan;
         this.stockQuantity = stockQuantity;
     }
-    public InventoryModel(int id, Item item, int minQuan, int stockQuantity){
+    public InventoryModel(int id, ItemModel item, int minQuan, int stockQuantity){
         this.inventoryId = id;
         this.item = item;
         this.minimumStockQuantity = minQuan;
@@ -139,11 +137,11 @@ public class InventoryModel implements Parcelable {
         return 0;
     }
 
-    public Item getItem() {
+    public ItemModel getItem() {
         return item;
     }
 
-    public void setItem(Item item) {
+    public void setItem(ItemModel item) {
         this.item = item;
     }
 

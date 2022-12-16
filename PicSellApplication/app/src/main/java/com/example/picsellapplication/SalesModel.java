@@ -28,22 +28,13 @@ public class SalesModel {
         if(isUnique)
             return "Item does not exists";
 
-        Item item = db.getItem(sales.getItemName());
+        ItemModel item = db.getItem(sales.getItemName());
 
         sales.setCost(item.getCost());
         sales.setPrice(item.getPrice());
         return db.addItemToSales(sales);
     }
 
-    public String addNewItem(Item item){
-        return db.addNewItem(item);
-    }
-
-    public boolean isItemUnique(String itemName){
-        boolean isUnique = db.isItemUnique(itemName);
-
-        return isUnique;
-    }
     public Cursor getSoldItems(int startDate, int endDate){
         return  db.getSoldItems(startDate, endDate);
     }

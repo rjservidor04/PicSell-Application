@@ -27,7 +27,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
-import java.util.Random;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -37,7 +36,7 @@ import java.util.Random;
 public class SalesController extends Fragment {
     SalesModel model;
 
-    TextView tvStartDate, tvEndDate, tvResult;
+    TextView tvStartDate, tvEndDate, tvResult, tvDisplaySales, tvDisplayProfit;
     ImageView imgStartDate, imgEndDate;
     View.OnClickListener clicked;
 
@@ -101,7 +100,7 @@ public class SalesController extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View layoutView;
-        layoutView = inflater.inflate(R.layout.fragment_sales_view, container, false);
+        layoutView = inflater.inflate(R.layout.sales_view, container, false);
         Spinner dropdown = (Spinner) layoutView.findViewById(R.id.spinnerReport);
         String[] typeOfReport = new String[]{"Day", "Month", "Year"};
 
@@ -124,7 +123,6 @@ public class SalesController extends Fragment {
         clicked = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 if (view.getId() == R.id.tvStartDate || view.getId() == R.id.imgStartDate) {
                     flagView = 1;
                     if (reportType[0] == 0) {
@@ -167,7 +165,7 @@ public class SalesController extends Fragment {
                         public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
                         @Override
                         public void afterTextChanged(Editable editable) {
-                            setRecyclerView();
+                            displayReport();
 
                             if (!verifyReportType())
                                 Toast.makeText(getActivity(), "There's something wrong with the report format entered.", Toast.LENGTH_SHORT).show();
@@ -187,6 +185,8 @@ public class SalesController extends Fragment {
         tvEndDate = (TextView) layoutView.findViewById((R.id.tvEndDate));
         imgEndDate = (ImageView) layoutView.findViewById(R.id.imgEndDate);
         tvResult = (TextView) layoutView.findViewById(R.id.tvResult);
+        tvDisplaySales = (TextView) layoutView.findViewById(R.id.tvDisplayTotalSales);
+        tvDisplayProfit = (TextView) layoutView.findViewById(R.id.tvDisplayProfit);
 
         return layoutView;
     }
@@ -201,7 +201,7 @@ public class SalesController extends Fragment {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int dateOfMonth) {
                 tempCalendar.set(year, month, dateOfMonth);
-                updateLabel(0);
+                updateDateTextViews(0);
             }
         }, thisYear, thisMonth, thisDayOfMonth); // default values
 
@@ -220,7 +220,7 @@ public class SalesController extends Fragment {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int dateOfMonth) {
                 tempCalendar.set(year, month, 1);
-                updateLabel(1);
+                updateDateTextViews(1);
             }
         }, flagView);
         builder.show(getFragmentManager(), "MonthYearDialog");
@@ -232,29 +232,32 @@ public class SalesController extends Fragment {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int dateOfMonth) {
                 tempCalendar.set(year, 0, 1);
-                updateLabel(2);
+                updateDateTextViews(2);
             }
         }, flagView);
         builder.show(getFragmentManager(), "YearPickerDialog");
     }
 
-    private void setRecyclerView(){
+    private void displayReport(){
         recycler_view.setHasFixedSize(true);
         recycler_view.setLayoutManager(new LinearLayoutManager(getActivity()));
-        adapter = new SalesTableAdapter(getActivity(), displayReport());
+        adapter = new SalesTableAdapter(getActivity(), formatReport());
 
         recycler_view.setAdapter(adapter);
     }
     // model-interaction functions
-    public List<SalesModel> displayReport(){
+    public List<SalesModel> formatReport(){
+
         SalesModel thisModel = new SalesModel(getActivity());
         List<SalesModel> salesList = new ArrayList<SalesModel>();
         int start = getFormattedDate(startDate);
         int end = getFormattedDate(endDate);
 
-        // if report type = month or year, add 1 to the endDate
-        // when report type is either month or year, its value is the day before the month/year begins
-        // so if month is December, its value would be similar to December 0.
+        // if report type = month or year, add 1 to the endDate's month or year.
+        // example: report type = month. startDate: December, endDate: December
+        // adding 1 would mean. December 0 - January 0.
+        // if you didnt add 1, it the same as December 0 - December 0, which is not what you wanted
+        // The same explanation if report type = year
 
         if(reportType[0] == 1 || reportType[2] == 1){
             int year = endDate.get(Calendar.YEAR);
@@ -286,7 +289,8 @@ public class SalesController extends Fragment {
                 salesList.add(temp);
             }while(cursor.moveToNext());
         }
-
+        tvDisplaySales.setText(totalSales+"");
+        tvDisplayProfit.setText((totalSales - totalCost) + "");
         return salesList;
     }
 
@@ -313,7 +317,7 @@ public class SalesController extends Fragment {
     }
 
     //helper functions
-    private void updateLabel(int type){
+    private void updateDateTextViews(int type){
         SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy", Locale.TAIWAN);
         int year, month, dateOfMonth;
         year = tempCalendar.get(Calendar.YEAR);
