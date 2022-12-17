@@ -69,6 +69,10 @@
             android:exported="true"
             android:theme="@style/Theme.PicSellApplication.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.example.picsellapplication.ReStock"
+            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
 
         <service
             android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"

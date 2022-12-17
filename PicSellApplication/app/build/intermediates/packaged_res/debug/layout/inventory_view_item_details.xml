@@ -6,15 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".ViewItemDetails">
 
+    <Button
+        android:id="@+id/btnReStock2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Restock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelete" />
+
     <TextView
         android:id="@+id/tvBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
+        android:clickable="true"
         android:text="BACK"
         android:textSize="16dp"
-        android:clickable="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -65,8 +76,8 @@
             android:id="@+id/etItemName_Details"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:singleLine="true"
-            android:editable="false"/>
+            android:editable="false"
+            android:singleLine="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -88,8 +99,8 @@
             android:id="@+id/etPrice_Details"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:singleLine="true"
             android:inputType="numberDecimal"
+            android:singleLine="true"
             app:layout_constraintTop_toBottomOf="@+id/etStocks_Details" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -110,8 +121,8 @@
             android:id="@+id/etCost_Details"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:singleLine="true"
             android:inputType="numberDecimal"
+            android:singleLine="true"
             app:layout_constraintTop_toBottomOf="@+id/etStocks_Details" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -135,8 +146,8 @@
             android:id="@+id/etStocks_Details"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:singleLine="true"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:singleLine="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -159,9 +170,10 @@
             android:id="@+id/etMinimum_Details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:singleLine="true"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:singleLine="true" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/btnUpdate"
         android:layout_width="wrap_content"

@@ -71,6 +71,19 @@ public class InventoryModel implements Parcelable {
         dbHandler.updateItem(inventory.getItem());
         return;
     }
+    public void ReStockItem(String itemName, double stock){
+        int id = dbHandler.getItemId(itemName);
+        dbHandler.ReStock(stock,id);
+        return;
+    }
+    public boolean VerifyConfirm(String username,String password){
+       // UserModel user = new UserModel(Context this);
+       if(dbHandler.verifyCredentials(username,password))
+           return true;
+       else
+           return false;
+
+    }
 
     public void RemoveInventoryItem(InventoryModel inventory){
         int id = dbHandler.getItemId(inventory.getItem().getItemName());

@@ -3,8 +3,11 @@ package com.example.picsellapplication;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,8 +18,9 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 
 public class ViewItemDetails extends AppCompatActivity {
-    Button btnUpdate, btnDelete;
-    EditText etItemName, etPrice, etStock, etMinimum, etCost;
+    Button btnUpdate, btnDelete,btnRestock;
+    SharedPreferences account;
+    EditText etItemName, etPrice, etStock, etMinimum, etCost,etconpass;
     InventoryModel dbModel;
 
     @Override
@@ -32,6 +36,8 @@ public class ViewItemDetails extends AppCompatActivity {
         etCost = findViewById(R.id.etCost_Details);
         btnUpdate = findViewById(R.id.btnUpdate);
         btnDelete = findViewById(R.id.btnDelete);
+        btnRestock = findViewById(R.id.btnReStock2);
+
 
         // getting the data from the inventory view through the use of Gson or basically JSON
         // where we convert Object to String and vice versa.
@@ -47,6 +53,7 @@ public class ViewItemDetails extends AppCompatActivity {
         etMinimum.setText(inventoryModel.getMinimumStockQuantity() +"");
 
         dbModel = new InventoryModel(ViewItemDetails.this);
+
 
         tvBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,12 +77,59 @@ public class ViewItemDetails extends AppCompatActivity {
                 if(cost >= price){
                     Toast.makeText(ViewItemDetails.this, "Cost is either greater or equal to price", Toast.LENGTH_SHORT).show();
                 }else{
-                    ItemModel item = new ItemModel(itemName, cost, price);
-                    InventoryModel inventory = new InventoryModel(item, min, stock);
-                    dbModel.UpdateInventoryItem(inventory);
-                    Toast.makeText(ViewItemDetails.this, "Item Updated..", Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(ViewItemDetails.this, MainFragmentActivity.class);
-                    startActivity(i);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(ViewItemDetails.this);
+                    builder.setCancelable(true);
+                    builder.setTitle("Confirmation");
+                    builder.setMessage("Do you wish to Update the item?");
+                    builder.setPositiveButton("Yes",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    AlertDialog.Builder builder2 = new AlertDialog.Builder(ViewItemDetails.this);
+                                    final View confirmationpop_up = getLayoutInflater().inflate(R.layout.confirmationpop_up,null);
+                                    etconpass = confirmationpop_up.findViewById(R.id.etpass);
+                                    builder2.setView(confirmationpop_up);
+                                    builder2.setTitle("Confirm Password");
+                                    builder2.setPositiveButton("Enter",
+                                            new DialogInterface.OnClickListener() {
+                                                @Override
+                                                public void onClick(DialogInterface dialog, int which) {
+                                                    String pass = etconpass.getText().toString();
+                                                    account = getSharedPreferences("MYPREFS", Activity.MODE_PRIVATE);
+                                                    String uName = account.getString("username", "N/A");
+                                                    if(dbModel.VerifyConfirm(uName,pass)){
+                                                        ItemModel item = new ItemModel(itemName, cost, price);
+                                                        InventoryModel inventory = new InventoryModel(item, min, stock);
+                                                        dbModel.UpdateInventoryItem(inventory);
+                                                        Toast.makeText(ViewItemDetails.this, "Item Updated..", Toast.LENGTH_SHORT).show();
+                                                        Intent i = new Intent(ViewItemDetails.this, MainFragmentActivity.class);
+                                                        startActivity(i);
+                                                    }
+                                                    else{
+                                                        Toast.makeText(ViewItemDetails.this, "Incorrect password!", Toast.LENGTH_SHORT).show();
+                                                    }
+
+                                                }
+                                            });
+                                    builder2.setNegativeButton("Cancel",   new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                        }
+                                    });
+
+                                    AlertDialog dialog2 = builder2.create();
+                                    dialog2.show();
+                                }
+                            });
+                    builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                        }
+                    });
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+
                 }
 
 
@@ -92,10 +146,38 @@ public class ViewItemDetails extends AppCompatActivity {
                             new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                dbModel.RemoveInventoryItem(inventoryModel);
-                                    Toast.makeText(ViewItemDetails.this, "Item Deleted..", Toast.LENGTH_SHORT).show();
-                                    Intent i = new Intent(ViewItemDetails.this, MainFragmentActivity.class);
-                                    startActivity(i);
+                                    AlertDialog.Builder builder2 = new AlertDialog.Builder(ViewItemDetails.this);
+                                    final View confirmationpop_up = getLayoutInflater().inflate(R.layout.confirmationpop_up,null);
+                                    etconpass = confirmationpop_up.findViewById(R.id.etpass);
+                                    builder2.setView(confirmationpop_up);
+                                    builder2.setTitle("Confirm Password");
+                                    builder2.setPositiveButton("Enter",
+                                            new DialogInterface.OnClickListener() {
+                                                @Override
+                                                public void onClick(DialogInterface dialog, int which) {
+                                                    String pass = etconpass.getText().toString();
+                                                    account = getSharedPreferences("MYPREFS", Activity.MODE_PRIVATE);
+                                                    String uName = account.getString("username", "N/A");
+                                                    if(dbModel.VerifyConfirm(uName,pass)){
+                                                        dbModel.RemoveInventoryItem(inventoryModel);
+                                                        Toast.makeText(ViewItemDetails.this, "Item Deleted..", Toast.LENGTH_SHORT).show();
+                                                        Intent i = new Intent(ViewItemDetails.this, MainFragmentActivity.class);
+                                                        startActivity(i);
+                                                    }
+                                                    else{
+                                                        Toast.makeText(ViewItemDetails.this, "Incorrect password!", Toast.LENGTH_SHORT).show();
+                                                    }
+
+                                                }
+                                            });
+                                    builder2.setNegativeButton("Cancel",   new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                        }
+                                    });
+
+                                    AlertDialog dialog2 = builder2.create();
+                                    dialog2.show();
                                 }
                             });
                     builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -106,7 +188,18 @@ public class ViewItemDetails extends AppCompatActivity {
 
                     AlertDialog dialog = builder.create();
                     dialog.show();
+
             }
+
+        });
+        btnRestock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ViewItemDetails.this, ReStock.class);
+                intent.putExtra("itemname",inventoryModel.getItem().getItemName());
+                startActivity(intent);
+            }
+
         });
     }
 }

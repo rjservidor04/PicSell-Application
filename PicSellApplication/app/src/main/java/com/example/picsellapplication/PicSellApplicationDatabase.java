@@ -373,6 +373,23 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
         // calling update method to update database and passing values and comparing it with name of product which is stored in originalProductName variable
         db.update(TABLE_INVENTORY, values, "itemId = " + inventory.getItemId(),null);
     }
+    public void ReStock(double stock,int id) {
+        // calling a method to get writable database.
+        SQLiteDatabase read = this.getReadableDatabase();
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = read.rawQuery("SELECT stockQuantity FROM Inventory WHERE itemId = "+ id, null);
+        double result = 0;
+        if (cursor.moveToFirst()) {
+            double dbval = cursor.getInt(0);
+            result = stock + dbval;
+        }
+        ContentValues values = new ContentValues();
+        // passing all values along with its key and value pair
+        values.put(STOCKQUANTITY_COL, result);
+        // calling update method to update database and passing values and comparing it with name of product which is stored in originalProductName variable
+        db.update(TABLE_INVENTORY, values, "itemId = " + id, null);
+    }
+
     public void updateItem(ItemModel item) {
         // calling a method to get writable database.
         SQLiteDatabase db = this.getWritableDatabase();
