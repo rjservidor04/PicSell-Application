@@ -27,6 +27,9 @@ public final class InventoryViewItemDetailsBinding implements ViewBinding {
   public final Button btnDelete;
 
   @NonNull
+  public final Button btnReStock2;
+
+  @NonNull
   public final Button btnUpdate;
 
   @NonNull
@@ -69,7 +72,7 @@ public final class InventoryViewItemDetailsBinding implements ViewBinding {
   public final TextView tvLogoName2;
 
   private InventoryViewItemDetailsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnDelete, @NonNull Button btnUpdate,
+      @NonNull Button btnDelete, @NonNull Button btnReStock2, @NonNull Button btnUpdate,
       @NonNull TextInputEditText etCostDetails, @NonNull TextInputEditText etItemNameDetails,
       @NonNull TextInputEditText etMinimumDetails, @NonNull TextInputEditText etPriceDetails,
       @NonNull TextInputEditText etStocksDetails, @NonNull ImageView imageView2,
@@ -79,6 +82,7 @@ public final class InventoryViewItemDetailsBinding implements ViewBinding {
       @NonNull TextView tvLogoName2) {
     this.rootView = rootView;
     this.btnDelete = btnDelete;
+    this.btnReStock2 = btnReStock2;
     this.btnUpdate = btnUpdate;
     this.etCostDetails = etCostDetails;
     this.etItemNameDetails = etItemNameDetails;
@@ -125,6 +129,12 @@ public final class InventoryViewItemDetailsBinding implements ViewBinding {
       id = R.id.btnDelete;
       Button btnDelete = ViewBindings.findChildViewById(rootView, id);
       if (btnDelete == null) {
+        break missingId;
+      }
+
+      id = R.id.btnReStock2;
+      Button btnReStock2 = ViewBindings.findChildViewById(rootView, id);
+      if (btnReStock2 == null) {
         break missingId;
       }
 
@@ -212,10 +222,10 @@ public final class InventoryViewItemDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new InventoryViewItemDetailsBinding((ConstraintLayout) rootView, btnDelete, btnUpdate,
-          etCostDetails, etItemNameDetails, etMinimumDetails, etPriceDetails, etStocksDetails,
-          imageView2, layoutCost, layoutItem, layoutMin, layoutPrice, layoutStock, tvBack,
-          tvLogoName2);
+      return new InventoryViewItemDetailsBinding((ConstraintLayout) rootView, btnDelete,
+          btnReStock2, btnUpdate, etCostDetails, etItemNameDetails, etMinimumDetails,
+          etPriceDetails, etStocksDetails, imageView2, layoutCost, layoutItem, layoutMin,
+          layoutPrice, layoutStock, tvBack, tvLogoName2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

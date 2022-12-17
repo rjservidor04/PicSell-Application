@@ -2766,7 +2766,9 @@ id btnCheckout
 id btnDelete
 id btnLogin
 id btnNewItem
+id btnReStock2
 id btnRegister
+id btnRestock
 id btnTakePicture
 id btnUpdate
 id btnUpdatePassword
@@ -2878,11 +2880,13 @@ id etPassword
 id etPrice
 id etPrice_Details
 id etQuantity
+id etQuantityv
 id etRetypeNewPassword
 id etStocks
 id etStocks_Details
 id etStoreName
 id etUsername
+id etpass
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2934,6 +2938,7 @@ id ignoreRequest
 id image
 id imageView
 id imageView2
+id imageView3
 id imageView5
 id imgEndDate
 id imgStartDate
@@ -3227,6 +3232,7 @@ id tvItem
 id tvLogin
 id tvLogoName
 id tvLogoName2
+id tvLogoName3
 id tvLogout
 id tvMore
 id tvPassword
@@ -3373,6 +3379,7 @@ layout activity_main_fragment
 layout change_password_view
 layout change_profile_details_view
 layout checkout_view
+layout confirmationpop_up
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3452,6 +3459,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout profile_view
 layout register_view
+layout restocks_view
 layout sales_table_layout
 layout sales_view
 layout select_dialog_item_material

@@ -62,7 +62,9 @@ id btnCheckout
 id btnDelete
 id btnLogin
 id btnNewItem
+id btnReStock2
 id btnRegister
+id btnRestock
 id btnTakePicture
 id btnUpdate
 id btnUpdatePassword
@@ -87,11 +89,13 @@ id etPassword
 id etPrice
 id etPrice_Details
 id etQuantity
+id etQuantityv
 id etRetypeNewPassword
 id etStocks
 id etStocks_Details
 id etStoreName
 id etUsername
+id etpass
 id fragmentContainerView
 id ftvConfirmPassword
 id ftvItem
@@ -101,6 +105,7 @@ id ftvStoreName
 id ftvUsername
 id imageView
 id imageView2
+id imageView3
 id imageView5
 id imgEndDate
 id imgStartDate
@@ -146,6 +151,7 @@ id tvItem
 id tvLogin
 id tvLogoName
 id tvLogoName2
+id tvLogoName3
 id tvLogout
 id tvMore
 id tvPassword
@@ -174,6 +180,7 @@ layout activity_main_fragment
 layout change_password_view
 layout change_profile_details_view
 layout checkout_view
+layout confirmationpop_up
 layout dialog_month_year_
 layout dialog_year_picker
 layout inventory_add_item_view
@@ -183,6 +190,7 @@ layout inventory_view_item_details
 layout login_view
 layout profile_view
 layout register_view
+layout restocks_view
 layout sales_table_layout
 layout sales_view
 menu bottom_nav_menu

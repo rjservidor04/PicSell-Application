@@ -64,6 +64,10 @@
             android:exported="true"
             android:theme="@style/Theme.PicSellApplication.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ReStock"
+            android:theme="@style/Theme.PicSellApplication.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
 
     </application>
 
