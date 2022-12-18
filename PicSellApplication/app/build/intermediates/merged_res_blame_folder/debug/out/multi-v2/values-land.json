@@ -4,7 +4,7 @@
             "outputFile": "com.example.picsellapplication.app-mergeDebugResources-42:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sinon\\StudioProjects\\PicSell-Application\\PicSellApplication\\app\\src\\main\\res\\values-land\\dimens.xml",
+                    "source": "C:\\Users\\sinon\\StudioProjects\\PicSell-Application2\\PicSellApplication\\app\\src\\main\\res\\values-land\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",

@@ -1,74 +1,70 @@
 [
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\activity_main_fragment.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\activity_main_fragment.xml"
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/change_profile_details_view.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/change_profile_details_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\checkout_view.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\checkout_view.xml"
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/inventory_view_item_details.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/inventory_view_item_details.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\profile_view.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\profile_view.xml"
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/profile_view.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/profile_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\sales_view.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\sales_view.xml"
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/activity_main_fragment.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/activity_main_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\change_password_view.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\change_password_view.xml"
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/inventory_add_item_view.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/inventory_add_item_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\login_view.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\login_view.xml"
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/restocks_view.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/restocks_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\restocks_view.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\restocks_view.xml"
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/inventory_view.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/inventory_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\change_profile_details_view.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\change_profile_details_view.xml"
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/sales_table_layout.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/sales_table_layout.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\inventory_add_item_view.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\inventory_add_item_view.xml"
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/change_password_view.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/change_password_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\inventory_view.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\inventory_view.xml"
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/checkout_view.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/checkout_view.xml"
+    },
+    {
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/sales_view.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/sales_view.xml"
+    },
+    {
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/inventory_table_layout.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/inventory_table_layout.xml"
     },
     {
         "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/confirmationpop_up.xml",
         "source": "com.example.picsellapplication.app-main-46:/layout/confirmationpop_up.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\restock_view.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\restock_view.xml"
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/login_view.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/login_view.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\sales_table_layout.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\sales_table_layout.xml"
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/dialog_year_picker.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/dialog_year_picker.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\register_view.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\register_view.xml"
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/dialog_month_year_.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/dialog_month_year_.xml"
     },
     {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\inventory_view_item_details.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\inventory_view_item_details.xml"
-    },
-    {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\inventory_table_layout.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\inventory_table_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\dialog_month_year_.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\dialog_month_year_.xml"
-    },
-    {
-        "merged": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-mergeDebugResources-43:\\layout\\dialog_year_picker.xml",
-        "source": "C:\\Users\\sinon\\.gradle\\daemon\\7.4\\com.example.picsellapplication.app-main-46:\\layout\\dialog_year_picker.xml"
+        "merged": "com.example.picsellapplication.app-mergeDebugResources-43:/layout/register_view.xml",
+        "source": "com.example.picsellapplication.app-main-46:/layout/register_view.xml"
     }
 ]
