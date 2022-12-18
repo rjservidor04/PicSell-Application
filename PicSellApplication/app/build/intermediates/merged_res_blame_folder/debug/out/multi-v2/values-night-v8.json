@@ -4,7 +4,7 @@
             "outputFile": "com.example.picsellapplication.app-mergeDebugResources-42:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sinon\\StudioProjects\\PicSell-Application\\PicSellApplication\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\sinon\\StudioProjects\\PicSell-Application2\\PicSellApplication\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
