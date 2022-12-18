@@ -465,7 +465,7 @@ public class PicSellApplicationDatabase extends SQLiteOpenHelper{
             stock = inventoryCursor.getInt(0);
 
         if(stock < sales.getQuantity())
-            return "Not enough stock for item " + sales.getItemName() + " Stock " + stock;
+            return "Not enough stock for item: " + sales.getItemName() + ", stock: " + stock;
 
         // check if same item is sold within the day, if yes just update its quantity sold
         String sql2 = "SELECT Quantity FROM " + TABLE_SALES + " WHERE "

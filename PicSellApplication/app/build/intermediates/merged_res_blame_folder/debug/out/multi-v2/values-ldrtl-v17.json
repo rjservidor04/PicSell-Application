@@ -4,7 +4,7 @@
             "outputFile": "com.example.picsellapplication.app-mergeDebugResources-42:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sinon\\.gradle\\caches\\transforms-3\\cf199b73e85c40708ab42c5f13bad77e\\transformed\\material-1.6.1\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\Rd\\.gradle\\caches\\transforms-3\\cf199b73e85c40708ab42c5f13bad77e\\transformed\\material-1.6.1\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

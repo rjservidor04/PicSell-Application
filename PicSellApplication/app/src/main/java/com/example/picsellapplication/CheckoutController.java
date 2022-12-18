@@ -127,7 +127,11 @@ public class CheckoutController extends Fragment {
                 else {
                     try{
                         int quantity = Integer.parseInt(etQuantity.getText().toString());
-                        msg = addItemToSales(itemName, quantity);
+                        if(quantity == 0)
+                            msg = "Invalid value in quantity field";
+                        else
+                            msg = addItemToSales(itemName, quantity);
+
                         if(inventoryModel.getStockQuantityFromItemName(itemName) <= inventoryModel.getMinimumStockQuantityFromItemName(itemName)) {
                             NotificationCompat.Builder builder = new NotificationCompat.Builder(getActivity(), "test");
                             builder.setContentTitle("Item Almost Out!");
