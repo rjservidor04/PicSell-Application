@@ -7,6 +7,18 @@
     tools:context=".ReStock">
 
 
+    <TextView
+        android:id="@+id/tvBack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:text="BACK"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="422dp"
         android:layout_height="581dp"

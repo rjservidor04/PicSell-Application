@@ -121,6 +121,7 @@ public class CheckoutController extends Fragment {
                 String itemName = etItem.getText().toString();
                 String qty = etQuantity.getText().toString();
                 String msg = "";
+                String notifMsg ="";
 
                 if(qty.isEmpty() || itemName.isEmpty())  Toast.makeText(getActivity(), "Please fill all fields", Toast.LENGTH_SHORT).show();
 
@@ -132,16 +133,27 @@ public class CheckoutController extends Fragment {
                         else
                             msg = addItemToSales(itemName, quantity);
 
-                        if(inventoryModel.getStockQuantityFromItemName(itemName) <= inventoryModel.getMinimumStockQuantityFromItemName(itemName)) {
+                        int itemStock = inventoryModel.getStockQuantityFromItemName(itemName);
+                        int itemMinStock = inventoryModel.getMinimumStockQuantityFromItemName(itemName);
+
+                        if( itemStock <= itemMinStock ) {
                             NotificationCompat.Builder builder = new NotificationCompat.Builder(getActivity(), "test");
-                            builder.setContentTitle("Item Almost Out!");
-                            builder.setContentText("The following item " + itemName + " has almost ran out! Try restocking in Inventory.");
+                            if(itemStock == 0)
+                                notifMsg = "Item "+ itemName + " has ran out!";
+                            else
+                                notifMsg = "Item " + itemName + " almost out!";
+
+                            builder.setContentTitle(notifMsg);
+                            builder.setContentText("The following " + notifMsg + ". Try restocking in Inventory.");
                             builder.setSmallIcon(R.drawable.picsell_logo);
                             builder.setAutoCancel(true);
 
                             NotificationManagerCompat managerCompat = NotificationManagerCompat.from(getActivity());
                             managerCompat.notify(1, builder.build());
                         }
+
+
+
                     }
                     catch(Exception e){
                         msg = e.toString();

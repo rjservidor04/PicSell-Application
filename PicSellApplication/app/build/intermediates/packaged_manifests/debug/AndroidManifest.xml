@@ -26,7 +26,6 @@
         android:icon="@drawable/picsell_logo"
         android:roundIcon="@drawable/picsell_logo"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.PicSellApplication.NoActionBar" >
         <activity
             android:name="com.example.picsellapplication.ChangePasswordController"

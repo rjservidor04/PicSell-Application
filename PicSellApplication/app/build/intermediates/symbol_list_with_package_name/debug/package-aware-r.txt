@@ -3219,6 +3219,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvBack
+id tvBack2
 id tvDateType
 id tvDisplayProfit
 id tvDisplayTotalSales

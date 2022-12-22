@@ -41,29 +41,35 @@ public class AddInventoryItemController extends AppCompatActivity {
 
                 if(itemName.isEmpty() || sPrice.isEmpty() || sStock.isEmpty() || sMin.isEmpty()|| sCost.isEmpty())
                     msg = "Please input all fields";
-                else if(Double.parseDouble(sCost) >= Double.parseDouble(sPrice)){
-                    msg = "Cost is either greater than or equal to price";
-                }
                 else{
                     try {
                         double cost = Double.parseDouble(sCost);
                         double price = Double.parseDouble(sPrice);
                         int min = Integer.parseInt(sMin);
                         int stock = Integer.parseInt(sStock);
+                        if(min > stock)
+                            msg = "Stock should be greater than Low Level Stock";
+                        else if(cost == 0 || price == 0)
+                            msg = "Amount should not be zero";
+                        else if(cost >= price)
+                            msg = "Price should be greater than cost to have profit";
+                        else if( min == 0 || stock == 0)
+                            msg = "Stock should not be zero";
+                        else{
+                            ItemModel item = new ItemModel(itemName, cost, price);
+                            InventoryModel inventory = new InventoryModel(item, min, stock);
 
-                        ItemModel item = new ItemModel(itemName, cost, price);
-                        InventoryModel inventory = new InventoryModel(item, min, stock);
-
-                        if(model.isItemUnique(itemName)){
-                            if(model.addItemToInventory(inventory)){ // this method inserts data to Item table first, then to Inventory table
-                                msg = "Insertion is successful";
-                                Intent intent = new Intent(AddInventoryItemController.this, MainFragmentActivity.class);
-                                startActivity(intent);
-                            }
-                            else
-                                msg = "Insertion failed";
-                        }else
-                            msg = "Product already exists";
+                            if(model.isItemUnique(itemName)){
+                                if(model.addItemToInventory(inventory)){ // this method inserts data to Item table first, then to Inventory table
+                                    msg = "Insertion is successful";
+                                    Intent intent = new Intent(AddInventoryItemController.this, MainFragmentActivity.class);
+                                    startActivity(intent);
+                                }
+                                else
+                                    msg = "Insertion failed";
+                            }else
+                                msg = "Product already exists";
+                        }
                     }
                     catch (Exception e){
                         msg = "Error " + e.getMessage();

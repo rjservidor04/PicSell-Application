@@ -42,12 +42,15 @@ public final class RestocksViewBinding implements ViewBinding {
   public final ImageView imageView3;
 
   @NonNull
+  public final TextView tvBack2;
+
+  @NonNull
   public final TextView tvLogoName3;
 
   private RestocksViewBinding(@NonNull FrameLayout rootView, @NonNull Button btnRestock,
       @NonNull TextInputEditText etItem, @NonNull TextInputEditText etQuantityv,
       @NonNull TextInputLayout ftvItem, @NonNull TextInputLayout ftvQuantity,
-      @NonNull ImageView imageView3, @NonNull TextView tvLogoName3) {
+      @NonNull ImageView imageView3, @NonNull TextView tvBack2, @NonNull TextView tvLogoName3) {
     this.rootView = rootView;
     this.btnRestock = btnRestock;
     this.etItem = etItem;
@@ -55,6 +58,7 @@ public final class RestocksViewBinding implements ViewBinding {
     this.ftvItem = ftvItem;
     this.ftvQuantity = ftvQuantity;
     this.imageView3 = imageView3;
+    this.tvBack2 = tvBack2;
     this.tvLogoName3 = tvLogoName3;
   }
 
@@ -121,6 +125,12 @@ public final class RestocksViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvBack2;
+      TextView tvBack2 = ViewBindings.findChildViewById(rootView, id);
+      if (tvBack2 == null) {
+        break missingId;
+      }
+
       id = R.id.tvLogoName3;
       TextView tvLogoName3 = ViewBindings.findChildViewById(rootView, id);
       if (tvLogoName3 == null) {
@@ -128,7 +138,7 @@ public final class RestocksViewBinding implements ViewBinding {
       }
 
       return new RestocksViewBinding((FrameLayout) rootView, btnRestock, etItem, etQuantityv,
-          ftvItem, ftvQuantity, imageView3, tvLogoName3);
+          ftvItem, ftvQuantity, imageView3, tvBack2, tvLogoName3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

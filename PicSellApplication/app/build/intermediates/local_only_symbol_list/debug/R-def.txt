@@ -138,6 +138,7 @@ id textView5
 id textView6
 id trRowData
 id tvBack
+id tvBack2
 id tvDateType
 id tvDisplayProfit
 id tvDisplayTotalSales

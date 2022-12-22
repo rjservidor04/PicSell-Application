@@ -74,9 +74,12 @@ public class ViewItemDetails extends AppCompatActivity {
                 double price = Double.parseDouble(sPrice);
                 int min = Integer.parseInt(sMin);
                 int stock = Integer.parseInt(sStock);
-                if(cost >= price){
-                    Toast.makeText(ViewItemDetails.this, "Cost is either greater or equal to price", Toast.LENGTH_SHORT).show();
-                }else{
+
+                if(cost >= price)
+                    Toast.makeText(ViewItemDetails.this, "Price should be greater than cost to have profit", Toast.LENGTH_SHORT).show();
+                else if(cost == 0 || price == 0 || min==0)
+                    Toast.makeText(ViewItemDetails.this, "Invalid zero value", Toast.LENGTH_SHORT).show();
+                else{
                     AlertDialog.Builder builder = new AlertDialog.Builder(ViewItemDetails.this);
                     builder.setCancelable(true);
                     builder.setTitle("Confirmation");
