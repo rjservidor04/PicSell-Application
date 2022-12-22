@@ -3,7 +3,7 @@ PicSell application developed by The Plug
 
 ## Installation:
 To install the application, you can get the apk file in this link: \
-https://drive.google.com/drive/folders/1mLdv1eGdPD0urJPHEtIgucWTwgtMlHX4?usp=sharing
+https://drive.google.com/file/d/1b1mp0sZZWhU9MPKpvmhn0YL3W9WTtGsy/view?usp=share_link
 
 ## Tools Used:
 IDE - Android Studio : https://developer.android.com/docs \
